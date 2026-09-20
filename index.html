@@ -84,6 +84,11 @@ td.best:hover{background:#0c2b1a}
 .fit-good{background:#10233a;color:#7dd3fc;border:1px solid #1e40af}
 .fit-risky{background:#2b210c;color:#fcd34d;border:1px solid #92610d}
 .fit-avoid{background:#2b0f14;color:#fda4af;border:1px solid #8c1f2f}
+.ord{display:inline-block;font-size:.64rem;font-weight:800;padding:2px 9px;border-radius:999px;letter-spacing:.4px;margin-bottom:5px}
+.ord-0{background:#3a2e07;color:#fbbf24;border:1px solid #8a6d1d}
+.ord-1{background:#22304d;color:#cbd5e1;border:1px solid #475569}
+.ord-2{background:#2b1a10;color:#fdba74;border:1px solid #7c4a12}
+.ord-3{background:#1c2740;color:#8fa0bb;border:1px solid var(--line)}
 .meter{height:7px;background:#1c2740;border-radius:4px;overflow:hidden;margin:7px 0}
 .meter i{display:block;height:100%;background:linear-gradient(90deg,var(--bad),var(--warn),var(--good))}
 /* chips */
@@ -391,6 +396,8 @@ summary{cursor:pointer;color:var(--acc2);font-weight:600;font-size:.85rem}
 
 <script>
 "use strict";
+const EMBEDDED_FEED = {"generated":"2026-09-20T16:35:18Z","offers":[{"name":"CueVue","url":"https://muncheye.com/unreal-ai","network":"JVZoo","niche":"software","launch":"2026-09-20","details":"$147 at 50%","price":147.0,"commPct":50.0,"source":"MunchEye"},{"name":"LocalMediaEmpire","url":"https://muncheye.com/localmediaempire","network":"JVZoo","niche":"other","launch":"2026-09-23","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"Jikan Nazo","url":"https://muncheye.com/jikan-nazo-time-crime-whodunit-amazon-kdp-software-2001-k-in-prizes","network":"WarriorPlus","niche":"software","launch":"2026-09-23","details":"$19 at 50%","price":19.0,"commPct":50.0,"source":"MunchEye"},{"name":"Blog2Vid","url":"https://muncheye.com/blog2vid","network":"JVZoo","niche":"other","launch":"2026-09-25","details":"47 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"NewsletterPilot AI","url":"https://muncheye.com/im-wealth-builders-shortstory-engine","network":"WarriorPlus","niche":"software","launch":"2026-09-25","details":"17 at 75%","price":0,"commPct":75.0,"source":"MunchEye"},{"name":"ProductsPilot","url":"https://muncheye.com/productspilot","network":"JVZoo","niche":"other","launch":"2026-09-29","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"LeadsGorilla 3.0 APEX AI","url":"https://muncheye.com/adrian-isfan-leadsgorilla-3-0-apex-ai","network":"JVZoo","niche":"software","launch":"2026-10-01","details":"47 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"ShopEmpire","url":"https://muncheye.com/neil-napier-shopempire","network":"JVZoo","niche":"other","launch":"2026-10-02","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"History Co-Author","url":"https://muncheye.com/history-co-author","network":"WarriorPlus","niche":"other","launch":"2026-10-02","details":"$17 at 75%","price":17.0,"commPct":75.0,"source":"MunchEye"},{"name":"BuyerEngine AI","url":"https://muncheye.com/buyerengineai","network":"JVZoo","niche":"software","launch":"2026-10-06","details":"37.00 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"WowClips","url":"https://muncheye.com/pankaj-malav-deepanker-r-wowclips","network":"JVZoo","niche":"other","launch":"2026-10-07","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"AIProspectGenie","url":"https://muncheye.com/wayne-crowe-october-launch","network":"JVZoo","niche":"other","launch":"2026-10-08","details":"$27 at 50%","price":27.0,"commPct":50.0,"source":"MunchEye"},{"name":"ClickFlow","url":"https://muncheye.com/clickflow","network":"JVZoo","niche":"other","launch":"2026-10-13","details":"47.00 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"October Launch","url":"https://muncheye.com/october-launch-3","network":"JVZoo","niche":"other","launch":"2026-10-15","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"Pin2Profit Ai","url":"https://muncheye.com/pin2profit-ai","network":"WarriorPlus","niche":"software","launch":"2026-10-16","details":"27 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Guaranteed Launch Date","url":"https://muncheye.com/guaranteed-launch","network":"JVZoo","niche":"other","launch":"2026-10-19","details":"47 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Prompt Engine Pro","url":"https://muncheye.com/karthik-ramani-et-al-prompt-engine-pro","network":"JVZoo","niche":"other","launch":"2026-10-21","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"Pages2Vid","url":"https://muncheye.com/pages2vid","network":"JVZoo","niche":"other","launch":"2026-10-23","details":"37 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"AIAgentic","url":"https://muncheye.com/aiagentic","network":"JVZoo","niche":"other","launch":"2026-10-27","details":"$67 at 50%","price":67.0,"commPct":50.0,"source":"MunchEye"},{"name":"Pitch Ai","url":"https://muncheye.com/pitch-ai","network":"JVZoo","niche":"software","launch":"2026-10-30","details":"37 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"AI Repurposer","url":"https://muncheye.com/neil-napier-aicloser-2","network":"JVZoo","niche":"software","launch":"2026-11-03","details":"37 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Social Beaver A.I","url":"https://muncheye.com/social-beaver-a-i-gpt-monster-10000-prizes","network":"JVZoo","niche":"other","launch":"2026-11-03","details":"497.00 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Framme","url":"https://muncheye.com/pankaj-malav-deepanker-framme","network":"JVZoo","niche":"other","launch":"2026-11-04","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"ClickWorks","url":"https://muncheye.com/clickworks","network":"JVZoo","niche":"other","launch":"2026-11-05","details":"47 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Tba","url":"https://muncheye.com/adrian-isfan","network":"JVZoo","niche":"other","launch":"2026-11-10","details":"67 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"AI Agency Engine","url":"https://muncheye.com/sean-donahoe-ai-income-engine","network":"JVZoo","niche":"software","launch":"2026-11-10","details":"$47 - ($497 Bundle) at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"6th of 2026","url":"https://muncheye.com/6th-of-2026","network":"JVZoo","niche":"other","launch":"2026-11-12","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"Official Launch","url":"https://muncheye.com/official-launch","network":"JVZoo","niche":"other","launch":"2026-11-15","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"MarketPresso Dfy Edition","url":"https://muncheye.com/marketpresso-dfy-edition","network":"JVZoo","niche":"other","launch":"2026-11-18","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"BuzzFarmAI","url":"https://muncheye.com/buzzfarmai","network":"JVZoo","niche":"other","launch":"2026-11-23","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"CursorReel","url":"https://muncheye.com/cursorreel","network":"JVZoo","niche":"other","launch":"2026-11-24","details":"$67 at 50%","price":67.0,"commPct":50.0,"source":"MunchEye"},{"name":"The 2026 Engine Vault","url":"https://muncheye.com/sean-donahoe-ai-trading-engine","network":"JVZoo","niche":"software","launch":"2026-11-26","details":"$97 at 50%","price":97.0,"commPct":50.0,"source":"MunchEye"},{"name":"SeoVids","url":"https://muncheye.com/seovids","network":"JVZoo","niche":"other","launch":"2026-11-27","details":"32 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"AppLab","url":"https://muncheye.com/app-lab","network":"JVZoo","niche":"software","launch":"2026-11-30","details":"47 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Local Max","url":"https://muncheye.com/neil-napier-aicloser-3","network":"JVZoo","niche":"other","launch":"2026-12-03","details":"37 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"The Next Co-Author","url":"https://muncheye.com/halloween-spooky-co-author","network":"WarriorPlus","niche":"other","launch":"2026-12-04","details":"$17 at 75%","price":17.0,"commPct":75.0,"source":"MunchEye"},{"name":"New Video Software","url":"https://muncheye.com/new-video-software","network":"JVZoo","niche":"software","launch":"2026-12-05","details":"37 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Traffic Lift","url":"https://muncheye.com/traffic-lift","network":"JVZoo","niche":"mmo","launch":"2026-12-08","details":"47 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Final 2026","url":"https://muncheye.com/final-2026","network":"JVZoo","niche":"other","launch":"2026-12-10","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"Big Launch","url":"https://muncheye.com/adrian-isfan-big-launch-3","network":"JVZoo","niche":"other","launch":"2026-12-16","details":"67 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"FinalBells","url":"https://muncheye.com/pankaj-malav-deepanker-r-finalbells","network":"JVZoo","niche":"other","launch":"2026-12-16","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"Splistsi","url":"https://muncheye.com/splistsi","network":"JVZoo","niche":"other","launch":"2026-12-21","details":"37 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Adpreso AI","url":"https://muncheye.com/adpresoai","network":"JVZoo","niche":"software","launch":"2026-12-23","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"The Copy Viking","url":"https://muncheye.com/the-copy-viking-x-mas","network":"WarriorPlus","niche":"other","launch":"2026-12-26","details":"$17 at 75%","price":17.0,"commPct":75.0,"source":"MunchEye"},{"name":"AISites","url":"https://muncheye.com/aisites","network":"JVZoo","niche":"other","launch":"2026-12-29","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"EvilAI","url":"https://muncheye.com/evilai","network":"JVZoo","niche":"other","launch":"2027-01-12","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"AI AutoBots Pro 2.0","url":"https://muncheye.com/karthik-ramani-aiautobotspro","network":"JVZoo","niche":"software","launch":"2027-01-20","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"TokBuilder","url":"https://muncheye.com/tokbuilder","network":"JVZoo","niche":"other","launch":"2027-02-01","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"Massfluence 2.0","url":"https://muncheye.com/karthik-ramani-massfluence","network":"JVZoo","niche":"other","launch":"2027-02-17","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"SkyNetAI","url":"https://muncheye.com/skynetai","network":"JVZoo","niche":"other","launch":"2027-03-09","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"},{"name":"Showcase You - Elite","url":"https://muncheye.com/showcase-you-elite","network":"JVZoo","niche":"other","launch":"2027-03-12","details":"1.10 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"Better Prompts","url":"https://muncheye.com/betterprompts","network":"JVZoo","niche":"other","launch":"2027-03-24","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"Marketpresso AI","url":"https://muncheye.com/marketpressoal","network":"JVZoo","niche":"software","launch":"2027-04-21","details":"$37 at 50%","price":37.0,"commPct":50.0,"source":"MunchEye"},{"name":"Profit Partnership","url":"https://muncheye.com/profit-partnership-plr-mrr-included","network":"WarriorPlus","niche":"mmo","launch":"2026-09-19","details":"$1 at 50%","price":1.0,"commPct":50.0,"source":"MunchEye"},{"name":"CineClaw","url":"https://muncheye.com/cineclaw-art-flair","network":"Launchpad","niche":"other","launch":"2026-09-19","details":"17 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"GiggleDeck","url":"https://muncheye.com/giggledeck-turn-one-keyword-into-a-complete-60-page-joke-book","network":"","niche":"other","launch":"2026-09-19","details":"17 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"(PLR) Prompt Engineering Hand Drawn Videos","url":"https://muncheye.com/plr-prompt-engineering-hand-drawn-videos","network":"WarriorPlus","niche":"mmo","launch":"2026-09-19","details":"14.95 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"DubForge","url":"https://muncheye.com/dubforge","network":"JVZoo","niche":"other","launch":"2026-09-19","details":"47 at 60%","price":0,"commPct":60.0,"source":"MunchEye"},{"name":"QuestTrail Detective Scavenger Hunt Creator","url":"https://muncheye.com/questtrail-detective-scavenger-hunt-creator","network":"WarriorPlus","niche":"other","launch":"2026-09-19","details":"17 at 50%","price":0,"commPct":50.0,"source":"MunchEye"},{"name":"FableFoxAi","url":"https://muncheye.com/fablefoxai","network":"JVZoo","niche":"other","launch":"2026-09-18","details":"$47 at 50%","price":47.0,"commPct":50.0,"source":"MunchEye"}]};
+
 /* =====================================================================
    DATA — benchmarks (all editable in Settings). Ranges are Tier-1 USD.
 ===================================================================== */
@@ -422,6 +429,7 @@ const ADNET_DEF = [
  ["udimi","Solo Ads (Udimi)","Email",["email"],[0.35,0.85],[0,0],0.70,"low","MMO email lists; buy clicks from sellers with sales-reported reviews."]
 ];
 const GROUPS = ["Major platforms","Native","Push / Pop","Email"];
+const ORDLBL = ["🥇 FIRST CHOICE","🥈 Second choice","🥉 Third choice","▫️ Alternative"];
 
 const AFFNETS = {
  warriorplus:{label:"WarriorPlus", domains:["warriorplus.com","warriorplus.com/o2"], fields:["sales","conv","vv","avg","refund","pulse"], hint:"Copy from the offer’s affiliate stats table."},
@@ -737,8 +745,9 @@ function analyze(){
   const fits=ALLNETS().map(n=>{const f=netFit(n,o);return {n,f}}).sort((a,b)=>b.f.s-a.f.s);
   const top=fits.slice(0,4), avoid=fits.filter(x=>x.f.label==="Avoid").slice(-3);
   $("netCards").innerHTML=top.map(({n,f},i)=>`
-    <div class="netcard">
-      <h4>${i===0?"🏆 ":""}${esc(n.name)} <span class="fit-pill ${f.cls}">${f.label} · ${f.s}</span></h4>
+    <div class="netcard" ${i===0?'style="border-color:#8a6d1d"':""}>
+      <div><span class="ord ord-${i}">${ORDLBL[i]}</span></div>
+      <h4>${esc(n.name)} <span class="fit-pill ${f.cls}">${f.label} · ${f.s}</span></h4>
       <div class="meter"><i style="width:${f.s}%"></i></div>
       <div class="hint">Formats: <b>${n.formats.join(", ")}</b> · est CPC ${fmtusd(n.cpc[0],3)}–${fmtusd(n.cpc[1],2)} ${n.cpm[1]?`· est CPM ${fmtusd(n.cpm[0],2)}–${fmtusd(n.cpm[1],2)}`:""} · quality ×${n.q}</div>
       <ul style="font-size:.78rem;color:var(--dim);padding-left:16px;margin-top:5px">${f.why.map(w=>`<li>${esc(w)}</li>`).join("")}${n.note?`<li>${esc(n.note)}</li>`:""}</ul>
@@ -1017,28 +1026,42 @@ async function scanLink(){
 }
 
 /* ================= launches (offers.json from GitHub Action) ================= */
+function renderLaunchTable(d){
+  $("launchStamp").textContent="updated "+(d.generated||"").slice(0,10);
+  $("launchList").innerHTML=`<table><thead><tr><th>Offer</th><th>Network</th><th>Niche (guess)</th><th>Launch</th><th></th></tr></thead><tbody>${d.offers.slice(0,40).map((of,i)=>`<tr>
+    <td><b>${esc(of.name)}</b><div class="hint">${esc(of.details||"")}${of.url?` · <a href="${esc(of.url)}" target="_blank" rel="noopener">research ↗</a>`:""}</div></td>
+    <td>${esc(of.network||"—")}</td><td>${esc(NICHES[of.niche]?.label||of.niche||"—")}</td><td class="hint">${esc(of.launch||"")}</td>
+    <td><button class="btn-g" style="padding:4px 10px;font-size:.75rem" data-lau="${i}">Load</button></td></tr>`).join("")}</tbody></table>`;
+  document.querySelectorAll("[data-lau]").forEach(b=>b.onclick=()=>{
+    const of=d.offers[+b.dataset.lau];
+    switchTab("analyzer");
+    $("in_name").value=of.name||"";$("in_link").value=of.url||"";
+    if(of.niche&&NICHES[of.niche])$("in_niche").value=of.niche;
+    $("in_affnet").value="universal";renderDynFields();
+    const setv=(id,v)=>{if(!v)return;const e=$(id);if(e){e.value=v;const r=$(id+"_r");if(r)r.value=v;}};
+    setv("m_price",of.price); setv("m_commpct",of.commPct);
+    if(of.launch)$("in_release").value=of.launch;
+    schedule(); window.scrollTo({top:0,behavior:"smooth"});
+  });
+}
 async function loadLaunches(){
+  let d=null,note="";
   try{
     const r=await fetch("offers.json",{cache:"no-store"});
-    if(!r.ok)throw 0;
-    const d=await r.json();
-    if(!d.offers||!d.offers.length)throw 0;
-    $("launchStamp").textContent="updated "+(d.generated||"").slice(0,10);
-    $("launchNote").innerHTML="Auto-crawled from public launch calendars by a GitHub Action. Click “Load” to send an offer to the Analyzer.";
-    $("launchList").innerHTML=`<table><thead><tr><th>Offer</th><th>Network</th><th>Niche (guess)</th><th>Launch</th><th></th></tr></thead><tbody>${d.offers.slice(0,40).map((of,i)=>`<tr>
-      <td><b>${esc(of.name)}</b><div class="hint">${of.url?`<a href="${esc(of.url)}" target="_blank" rel="noopener">${esc(of.url.slice(0,60))}…</a>`:""}</div></td>
-      <td>${esc(of.network||"—")}</td><td>${esc(NICHES[of.niche]?.label||of.niche||"—")}</td><td class="hint">${esc(of.launch||"")}</td>
-      <td><button class="btn-g" style="padding:4px 10px;font-size:.75rem" data-lau="${i}">Load</button></td></tr>`).join("")}</tbody></table>`;
-    document.querySelectorAll("[data-lau]").forEach(b=>b.onclick=()=>{
-      const of=d.offers[+b.dataset.lau];
-      switchTab("analyzer");
-      $("in_name").value=of.name||"";$("in_link").value=of.url||"";
-      if(of.niche&&NICHES[of.niche])$("in_niche").value=of.niche;
-      schedule(); window.scrollTo({top:0,behavior:"smooth"});
-    });
-  }catch(e){
-    $("launchNote").innerHTML="No <code>offers.json</code> feed found yet. Enable the GitHub Action (see README → “Cloud layer”) and this tab fills itself daily.";
+    if(r.ok){const j=await r.json();if(j&&j.offers&&j.offers.length){d=j;note="📡 Live feed — refreshed daily by the GitHub Action. “Load” sends an offer to the Analyzer (price &amp; commission pre-filled)."}}
+  }catch(e){}
+  if(!d && typeof EMBEDDED_FEED!=="undefined"){
+    d=EMBEDDED_FEED;
+    note="📦 Offline snapshot from "+(d.generated||"").slice(0,10)+" (real crawled launches). This preview can’t reach the live file — once deployed to GitHub Pages with the Action enabled, this becomes a daily live feed.";
   }
+  if(!d){
+    $("launchStamp").textContent="";
+    $("launchNote").innerHTML="";
+    $("launchList").innerHTML=`<div class="banner test">🛠️ <b>Feed not active yet</b> — 3 steps: ① push this project to GitHub &amp; enable Pages ② repo → Settings → Actions → General → Workflow permissions → “Read and write” ③ Actions tab → “OfferPilot launch feed” → Run workflow once. Then it refreshes itself daily.</div>`;
+    return;
+  }
+  $("launchNote").innerHTML=note;
+  renderLaunchTable(d);
 }
 
 /* ================= settings UI ================= */
@@ -1121,5 +1144,5 @@ $("in_niche").innerHTML=Object.keys(NICHES).map(k=>`<option value="${k}">${NICHE
 $("nicheHint").textContent="Used for audience defaults & compliance rules — the scan pre-fills it.";
 renderDynFields(); renderSettings(); applyLead(); renderHistory(); loadLaunches();
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3e24086fb6c656e',t:'MTc4OTkyMjIxOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
