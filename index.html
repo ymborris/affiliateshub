@@ -126,7 +126,7 @@ summary{cursor:pointer;color:var(--acc2);font-weight:600;font-size:.85rem}
     <div class="logo">OP</div>
     <div>
       <h1>OfferPilot</h1>
-      <div class="tag">Affiliate offer analyzer &amp; campaign agent — WarriorPlus · JVZoo · ClickBank · Digistore24 · Any link <span class="badge">v1.1</span></div>
+      <div class="tag">Affiliate offer analyzer &amp; campaign agent — WarriorPlus · JVZoo · ClickBank · Digistore24 · Any link <span class="badge">v1.2</span></div>
     </div>
   </div>
 </header>
@@ -233,13 +233,24 @@ summary{cursor:pointer;color:var(--acc2);font-weight:600;font-size:.85rem}
 
           <div class="card" style="margin-top:16px">
             <h3>4 · Audience to target</h3>
-            <div class="grid g2">
-              <div><label>Geography</label><div id="aud_geo" style="font-size:.88rem"></div></div>
-              <div><label>Age</label><div id="aud_age" style="font-size:.88rem"></div></div>
-              <div><label>Gender</label><div id="aud_gender" style="font-size:.88rem"></div></div>
-              <div><label>Devices</label><div id="aud_dev" style="font-size:.88rem"></div></div>
+            <div class="grid g4">
+              <div><label>Geography</label><div id="aud_geo" style="font-size:.85rem"></div></div>
+              <div><label>Age</label><div id="aud_age" style="font-size:.85rem"></div></div>
+              <div><label>Gender</label><div id="aud_gender" style="font-size:.85rem"></div></div>
+              <div><label>Devices</label><div id="aud_dev" style="font-size:.85rem"></div></div>
             </div>
-            <div class="hint" id="aud_note"></div>
+            <hr style="border-color:var(--line);margin:12px 0">
+            <div class="grid g2">
+              <div><label>🎯 Interest targeting (Meta / native)</label><div class="chips" id="aud_int"></div></div>
+              <div><label>🔎 Search keywords (Google / Bing)</label><div class="chips" id="aud_kw"></div></div>
+              <div><label>🗂️ Site categories (push / pop networks)</label><div class="chips" id="aud_cats"></div></div>
+              <div><label>🧩 Placements &amp; creative</label><div id="aud_place" style="font-size:.84rem"></div></div>
+            </div>
+            <label style="margin-top:12px">🧠 Ad angles that win in this niche</label>
+            <ul id="aud_angles" style="font-size:.85rem;padding-left:18px"></ul>
+            <label>👤 Buyer persona</label>
+            <div id="aud_persona" style="font-size:.85rem"></div>
+            <div class="hint" id="aud_note" style="margin-top:8px"></div>
           </div>
 
           <div class="card" style="margin-top:16px">
@@ -287,18 +298,30 @@ summary{cursor:pointer;color:var(--acc2);font-weight:600;font-size:.85rem}
       <div>
         <div class="card">
           <h3>Live projection</h3>
-          <div class="grid g3" style="text-align:center">
+          <div class="grid g4" style="text-align:center">
+            <div><div class="hint">Total ad budget</div><div class="bigne" id="o_tbudget">—</div></div>
             <div><div class="hint">Daily spend</div><div class="bigne" id="o_daily">—</div></div>
-            <div><div class="hint">Clicks</div><div class="bigne" id="o_clicks">—</div></div>
+            <div><div class="hint">Total clicks</div><div class="bigne" id="o_clicks">—</div></div>
             <div><div class="hint">Expected sales</div><div class="bigne" id="o_sales">—</div></div>
           </div>
           <hr style="border-color:var(--line);margin:14px 0">
           <div class="grid g3" style="text-align:center">
-            <div><div class="hint">Net revenue</div><div class="bigne" id="o_rev">—</div></div>
-            <div><div class="hint">Profit / loss</div><div class="bigne" id="o_pl">—</div></div>
+            <div><div class="hint">Total net revenue</div><div class="bigne" id="o_rev">—</div></div>
+            <div><div class="hint">Total profit / loss</div><div class="bigne" id="o_pl">—</div></div>
             <div><div class="hint">ROI</div><div class="bigne" id="o_roi">—</div></div>
           </div>
           <div id="o_verdict" style="margin-top:12px"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>💰 Budget plan — how to deploy the total ad budget</h3>
+          <div id="allocBox"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>📅 Day-by-day projection</h3>
+          <div style="overflow-x:auto"><table id="dayTable"><thead><tr><th>Day</th><th>Spend</th><th>Clicks</th><th>Est. sales</th><th>Day P/L</th><th>Cumulative</th></tr></thead><tbody></tbody></table></div>
+          <div class="hint">Days 1–5 include the learning-phase penalty (conversions ramp 72% → 100%). Cumulative = running profit/loss.</div>
         </div>
 
         <div class="card" style="margin-top:16px">
@@ -440,18 +463,102 @@ const AFFNETS = {
 };
 
 const NICHES = {
- mmo:{label:"Make Money Online / Biz-opp", kw:["make money","income","commission","affiliate","passive income","side hustle","financial freedom","quit your job","earn cash","traffic system","done for you","reseller","plr","work from home","online business","ai profits","profit"], gender:["62% male","38% female"], age:[25,54], dev:"Mobile 60% / Desktop 40%", comp:"High restriction on Facebook/Google (biz-opp claims). Push, native & solo ads are the natural home."},
- software:{label:"Software / SaaS tools", kw:["software","app","automation","tool","dashboard","plugin","ai writer","video creator","builder","cloud-based","platform","saas"], gender:["55% male","45% female"], age:[25,45], dev:"Desktop-weighted 55% / Mobile 45%", comp:"Low restriction; search & review content work well."},
- health:{label:"Health (general supplements)", kw:["supplement","health","remedy","vitamin","joint","hearing","vision","blood sugar","prostate","gut","detox","tea"], gender:["50% male","50% female"], age:[35,65], dev:"Mobile 55% / Desktop 45%", comp:"High restriction on claims (FB/Google). Native + email foundations."},
- weightloss:{label:"Weight loss / Fitness", kw:["weight loss","lose weight","fat burn","belly fat","keto","slim","metabolism","diet","fitness","workout","muscle"], gender:["35% male","65% female"], age:[25,55], dev:"Mobile-first 65% / Desktop 35%", comp:"Strict claims policies on FB/Google; native & push thrive."},
- dating:{label:"Dating / Relationships", kw:["dating","relationship","ex back","soulmate","attraction","romance","marriage","text messages","obsession"], gender:["50% male","50% female"], age:[21,45], dev:"Mobile 70% / Desktop 30%", comp:"Restricted categories on FB; push/pop & email work."},
- finance:{label:"Finance / Crypto / Trading", kw:["crypto","bitcoin","trading","forex","stocks","investment","debt","credit score","gold ira","retirement","signals"], gender:["70% male","30% female"], age:[28,60], dev:"Desktop-weighted 55% / Mobile 45%", comp:"Very restricted (licenses on Google/FB). Native & email plus compliant landers."},
- selfhelp:{label:"Self-help / Manifestation", kw:["manifestation","law of attraction","abundance","mindset","meditation","happiness","success habits","brain","subconscious","moon reading","numerology"], gender:["40% male","60% female"], age:[25,60], dev:"Mobile 60% / Desktop 40%", comp:"Moderate; avoid guarantees. Email + native strong."},
- survival:{label:"Survival / Prepper", kw:["survival","prepper","emp","blackout","food stockpile","bug out","self defense","water filter","off grid"], gender:["78% male","22% female"], age:[35,65], dev:"Mobile 55% / Desktop 45%", comp:"Native + email; older US male audience."},
- pets:{label:"Pets", kw:["dog","puppy","cat","pet","training your dog","brain training for dogs","cat spray"], gender:["40% male","60% female"], age:[24,60], dev:"Mobile 60% / Desktop 40%", comp:"Broadly allowed; social + search friendly."},
- ecom:{label:"E-commerce / Physical product", kw:["buy now","free shipping","add to cart","gadget","50% off","limited stock","order today"], gender:["50%","50%"], age:[18,55], dev:"Mobile-first 70%", comp:"Broadly allowed."},
- education:{label:"Education / Skills courses", kw:["course","learn","masterclass","certification","training","tutorial","speak","language","piano","photography"], gender:["50%","50%"], age:[20,45], dev:"Mobile 55% / Desktop 45%", comp:"Broadly allowed."},
- other:{label:"Other / unsure", kw:[], gender:["Broad","—"], age:[21,55], dev:"Mixed (mobile-first)", comp:"Check each platform’s policy."}
+ mmo:{label:"Make Money Online / Biz-opp", kw:["make money","income","commission","affiliate","passive income","side hustle","financial freedom","quit your job","earn cash","traffic system","done for you","reseller","plr","work from home","online business","ai profits","profit"], gender:["62% male","38% female"], age:[25,54], dev:"Mobile 60% / Desktop 40%",
+  comp:"High restriction on Facebook/Google (biz-opp claims). Push, native & solo ads are the natural home.",
+  interests:["Affiliate marketing","ClickBank","Internet marketing","Work at home","Entrepreneurship","Network marketing","Shopify","Grant Cardone","Robert Kiyosaki","Side hustle"],
+  keywords:["make money online","affiliate marketing for beginners","passive income ideas 2026","work from home opportunity","best side hustle","[product] review + bonus"],
+  angles:["Curiosity “weird system” hook → quiz or bridge page","Realistic-ish case-study story (avoid income guarantees)","“Beginner-friendly” listicle → email capture first"],
+  persona:"25–54, tired of the 9–5, usually has bought a course before; responds to proof, simplicity and low entry price.",
+  placements:"FB Feed + Reels only (never Audience Network — junk clicks); collect LP visitors for retargeting; solo ads = warm lists.",
+  pushCats:["Make Money / BizOpp","E-business"]},
+ software:{label:"Software / SaaS tools", kw:["software","app","automation","tool","dashboard","plugin","ai writer","video creator","builder","cloud-based","platform","saas"], gender:["55% male","45% female"], age:[25,45], dev:"Desktop-weighted 55% / Mobile 45%",
+  comp:"Low restriction; search & review content work well.",
+  interests:["Digital marketing","Content marketing","Small business","WordPress","Canva","Artificial intelligence","Web development","YouTube creators"],
+  keywords:["best ai video generator","content repurposing tool","youtube automation software","[product] review","[product] bonus","[product] vs [competitor]"],
+  angles:["Rank a review + bonus page for “[product] review” searches","“Watch it work in 60 seconds” demo GIF/video → landing page","“X vs Y” comparison article (steals warm buyers)"],
+  persona:"Marketers, creators and small-business owners; desktop-heavy; buys on launch discounts, bonuses and fear of missing the deal.",
+  placements:"Google Search on review keywords (cheapest warm traffic), YouTube reviews, FB groups/ads to marketers.",
+  pushCats:["Technology","Marketing / Business"]},
+ health:{label:"Health (general supplements)", kw:["supplement","health","remedy","vitamin","joint","hearing","vision","blood sugar","prostate","gut","detox","tea"], gender:["50% male","50% female"], age:[35,65], dev:"Mobile 55% / Desktop 45%",
+  comp:"High restriction on claims (FB/Google). Native + email foundations.",
+  interests:["Health & wellness","Nutrition","Natural health","WebMD","Mayo Clinic","AARP","Senior living"],
+  keywords:["[symptom] supplement","natural remedy for [symptom]","[product] reviews","[product] scam or legit","[symptom] after 50"],
+  angles:["Advertorial news-style story → VSL/text page","Symptom quiz lander (“is your [symptom] caused by…?”)","“Weird nutrient/root” curiosity hook"],
+  persona:"35–65, symptom-aware, skeptical-but-hopeful; needs story, authority cues and risk-free guarantee.",
+  placements:"Native widgets on news & health sites (MGID/Taboola/Revcontent), solo/email drops, avoid direct claims on Meta.",
+  pushCats:["Health & Beauty","News portals","Seniors' content"]},
+ weightloss:{label:"Weight loss / Fitness", kw:["weight loss","lose weight","fat burn","belly fat","keto","slim","metabolism","diet","fitness","workout","muscle"], gender:["35% male","65% female"], age:[25,55], dev:"Mobile-first 65% / Desktop 35%",
+  comp:"Strict claims policies on FB/Google; native & push thrive.",
+  interests:["Weight loss","Ketogenic diet","Dieting","Fitness and wellness","Yoga","Women's health","Bodybuilding","Healthy eating"],
+  keywords:["how to lose belly fat","weight loss after 40 women","keto supplement review","[product] before and after","fastest way to lose weight naturally"],
+  angles:["Before/after story advertorial (compliant wording)","“One odd breakfast trick” video lander","Seasonal angles: New Year, summer body, post-holiday"],
+  persona:"Women 30–55 core; emotional triggers + social proof; mobile impulse buys under $60; rebill potential.",
+  placements:"Native + push; story-style creatives; avoid body-image shaming (rejected by most networks).",
+  pushCats:["Weight loss / Diets","Health & Beauty","Women's sites"]},
+ dating:{label:"Dating / Relationships", kw:["dating","relationship","ex back","soulmate","attraction","romance","marriage","text messages","obsession"], gender:["50% male","50% female"], age:[21,45], dev:"Mobile 70% / Desktop 30%",
+  comp:"Restricted category on FB; push/pop & email work well.",
+  interests:["Dating","Relationships","Online dating","Tinder","Match.com","Men's interests","Counseling"],
+  keywords:["how to get your ex back","text messages that attract","dating advice for men over 40","relationship rescue guide"],
+  angles:["“Text her this tonight” curiosity → VSL","Story-based email capture (“what I did wrong”)","Quiz: “Will you get your ex back?”"],
+  persona:"Split campaign by gender: men buy attraction/ex-back, women buy commitment/fix angles — never mix creatives.",
+  placements:"Meta restricts dating ads → use “relationship advice” framing; push/native/email primary.",
+  pushCats:["Dating","Men's sites","Women's sites"]},
+ finance:{label:"Finance / Crypto / Trading", kw:["crypto","bitcoin","trading","forex","stocks","investment","debt","credit score","gold ira","retirement","signals"], gender:["70% male","30% female"], age:[28,60], dev:"Desktop-weighted 55% / Mobile 45%",
+  comp:"Very restricted (licenses on Google/FB). Native & email plus compliant landers.",
+  interests:["Investing","Cryptocurrency","Stock market","Bitcoin","Retirement planning","Bloomberg","Forbes","Personal finance"],
+  keywords:["best crypto to buy now","gold ira rollover guide","forex signals review","passive investing strategy 2026","[product] review"],
+  angles:["News-jacking (“what [current event] means for your money”)","Free report lead magnet → email upsell","Webinar registration funnel (high-ticket)"],
+  persona:"Men 30–60, higher income, research on desktop; needs credibility, charts, and “insider” positioning.",
+  placements:"Native on finance/news sites, Bing search, finance email lists; long-form landers.",
+  pushCats:["Finance","Business news"]},
+ selfhelp:{label:"Self-help / Manifestation", kw:["manifestation","law of attraction","abundance","mindset","meditation","happiness","success habits","brain","subconscious","moon reading","numerology"], gender:["40% male","60% female"], age:[25,60], dev:"Mobile 60% / Desktop 40%",
+  comp:"Moderate; avoid guarantees. Email + native strong.",
+  interests:["Law of attraction","Spirituality","Meditation","Numerology","Tarot","Self-improvement","Mindvalley","Astrology"],
+  keywords:["manifestation techniques","how to manifest money","moon reading review","law of attraction program","abundance meditation"],
+  angles:["Free personalised reading/report → paid upsell","“Ancient secret / NASA study” curiosity","Personal transformation story"],
+  persona:"Women 35–60 skew; buys sub-$50 reports and audio; email remarketing converts best.",
+  placements:"Meta spiritual-interest audiences allowed (word carefully), native lifestyle pieces, push on horoscope/lifestyle sites.",
+  pushCats:["Spirituality","Lifestyle","Women's sites"]},
+ survival:{label:"Survival / Prepper", kw:["survival","prepper","emp","blackout","food stockpile","bug out","self defense","water filter","off grid"], gender:["78% male","22% female"], age:[35,65], dev:"Mobile 55% / Desktop 45%",
+  comp:"Native + email; older US male audience.",
+  interests:["Survivalism","Prepping","Camping","Hunting","Firearms","Off-grid living","Military","Homesteading"],
+  keywords:["emp protection guide","survival food kits review","home defense plan","water purification methods"," blackout survival"],
+  angles:["Threat-news hook (grid failure, supply chain) — compliant wording","Free checklist lead magnet","Urgency VSL (“before the next crisis”)"],
+  persona:"US men 40–65, news consumers, higher AOV tolerance ($67+ kits); trusts veteran/experts positioning.",
+  placements:"Native on news portals, email lists, Facebook “outdoors” adjacent interests.",
+  pushCats:["News","Men's sites","Outdoors"]},
+ pets:{label:"Pets", kw:["dog","puppy","cat","pet","training your dog","brain training for dogs","cat spray"], gender:["40% male","60% female"], age:[24,60], dev:"Mobile 60% / Desktop 40%",
+  comp:"Broadly allowed; social + search friendly.",
+  interests:["Dogs","Dog training","Pet care","American Kennel Club","Cats","Animal rescue","Dog lovers"],
+  keywords:["stop dog barking","puppy training at home","dog anxiety remedy","brain training for dogs review","cat spraying solution"],
+  angles:["“3 games that fix bad behavior” listicle","Cute-thumbnail video ads (dog + owner bond)","Symptom targeting: barking, chewing, anxiety"],
+  persona:"Women 30–60, emotional buyers; mid-ticket courses OK; strong FB/IG performance.",
+  placements:"FB/IG Feed + Reels, Google Search on problem keywords, Pinterest.",
+  pushCats:["Family & Pets","Women's sites"]},
+ ecom:{label:"E-commerce / Physical product", kw:["buy now","free shipping","add to cart","gadget","50% off","limited stock","order today"], gender:["50%","50%"], age:[18,55], dev:"Mobile-first 70%",
+  comp:"Broadly allowed.",
+  interests:["Online shopping","Gadgets","Amazon.com","Pinterest","AliExpress","Wish (company)"],
+  keywords:["best [gadget] 2026","[gadget] review","cool gadgets under $50","[problem] solution product"],
+  angles:["UGC-style video demo (native feel)","Problem→solution hook in 3 seconds","Bundle / free-shipping urgency"],
+  persona:"Broad 18–55; impulse pricing under $50; mobile; creative quality decides everything.",
+  placements:"FB/IG + TikTok creatives, Pinterest for home/gadget niches.",
+  pushCats:["Shopping","Gadgets"]},
+ education:{label:"Education / Skills courses", kw:["course","learn","masterclass","certification","training","tutorial","speak","language","piano","photography"], gender:["50%","50%"], age:[20,45], dev:"Mobile 55% / Desktop 45%",
+  comp:"Broadly allowed.",
+  interests:["Online learning","Udemy","Coursera","Personal development","Language learning","Skillshare","Photography"],
+  keywords:["learn piano online","photography course review","speak spanish fast","[course] discount","online certification [skill]"],
+  angles:["Skill-outcome promise (“play your first song in 7 days”)","Free lesson/webinar lead magnet","Teacher-authority story"],
+  persona:"20–45, career or hobby motivated; webinar and email funnels beat direct sales pages.",
+  placements:"YouTube pre-roll + search, Google Search, FB interest audiences.",
+  pushCats:["Education","Entertainment"]},
+ other:{label:"Other / unsure", kw:[], gender:["Broad","—"], age:[21,55], dev:"Mixed (mobile-first)",
+  comp:"Check each platform’s policy.",
+  interests:["(describe the buyer’s 5 biggest interests)"],
+  keywords:["[problem] solution","[product type] review","best [product type] 2026"],
+  angles:["Problem→solution story","Review/comparison page","Quiz lander"],
+  persona:"Define: age, gender, income, core pain point, and where they hang out online.",
+  placements:"Start with one channel matching the pain point (search if they look for it, social if it's impulse).",
+  pushCats:["General news","Entertainment"]}
 };
 const MALE_KW=["prostate","testosterone","beard","dad bod","for men","his wife","men over","erectile","ed ","alpha male","survival","tactical","grill","beard"];
 const FEMALE_KW=["menopause","pregnancy","for women","her husband","women over","skincare","wrinkle","cellulite","postpartum","yoga for her","mom","mommy","floral","women who"];
@@ -791,7 +898,15 @@ function renderPlan(){
     </div>`;
   $("aud_geo").innerHTML=aud.geo; $("aud_age").innerHTML=aud.age+" years";
   $("aud_gender").innerHTML=aud.gender; $("aud_dev").innerHTML=aud.dev;
-  $("aud_note").textContent=aud.note;
+  const nch=NICHES[o.niche]||NICHES.other;
+  $("aud_int").innerHTML=(nch.interests||[]).map(i=>`<span class="chip">${esc(i)}</span>`).join("");
+  $("aud_kw").innerHTML=(nch.keywords||[]).map(i=>`<span class="chip">${esc(i)}</span>`).join("");
+  $("aud_cats").innerHTML=(nch.pushCats||[]).map(i=>`<span class="chip">${esc(i)}</span>`).join("");
+  $("aud_place").textContent=nch.placements||"";
+  $("aud_angles").innerHTML=(nch.angles||[]).map(a=>`<li>${esc(a)}</li>`).join("");
+  $("aud_persona").textContent=nch.persona||"";
+  const focus={"Major platforms":"use the Interests + Placements blocks","Native":"turn the Keywords into advertorial topics + use Site categories","Push / Pop":"use Site categories + Geo/Device filters (these networks have no interest targeting)","Email":"choose solo sellers whose lists match this niche"};
+  $("aud_note").innerHTML=aud.note+` <b>On ${esc(net.name)}:</b> ${focus[net.group]||""}.`;
   $("rulesBox").innerHTML=rules(o,net);
 }
 
@@ -829,8 +944,9 @@ function simRun(){
   $("lb_conv").textContent=v.conv*100>=1?(v.conv*100).toFixed(1)+"%":(v.conv*100).toFixed(2)+"%";
   $("lb_profit").textContent=fmtusd(v.profit,2);
   $("lb_ref").textContent=(v.ref*100).toFixed(1)+"%";
-  if(v.cpc<=0||v.budget<=0){["o_daily","o_clicks","o_sales","o_rev","o_pl","o_roi"].forEach(i=>$(i).textContent="—");$("o_verdict").innerHTML="";$("o_breakeven").innerHTML="";return;}
+  if(v.cpc<=0||v.budget<=0){["o_tbudget","o_daily","o_clicks","o_sales","o_rev","o_pl","o_roi"].forEach(i=>$(i).textContent="—");$("o_verdict").innerHTML="";$("o_breakeven").innerHTML="";$("allocBox").innerHTML="";$("dayTable").querySelector("tbody").innerHTML="";return;}
   const t=cumPL(v,v.days);
+  $("o_tbudget").textContent=fmtusd(v.budget,0);
   $("o_daily").textContent=fmtusd(v.budget/v.days,2);
   $("o_clicks").textContent=Math.round(t.clicks).toLocaleString();
   $("o_sales").textContent=t.sales.toFixed(1);
@@ -858,6 +974,26 @@ function simRun(){
   if(dataDays>v.days) html+=`<div class="flag warn">📊 <span>Statistical minimum: ~<b>${minClicks} clicks</b> before judging → that needs <b>≥${dataDays} days</b> at this budget. Below that, results are luck, not data.</span></div>`;
   if(v.budget/v.days<5) html+=`<div class="flag warn">🐌 <span>Daily spend under $5 → too few clicks/day to ever exit the learning phase. Concentrate budget into fewer days, or pick a cheaper network.</span></div>`;
   $("o_breakeven").innerHTML=html+`<div class="hint">Break-even CPC (keep-sale adjusted): <b>${fmtusd(beCPC,3)}</b></div>`;
+  // budget allocation plan
+  const test=Math.round(v.budget*0.30), scale=Math.round(v.budget*0.60), reserve=v.budget-test-scale;
+  const tDays=Math.max(2,Math.round(v.days*0.35));
+  $("allocBox").innerHTML=`
+  <div class="flag warn">🧪 <span><b>Phase 1 — TEST: ${fmtusd(test,0)}</b> over the first <b>${tDays} days</b> (${fmtusd(test/tDays,2)}/day). Solo purpose: validate the offer with enough clicks. Apply your kill rules here.</span></div>
+  <div class="flag good">📈 <span><b>Phase 2 — SCALE: ${fmtusd(scale,0)}</b> across the remaining <b>${v.days-tDays} days</b> — deploy ONLY if the test passes (≥5 sales &amp; ROI ≥ +25%). Ramp the daily budget +20–30% every 48h instead of one jump.</span></div>
+  <div class="flag warn">🛟 <span><b>RESERVE: ${fmtusd(reserve,0)} (10%)</b> — never touched unless the campaign is a proven winner (ramp buffer) or a promising second angle needs a small side-test. Blowing 100% of a bankroll on one unproven run is how affiliates go broke.</span></div>`;
+  // day-by-day rows
+  const money=n=>(n>=0?"+":"−")+fmtusd(Math.abs(n),2);
+  const cls=n=>n>=0?"pos":"neg";
+  const maxRows=v.days<=12?v.days:8;
+  let cumT=0; const dayRows=[];
+  for(let d=1;d<=Math.min(v.days,maxRows);d++){const x=dailyPL(v,d);cumT+=x.pl;
+    dayRows.push(`<tr><td>${d}</td><td>${fmtusd(x.spend,2)}</td><td>${Math.round(x.clicks).toLocaleString()}</td><td>${x.sales.toFixed(1)}</td><td class="${cls(x.pl)}">${money(x.pl)}</td><td class="${cls(cumT)}">${money(cumT)}</td></tr>`);}
+  if(v.days>maxRows){
+    const x=dailyPL(v,v.days);
+    dayRows.push(`<tr><td colspan="6" style="text-align:center;color:var(--dim)">… days ${maxRows+1}–${v.days-1} …</td></tr>`);
+    dayRows.push(`<tr><td>${v.days}</td><td>${fmtusd(x.spend,2)}</td><td>${Math.round(x.clicks).toLocaleString()}</td><td>${x.sales.toFixed(1)}</td><td class="${cls(x.pl)}">${money(x.pl)}</td><td class="${cls(t.pl)}">${money(t.pl)}</td></tr>`);
+  }
+  $("dayTable").querySelector("tbody").innerHTML=dayRows.join("");
   // scenarios
   const mk=(multC,multQ)=>{const vv=Object.assign({},v,{conv:v.conv*multC});const t=cumPL(vv,v.days);return t};
   const rows=[["Pessimistic (−40% conv)",mk(0.6)],["Expected",mk(1)],["Optimistic (+30% conv)",mk(1.3)]];
@@ -870,6 +1006,7 @@ function planText(){
   const {o,score,dec}=current;
   const net=bench($("in_adnet").value||"propeller");
   const fit=netFit(net,o), pa=pricingAdvice(net,o), aud=audience(o);
+  const nch=NICHES[o.niche]||NICHES.other;
   const strip=s=>s.replace(/<[^>]+>/g,"");
   return `OFFERPILOT CAMPAIGN PLAN — ${o.name}
 Network preset: ${AFFNETS[o.net].label} | Niche: ${(NICHES[o.niche]||{}).label||"-"}
@@ -881,6 +1018,12 @@ AD NETWORK: ${net.name} (fit ${fit.s}/100 — ${fit.label})
 Buying model: ${pa.model} — ${pa.why}
 Formats: ${pa.fmts}
 AUDIENCE: geo = ${strip(aud.geo)} | age = ${aud.age} | gender = ${aud.gender} | devices = ${aud.dev}
+INTERESTS (Meta/native): ${(nch.interests||[]).join(", ")}
+KEYWORDS (search): ${(nch.keywords||[]).join(", ")}
+SITE CATEGORIES (push/pop): ${(nch.pushCats||[]).join(", ")}
+ANGLES: ${(nch.angles||[]).join(" | ")}
+PERSONA: ${nch.persona||"-"}
+PLACEMENTS: ${nch.placements||"-"}
 
 RULES:
 ${strip($("rulesBox").innerHTML).replace(/\s+/g," ")}
@@ -967,11 +1110,11 @@ function classifyText(txt){
   for(const k in NICHES){let s=0;for(const w of (NICHES[k].kw||[])){let i=txt.indexOf(w);while(i>-1){s+=w.split(" ").length;i=txt.indexOf(w,i+1)}}scores[k]=s;}
   const sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
   const top=sorted[0], second=sorted[1]||["",0];
-  const hit=kw=>kw.some(w=>txt.includes(w));
-  const male=MALE_KW.filter(w=>txt.includes(w)).length, female=FEMALE_KW.filter(w=>txt.includes(w)).length;
+  const wordHit=list=>list.filter(w=>{try{return new RegExp("\\b"+w.trim().replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\b").test(txt)}catch(e){return false}}).length;
+  const male=wordHit(MALE_KW), female=wordHit(FEMALE_KW);
   let gender=null;
   if(male>=2&&male>female+1)gender="male-skewed"; if(female>=2&&female>male+1)gender="female-skewed";
-  const oldSig=AGE_OLD.filter(w=>txt.includes(w)).length, youngSig=AGE_YOUNG.filter(w=>txt.includes(w)).length;
+  const oldSig=wordHit(AGE_OLD), youngSig=wordHit(AGE_YOUNG);
   return {niche:top[1]>0?top[0]:null, conf:top[1]>0?clamp(Math.round(top[1]/(top[1]+second[1]+1)*100),45,95):0, gender, oldSig:oldSig>1, youngSig:youngSig>1, raw:scores};
 }
 async function fetchViaProxies(url){
