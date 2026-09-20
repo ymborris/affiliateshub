@@ -1,0 +1,29 @@
+name: OfferPilot launch feed
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily 06:00 UTC
+  workflow_dispatch:       # allows manual runs from the Actions tab
+
+permissions:
+  contents: write          # lets the Action commit offers.json back to the repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Crawl public launch calendars
+        run: python tools/scrape_offers.py
+      - name: Commit offers.json if changed
+        run: |
+          if git diff --quiet offers.json 2>/dev/null; then
+            echo "No changes"; exit 0
+          fi
+          git config user.name "offerpilot-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add offers.json
+          git commit -m "chore: update launches feed ($(date -u +%F))"
+          git push
