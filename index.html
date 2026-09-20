@@ -1,1743 +1,1125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Hot Streaks — Football form dashboard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-:root {
-  --bg: #0b0d11;
-  --bg-elev: #12151c;
-  --bg-elev-2: #181c25;
-  --line: #262b36;
-  --line-2: #323846;
-  --text: #eef1f6;
-  --muted: #8b93a3;
-  --dim: #5c6473;
-  --hot: #ff6a1a;
-  --hot-2: #ffb347;
-  --cold: #4d8dff;
-  --cold-2: #9ec1ff;
-  --spicy: #d6ff4a;
-  --spicy-2: #eeff9a;
-  --good: #3ee0a0;
-  --bad: #ff5d73;
-  --draw: #c9b36a;
-  --today: #ffd166;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
-  --radius: 14px;
-  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OfferPilot — Affiliate Offer Analyzer & Campaign Agent</title>
+<style>
+/* ============ THEME ============ */
+:root{
+  --bg:#0b1220; --panel:#111a2c; --panel2:#16223a; --line:#22304d;
+  --txt:#e5eaf3; --dim:#8fa0bb; --acc:#2dd4bf; --acc2:#38bdf8;
+  --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; --chip:#1c2a45;
 }
-
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-html { color-scheme: dark; }
-body {
-  font-family: var(--sans);
-  background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(255, 106, 26, 0.08), transparent 50%),
-    radial-gradient(900px 400px at 100% 0%, rgba(77, 141, 255, 0.07), transparent 45%),
-    var(--bg);
-  color: var(--text);
-  min-height: 100dvh;
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding-bottom:60px}
+a{color:var(--acc2)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+/* header */
+header{background:linear-gradient(135deg,#0e1a30,#0b1220);border-bottom:1px solid var(--line);padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:flex;align-items:center;justify-content:center;font-weight:900;color:#06231f;font-size:20px}
+h1{font-size:1.25rem;letter-spacing:.3px}
+.tag{color:var(--dim);font-size:.85rem}
+input,select,textarea{background:#0d1626;border:1px solid var(--line);color:var(--txt);border-radius:9px;padding:9px 11px;font-size:.92rem;width:100%;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--acc)}
+label{display:block;font-size:.78rem;color:var(--dim);margin:10px 0 4px;font-weight:600;letter-spacing:.3px;text-transform:uppercase}
+button{cursor:pointer;border:none;border-radius:9px;padding:10px 16px;font-size:.92rem;font-weight:700}
+.btn-p{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#052021}
+.btn-g{background:var(--chip);color:var(--txt);border:1px solid var(--line)}
+.btn-g:hover{border-color:var(--acc)}
+.btn-danger{background:#3a1620;color:#fda4af;border:1px solid #5b2233}
+/* tabs */
+nav.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 20px}
+nav.tabs button{background:transparent;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:600}
+nav.tabs button.on{background:var(--panel2);color:var(--txt);border-color:var(--acc)}
+.sec{display:none}
+.sec.on{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+/* cards & grids */
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{font-size:.95rem;margin-bottom:10px;color:var(--acc)}
+.hint{font-size:.78rem;color:var(--dim);margin-top:4px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;font-size:.68rem;padding:2px 8px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--dim);vertical-align:middle}
+.badge.est{background:#2a1f0d;border-color:#5b4516;color:#fbbf24}
+.flag{display:flex;gap:8px;align-items:flex-start;font-size:.85rem;padding:7px 10px;border-radius:9px;margin:5px 0}
+.flag.good{background:#0c2b1a;border:1px solid #14532d}
+.flag.warn{background:#2b210c;border:1px solid #57410e}
+.flag.bad{background:#2b0f14;border:1px solid #5b1622}
+/* gauge */
+.gauge{--p:0;--c:var(--acc);width:150px;height:150px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),#1c2740 0);display:flex;align-items:center;justify-content:center;position:relative;flex:none}
+.gauge::after{content:"";position:absolute;width:112px;height:112px;border-radius:50%;background:var(--panel)}
+.gauge b{position:relative;z-index:1;font-size:2rem}
+.gauge small{position:relative;z-index:1;display:block;text-align:center;color:var(--dim);font-size:.65rem;margin-top:48px;margin-left:-52px;font-weight:600}
+.verdict{font-size:1.05rem;font-weight:800}
+/* banner */
+.banner{border-radius:12px;padding:14px 16px;margin:14px 0;font-weight:700;border:1px solid var(--line)}
+.banner.go{background:#0c2b1a;border-color:#16803c}
+.banner.test{background:#2b210c;border-color:#907010}
+.banner.skip{background:#2b0f14;border-color:#8c1f2f}
+/* sliders */
+.sl-wrap{display:flex;gap:10px;align-items:center}
+.sl-wrap input[type=range]{flex:1;padding:0}
+input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:3px;background:#22304d;border:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--acc);cursor:pointer;border:2px solid #06231f}
+.sl-num{width:96px;flex:none;text-align:right}
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th,td{padding:8px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--dim);font-size:.7rem;text-transform:uppercase;letter-spacing:.4px}
+td.best{background:#0c2b1a;border-radius:6px;color:#86efac;font-weight:700}
+tr:hover td{background:#131f36}
+td.best:hover{background:#0c2b1a}
+/* net cards */
+.netcard{border:1px solid var(--line);border-radius:12px;padding:13px;background:var(--panel2)}
+.netcard h4{font-size:.9rem;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.fit-pill{font-size:.66rem;padding:2px 9px;border-radius:999px;font-weight:800}
+.fit-great{background:#0c2b1a;color:#4ade80;border:1px solid #166534}
+.fit-good{background:#10233a;color:#7dd3fc;border:1px solid #1e40af}
+.fit-risky{background:#2b210c;color:#fcd34d;border:1px solid #92610d}
+.fit-avoid{background:#2b0f14;color:#fda4af;border:1px solid #8c1f2f}
+.meter{height:7px;background:#1c2740;border-radius:4px;overflow:hidden;margin:7px 0}
+.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--bad),var(--warn),var(--good))}
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{font-size:.74rem;background:var(--chip);border:1px solid var(--line);padding:3px 10px;border-radius:999px}
+/* scan */
+.scanbox{display:none;margin-top:10px;border:1px dashed var(--line);border-radius:12px;padding:12px;background:#0d1828}
+.scanbox.on{display:block}
+.spin{width:15px;height:15px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:sp 0.8s linear infinite;display:inline-block;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+/* bars in sim */
+.bigne{font-size:1.6rem;font-weight:900}
+.pos{color:var(--good)}.neg{color:var(--bad)}.mid{color:var(--warn)}
+.brkv-wrap{position:relative;height:10px;background:#1c2740;border-radius:5px;margin:8px 0 4px}
+.brkv-fill{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:linear-gradient(90deg,var(--bad),var(--warn),var(--good));transition:width .15s}
+.brkv-mark{position:absolute;top:-4px;width:3px;height:18px;background:#fff;border-radius:2px}
+footer{margin-top:40px;border-top:1px solid var(--line);padding:22px 0;color:var(--dim);font-size:.8rem}
+/* print */
+#printArea{display:none}
+@media print{
+  body>*{display:none!important}
+  #printArea{display:block!important;color:#000;font-size:12px}
+  #printArea table th{color:#333}
 }
-
-button, input, select { font-family: inherit; color: inherit; }
-button { cursor: pointer; }
-
-.app {
-  display: grid;
-  grid-template-columns: 292px 1fr;
-  min-height: 100dvh;
-}
-
-.sidebar {
-  position: sticky;
-  top: 0;
-  height: 100dvh;
-  overflow: auto;
-  border-right: 1px solid var(--line);
-  background: rgba(12, 14, 18, 0.92);
-  padding: 22px 18px 28px;
-}
-
-.brand {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  margin-bottom: 22px;
-}
-.logo {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, #ff7a2e, #ff3d00 70%);
-  font-family: var(--mono);
-  font-weight: 700;
-  letter-spacing: -0.06em;
-  font-size: 13px;
-}
-.brand h1 {
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-}
-.brand p {
-  margin: 2px 0 0;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.search {
-  width: 100%;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-size: 13px;
-  outline: none;
-  margin-bottom: 18px;
-}
-.search:focus { border-color: #4a5364; }
-
-.group { margin-bottom: 18px; }
-.group-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--dim);
-  margin-bottom: 8px;
-}
-
-.chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.chip {
-  border: 1px solid var(--line);
-  background: var(--bg-elev);
-  color: var(--muted);
-  border-radius: 999px;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-.chip.active { color: var(--text); border-color: #4c5568; background: #1c212c; }
-.chip[data-pol="hot"].active { color: var(--hot-2); border-color: #5a3118; background: #22150e; }
-.chip[data-pol="cold"].active { color: var(--cold-2); border-color: #1c335c; background: #121a2b; }
-.chip[data-pol="spicy"].active { color: var(--spicy); border-color: #3d4a16; background: #171c0d; }
-.chip[data-m="corners"].active { color: #7af0d6; border-color: #1c4a40; background: #10211d; }
-.chip[data-m="cards"].active { color: #ffe08a; border-color: #4a3d16; background: #241e0d; }
-.chip[data-m="fouls"].active { color: #d2b6ff; border-color: #3a2a55; background: #1a1326; }
-.chip[data-m="shots"].active { color: #9ad8ff; border-color: #1c3d55; background: #0f1c26; }
-.chip[data-m="throws"].active { color: #ffc59a; border-color: #4a3018; background: #22160d; }
-.chip[data-m="tackles"].active { color: #b6f59a; border-color: #2a4a1c; background: #14210f; }
-.chip[data-m="other"].active { color: #c9d0dc; border-color: #3a4150; background: #1a1e26; }
-.chip[data-m="goals"].active { color: var(--hot-2); border-color: #5a3118; background: #22150e; }
-
-.select, .range-wrap {
-  width: 100%;
-}
-.select {
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 8px 10px;
-  font-size: 13px;
-}
-.range-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 12px;
-  color: var(--muted);
-}
-input[type="range"] { width: 100%; accent-color: var(--hot); }
-
-.stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-top: 8px;
-}
-.stat {
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px;
-}
-.stat b { display: block; font-size: 18px; font-family: var(--mono); }
-.stat span { color: var(--muted); font-size: 11px; }
-
-.main { padding: 20px 22px 48px; min-width: 0; }
-
-.topbar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-.topbar h2 {
-  margin: 0;
-  font-size: 22px;
-  letter-spacing: -0.03em;
-}
-.topbar .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
-.controls {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.seg {
-  display: flex;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--bg-elev);
-}
-.seg button {
-  background: transparent;
-  border: 0;
-  color: var(--muted);
-  padding: 8px 12px;
-  font-size: 12px;
-}
-.seg button.active { background: #222734; color: var(--text); }
-.mobile-filters {
-  display: none;
-  border: 1px solid var(--line);
-  background: var(--bg-elev);
-  border-radius: 10px;
-  padding: 8px 12px;
-  font-size: 12px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 12px;
-}
-
-.card {
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  min-height: 248px;
-}
-.card:hover { border-color: var(--line-2); }
-.card.hot { border-top: 3px solid var(--hot); }
-.card.cold { border-top: 3px solid var(--cold); }
-.card.spicy { border-top: 3px solid #9bb82e; }
-.card.m-corners { border-top-color: #2ee6c7; }
-.card.m-cards { border-top-color: #e4b34a; }
-.card.m-fouls { border-top-color: #a57bff; }
-.card.m-shots { border-top-color: #5cbcff; }
-.card.m-throws { border-top-color: #e3924a; }
-.card.m-tackles { border-top-color: #7bd65a; }
-.card.m-other { border-top-color: #8b93a3; }
-.market-tag {
-  display: inline-block;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--dim);
-  font-weight: 600;
-  margin-right: 6px;
-}
-
-.card-head {
-  display: flex;
-  gap: 12px;
-  padding: 14px 14px 10px;
-  align-items: center;
-}
-  .sports { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 10px; }
-  .sports button {
-    border: 1px solid var(--line); background: var(--bg-elev); color: var(--muted);
-    border-radius: 999px; padding: 7px 13px; font-size: 12.5px; font-weight: 600;
-  }
-  .sports button.active { color: #fff; border-color: var(--hot); background: rgba(255,106,26,.14); }
-  .sports button, .tabs button, .seg button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
-  .sports button.soon { opacity: .55; }
-  .sports button[disabled] { opacity: .42; cursor: not-allowed; }
-  .lgstrip { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; }
-  .lgstrip .lg {
-    display: inline-flex; align-items: center; gap: 6px;
-    border: 1px solid var(--line); background: var(--bg-elev); border-radius: 999px;
-    padding: 5px 11px; font-size: 12px; color: var(--muted);
-  }
-  .lgstrip .lg b { color: var(--text); font-weight: 600; }
-  .lgstrip .lg .dot {
-    width: 7px; height: 7px; border-radius: 50%; background: var(--dim); flex: 0 0 auto;
-  }
-  .lgstrip .lg.live .dot { background: var(--good); box-shadow: 0 0 6px rgba(62, 224, 160, .6); }
-  .lgstrip .lgmore { color: var(--today); border-style: dashed; cursor: pointer; font-weight: 600; }
-  /* the consistency section and the "both criteria" star */
-  .star {
-    display: inline-flex; align-items: center; justify-content: center;
-    font-size: 18px; line-height: 1; color: #ffd166; vertical-align: -3px;
-    text-shadow: 0 0 10px rgba(255, 209, 102, .85), 0 0 22px rgba(255, 176, 32, .45);
-    filter: drop-shadow(0 0 3px rgba(0, 0, 0, .6));
-    margin-left: 2px;
-  }
-  .star.sm { font-size: 16px; vertical-align: -2px; }
-  .recent-ticks { letter-spacing: 2px; white-space: nowrap; }
-  .recent-ticks .h { color: #4ade80; }
-  .recent-ticks .m { color: #f87171; }
-  .card.both { border-color: rgba(255, 209, 102, .45); }
-  .card .hitbar { display: flex; align-items: center; gap: 8px; margin: 2px 0 8px; }
-  .card .hitbar .track { flex: 1; height: 6px; border-radius: 99px; background: var(--bg-elev-2); overflow: hidden; }
-  .card .hitbar .fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #3ee0a0, #7ee0a8); }
-  .card .hitbar .fill.perfect { background: linear-gradient(90deg, #ffd166, #ffb347); }
-  .card .hitbar .games { font-family: var(--mono); font-size: 11px; color: var(--muted); }
-  .card .len.stats { font-size: 24px; line-height: 1.05; text-align: center; }
-  .card .len.stats b { display: block; font-size: 26px; }
-  .card .len.stats span { font-size: 11px; color: var(--muted); }
-  .mini .tick { font-family: var(--mono); font-weight: 700; }
-  .mini.hit .tick { color: var(--good); }
-  .mini.miss .tick { color: #ff8f7a; }
-  .mini.miss { opacity: .72; }
-  .lgstrip .lg.soon .dot { background: var(--today); }
-  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 16px; }
-  .tabs button {
-    border: 1px solid var(--line); background: var(--bg-elev); color: var(--muted);
-    border-radius: 10px; padding: 8px 13px; font-size: 13px; font-weight: 600;
-  }
-  .tabs button.active { color: #fff; background: var(--bg-elev-2); border-color: #4a5364; }
-  .panel { display: none; }
-  .panel.on { display: block; }
-  body.no-side .sidebar { display: none; }
-  body.no-side .app { grid-template-columns: 1fr; }
-  .kickoff { max-width: 190px; }
-  .note {
-    border-left: 3px solid var(--today); background: rgba(255, 209, 102, 0.06);
-    padding: 10px 13px; border-radius: 8px; color: var(--muted); font-size: 12.5px;
-    line-height: 1.55; margin: 0 0 14px;
-  }
-  .note b { color: var(--text); }
-  .row-list { display: flex; flex-direction: column; gap: 8px; }
-  .rrow {
-    display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 12px;
-    align-items: center; border: 1px solid var(--line); background: var(--bg-elev);
-    border-radius: 12px; padding: 10px 13px;
-  }
-  .rrow .rk { font-family: var(--mono); font-weight: 700; font-size: 15px; color: var(--hot); }
-  .rrow h5 { margin: 0; font-size: 14px; }
-  .rrow .meta { color: var(--muted); font-size: 12px; margin-top: 3px; }
-  .rrow .meta b { color: var(--spicy); font-family: var(--mono); }
-  .rrow .right { text-align: right; font-family: var(--mono); }
-  .rrow .right .big { font-size: 16px; font-weight: 700; color: var(--good); }
-  .rrow .right .small { font-size: 11px; color: var(--muted); }
-  .sport-tag {
-    font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em;
-    color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
-    padding: 1px 6px; margin-right: 4px; white-space: nowrap;
-  }
-  .ok-tag, .warn-tag {
-    font-family: var(--mono); font-size: 10px; letter-spacing: .04em; text-transform: uppercase;
-    border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: middle;
-  }
-  .ok-tag { color: #7ee0a8; border: 1px solid rgba(126, 224, 168, .45); background: rgba(126, 224, 168, .08); }
-  .warn-tag { color: #ffb4a2; border: 1px solid rgba(255, 180, 162, .5); background: rgba(255, 180, 162, .1); }
-  .build { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 5px; letter-spacing: .02em; }
-  .window-tag {
-    font-family: var(--mono); font-size: 10.5px; color: var(--today);
-    border: 1px solid rgba(255, 209, 102, 0.35); border-radius: 999px;
-    padding: 1px 7px; margin-left: 6px; white-space: nowrap;
-  }
-  .ticket { border: 1px solid var(--line); background: var(--bg-elev); border-radius: 14px; padding: 15px; margin-bottom: 16px; }
-  .ticket h4 { margin: 0 0 3px; font-size: 15.5px; }
-  .ticket .sub { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
-  .kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 8px; margin: 12px 0; }
-  .kv div { background: var(--bg-elev-2); border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; }
-  .kv b { display: block; font-family: var(--mono); font-size: 15px; margin-bottom: 2px; }
-  .kv span { font-size: 11px; color: var(--muted); }
-  .legtable { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-  .legtable th, .legtable td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
-  .legtable th { color: var(--dim); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em; }
-  .legtable td.odds { font-family: var(--mono); color: var(--good); }
-  .legtable td.be { font-family: var(--mono); color: var(--muted); }
-  .legtable tr:last-child td { border-bottom: none; }
-  .crest {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: #0e1116;
-  border: 1px solid var(--line);
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  flex: 0 0 auto;
-}
-.crest img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
-.crest .abbr {
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--hot-2);
-}
-.team-meta { min-width: 0; flex: 1; }
-.team-meta h3 {
-  margin: 0;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.team-meta p {
-  margin: 3px 0 0;
-  color: var(--muted);
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.len {
-  font-family: var(--mono);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1;
-  letter-spacing: -0.06em;
-}
-.card.hot .len { color: var(--hot-2); }
-.card.cold .len { color: var(--cold-2); }
-.card.spicy .len { color: var(--spicy); }
-
-.type-row {
-  padding: 0 14px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 8px;
-}
-.type-row .label { font-size: 13px; font-weight: 600; }
-.type-row .form { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
-.dot-W { color: var(--good); }
-.dot-D { color: var(--draw); }
-.dot-L { color: var(--bad); }
-
-.hero {
-  margin: 0 10px 10px;
-  background: var(--bg-elev-2);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 12px;
-}
-.hero .kicker {
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--dim);
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-.hero .kicker .now {
-  color: var(--today);
-  margin-left: 6px;
-}
-.hero h4 {
-  margin: 0;
-  font-size: 15px;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-}
-.hero .when {
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.hero .when span::before {
-  content: "·";
-  margin-right: 8px;
-  color: var(--dim);
-}
-.hero .when span:first-child::before { content: none; margin: 0; }
-
-.recent {
-  display: none;
-  padding: 0 14px 14px;
-  gap: 6px;
-  flex-direction: column;
-}
-.card.open .recent { display: flex; }
-.toggle {
-  margin-top: auto;
-  border: 0;
-  border-top: 1px solid var(--line);
-  background: transparent;
-  color: var(--muted);
-  padding: 8px;
-  font-size: 12px;
-  text-align: center;
-}
-.mini {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--muted);
-  padding: 6px 8px;
-  background: #10141b;
-  border-radius: 8px;
-}
-.mini b { color: var(--text); font-family: var(--mono); }
-
-.table-wrap {
-  overflow: auto;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--bg-elev);
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-th {
-  text-align: left;
-  color: var(--dim);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  background: #161a22;
-}
-td {
-  padding: 10px 12px;
-  border-bottom: 1px solid #1c212b;
-  vertical-align: middle;
-}
-tr:hover td { background: #171b24; }
-.num {
-  font-family: var(--mono);
-  font-weight: 700;
-  font-size: 16px;
-}
-.team-cell { display: flex; align-items: center; gap: 8px; }
-.team-cell .crest { width: 28px; height: 28px; border-radius: 8px; }
-
-.empty {
-  padding: 48px 16px;
-  text-align: center;
-  color: var(--muted);
-}
-.more {
-  display: block;
-  width: 100%;
-  margin-top: 14px;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 12px;
-  color: var(--text);
-  font-size: 13px;
-  font-weight: 600;
-}
-.more:hover { border-color: var(--line-2); }
-
-.hidden { display: none !important; }
-
-@media (max-width: 900px) {
-  .app { grid-template-columns: 1fr; }
-  .sidebar {
-    display: none;
-    position: fixed;
-    inset: 0 0 0 auto;
-    width: min(86vw, 340px);
-    z-index: 20;
-    height: 100dvh;
-    box-shadow: var(--shadow);
-  }
-  .sidebar.open { display: block; }
-  .mobile-filters { display: inline-flex; }
-  .grid { grid-template-columns: 1fr; }
-  .main { padding: 14px 12px 40px; }
-  .len { font-size: 36px; }
-}
-
-.backdrop {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.55);
-  z-index: 15;
-}
-.backdrop.on { display: block; }
-
-  </style>
+.hidden{display:none!important}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;white-space:pre-wrap;background:#0d1626;border:1px solid var(--line);border-radius:10px;padding:12px}
+details{margin-top:12px}
+summary{cursor:pointer;color:var(--acc2);font-weight:600;font-size:.85rem}
+</style>
 </head>
 <body>
-  <div class="backdrop" id="backdrop"></div>
-  <div class="app">
-    <aside class="sidebar" id="sidebar">
-      <div class="brand">
-        <div class="logo">HS</div>
-        <div>
-          <h1>Hot Streaks</h1>
-          <p>Worldwide football form</p>
-        </div>
-      </div>
-      <input class="search" id="search" type="search" placeholder="Search team, opponent, league…" autocomplete="off" />
 
-      <div class="group">
-        <div class="group-label">Market</div>
-        <div class="chips" id="markets"></div>
-      </div>
-      <div class="group">
-        <div class="group-label">Polarity</div>
-        <div class="chips" id="polarity"></div>
-      </div>
-      <div class="group">
-        <div class="group-label">Line / streak type</div>
-        <div class="chips" id="types"></div>
-      </div>
-      <div class="group">
-        <div class="group-label">Competition</div>
-        <select class="select" id="league">
-          <option value="">All competitions</option>
-        </select>
-      </div>
-      <div class="group">
-        <div class="group-label" id="lenLabel">Minimum length</div>
-        <div class="range-row"><span>Games</span><b id="minVal">3</b></div>
-        <input type="range" id="minLen" min="2" max="15" value="3" />
-      </div>
-      <div class="group">
-        <div class="group-label">Next match</div>
-        <div class="chips" id="when"></div>
-      </div>
-      <div class="stats">
-        <div class="stat"><b id="statAll">0</b><span id="statAllLabel">Streaks shown</span></div>
-        <div class="stat"><b id="statToday">0</b><span>Play today</span></div>
-      </div>
-    </aside>
+<header>
+  <div class="wrap brand">
+    <div class="logo">OP</div>
+    <div>
+      <h1>OfferPilot</h1>
+      <div class="tag">Affiliate offer analyzer &amp; campaign agent — WarriorPlus · JVZoo · ClickBank · Digistore24 · Any link</div>
+    </div>
+  </div>
+</header>
 
-    <main class="main">
-      <div class="topbar">
-        <div>
-          <h2 id="headline">Active betting runs</h2>
-          <div class="sub" id="subtitle">Loading worldwide results…</div>
-          <div class="build" id="buildStamp">build v6 · 19 Sep 2026 · sortable streaks · Consistency (8 of 10) · cards + tables · 15-leg Flexi tickets · all kickoffs WAT
-            · <span id="tapProbe">tap test: waiting for a tap…</span></div>
+<div class="wrap">
+  <nav class="tabs">
+    <button data-t="analyzer" class="on">🎯 Analyzer</button>
+    <button data-t="simulator">🎛️ Simulator</button>
+    <button data-t="launches">🔥 Launches</button>
+    <button data-t="history">🗂️ History &amp; Compare</button>
+    <button data-t="settings">⚙️ Settings</button>
+  </nav>
+
+  <!-- ================= ANALYZER ================= -->
+  <section id="tab-analyzer" class="sec on">
+    <div class="grid g2">
+      <!-- FORM -->
+      <div class="card" id="formCard">
+        <h3>1 · Offer data</h3>
+
+        <label>Affiliate / sales page link (optional)</label>
+        <div class="row" style="flex-wrap:nowrap">
+          <input id="in_link" type="url" placeholder="https://warriorplus.com/o2/a/… or any link">
+          <button class="btn-g" id="btn_scan" style="flex:none">🔍 Scan</button>
         </div>
-        <div class="controls">
-          <button class="mobile-filters" id="openFilters">Filters</button>
-          <select class="select kickoff" id="kickoff" title="Show only runs whose next match kicks off in this window">
-            <option value="0">Any kickoff time</option>
-            <option value="1">Next 1 hour</option>
-            <option value="3">Next 3 hours</option>
-            <option value="6">Next 6 hours</option>
-            <option value="12">Next 12 hours</option>
-            <option value="24">Next 24 hours</option>
-            <option value="72">Next 3 days</option>
-            <option value="168">Next 7 days</option>
-            <option value="720">Next 30 days</option>
-          </select>
-          <div class="seg" id="sortSeg"></div>
-          <div class="seg" id="viewSeg">
-            <button data-view="cards" class="active">Cards</button>
-            <button data-view="table">Table</button>
+        <div class="hint">Paste a link → I try to auto-detect the niche &amp; offer name. (Works best on GitHub Pages; offline previews can’t fetch pages — pick the niche manually.)</div>
+
+        <!-- scan result -->
+        <div class="scanbox" id="scanBox">
+          <div id="scanStatus" style="font-size:.85rem"></div>
+          <div id="scanOut" style="margin-top:8px"></div>
+        </div>
+
+        <label>Affiliate network (preset)</label>
+        <select id="in_affnet"></select>
+
+        <label>Offer name</label>
+        <input id="in_name" placeholder="e.g. TubeRush AI">
+
+        <label>Niche — auto-detected or pick manually</label>
+        <select id="in_niche"></select>
+        <div class="hint" id="nicheHint"></div>
+
+        <div id="dynFields"><!-- per-network metric fields injected here --></div>
+
+        <label>Release / launch date</label>
+        <input id="in_release" type="date">
+
+        <hr style="border-color:var(--line);margin:16px 0">
+        <h3>2 · Your money</h3>
+        <div class="grid g2">
+          <div>
+            <label>Your bankroll</label>
+            <input id="in_bankroll" type="number" min="0" placeholder="e.g. 300">
+          </div>
+          <div>
+            <label>Currency</label>
+            <select id="in_currency"><option value="USD">USD</option><option value="XAF">XAF (CFA)</option></select>
+          </div>
+        </div>
+        <details>
+          <summary>📖 Where do I find these metrics?</summary>
+          <div class="hint" style="margin-top:6px">
+            <b>WarriorPlus:</b> Affiliate → Offers → open an offer → stats table (Sales, Conv, Visitor value, Avg sale, Refund, Pulse).<br>
+            <b>JVZoo:</b> Affiliates → Find Products → Stats column (Sales, Conv, EPC, Avg price, Refund).<br>
+            <b>ClickBank:</b> Marketplace → Gravity, Avg $/sale, Initial $/sale, Rebill, Avg %/sale.<br>
+            <b>Digistore24:</b> Marketplace listing → commission %, conversion, cancellation rate.<br>
+            <b>Universal:</b> the product price + your commission is enough — estimates fill the rest (conservatively).
+          </div>
+        </details>
+      </div>
+
+      <!-- RESULTS -->
+      <div>
+        <div class="card" id="resCard">
+          <div id="resEmpty" style="text-align:center;color:var(--dim);padding:40px 10px">
+            <div style="font-size:2.4rem">🎯</div>
+            <p>Fill the form on the left — your agent report appears here live.</p>
+          </div>
+          <div id="resBody" class="hidden">
+            <div class="row" style="justify-content:space-between;align-items:flex-start">
+              <div>
+                <h3 id="r_name" style="color:var(--txt)">—</h3>
+                <div class="chips" id="r_chips"></div>
+              </div>
+              <div class="gauge" id="gauge" style="--p:0"><b id="g_num">0</b><small>/100 SCORE</small></div>
+            </div>
+            <div class="hint" id="r_conf"></div>
+            <div id="r_verdict" style="margin-top:8px"></div>
+            <div class="banner test" id="r_decision"></div>
+            <div id="r_flags"></div>
+          </div>
+        </div>
+
+        <div id="agentWrap" class="hidden">
+          <div class="card" style="margin-top:16px">
+            <h3>3 · Agent — where &amp; how to run it</h3>
+            <div class="grid g2" id="netCards"></div>
+            <div id="avoidList" style="margin-top:8px"></div>
+            <label style="margin-top:14px">Ad network you’ll actually use</label>
+            <select id="in_adnet"></select>
+            <div id="planBox" style="margin-top:10px"></div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3>4 · Audience to target</h3>
+            <div class="grid g2">
+              <div><label>Geography</label><div id="aud_geo" style="font-size:.88rem"></div></div>
+              <div><label>Age</label><div id="aud_age" style="font-size:.88rem"></div></div>
+              <div><label>Gender</label><div id="aud_gender" style="font-size:.88rem"></div></div>
+              <div><label>Devices</label><div id="aud_dev" style="font-size:.88rem"></div></div>
+            </div>
+            <div class="hint" id="aud_note"></div>
+          </div>
+
+          <div class="card" style="margin-top:16px">
+            <h3>5 · Campaign plan</h3>
+            <div id="rulesBox"></div>
+            <div class="row" style="margin-top:12px">
+              <button class="btn-p" id="btn_copy">📋 Copy campaign plan</button>
+              <button class="btn-g" id="btn_save">💾 Save analysis</button>
+              <button class="btn-g" id="btn_print">🖨️ Print / PDF</button>
+            </div>
+            <div class="hint" id="saveMsg"></div>
           </div>
         </div>
       </div>
-      <nav class="sports" id="sports">
-        <button data-sport="football" class="active">⚽ Football</button>
-        <button data-sport="basketball">🏀 Basketball</button>
-        <button data-sport="tennis">🎾 Tennis</button>
-        <button data-sport="icehockey">🏒 Ice hockey</button>
-        <button data-sport="baseball">⚾ Baseball</button>
-        <button data-sport="amfootball">🏈 Am. football</button>
-      </nav>
+    </div>
+  </section>
 
-      <div class="lgstrip" id="leagueStrip"></div>
+  <!-- ================= SIMULATOR ================= -->
+  <section id="tab-simulator" class="sec">
+    <div class="grid g2">
+      <div class="card">
+        <h3>What-if controls</h3>
+        <div class="hint" style="margin-bottom:8px">Drag anything — every number updates live. “Sync” pulls the latest analysis values.</div>
+        <button class="btn-g" id="btn_sync">⟳ Sync from analysis</button>
 
-      <nav class="tabs" id="tabs">
-        <button data-tab="streaks" class="active">Streaks</button>
-        <button data-tab="stats">Consistency · 8 of 10</button>
-        <button data-tab="rank">Power rankings</button>
-        <button data-tab="high">High odds</button>
-        <button data-tab="acca">Accumulators</button>
-      </nav>
+        <label>Ad budget: <b id="lb_budget">$300</b></label>
+        <input type="range" id="sm_budget" min="0" max="2000" step="10" value="300">
 
-      <section class="panel on" id="panel-streaks">
-      <div class="grid" id="cards"></div>
-      <div class="table-wrap hidden" id="tableWrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Len</th>
-              <th>Team</th>
-              <th>Streak</th>
-              <th>Form</th>
-              <th>Next match</th>
-              <th>When</th>
-              <th>Venue</th>
-            </tr>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
+        <label>Duration: <b id="lb_days">14 days</b></label>
+        <input type="range" id="sm_days" min="1" max="90" step="1" value="14">
+
+        <label>CPC: <b id="lb_cpc">$0.50</b> <span class="hint" id="sm_cpcsrc" style="display:inline"></span></label>
+        <input type="range" id="sm_cpc" min="0.005" max="3" step="0.005" value="0.5">
+
+        <label>Conversion rate: <b id="lb_conv">3.0%</b></label>
+        <input type="range" id="sm_conv" min="0.1" max="15" step="0.1" value="3">
+
+        <label>Profit per sale (after commission): <b id="lb_profit">$28.50</b></label>
+        <input type="range" id="sm_profit" min="1" max="500" step="0.5" value="28.5">
+
+        <label>Refund rate: <b id="lb_ref">6%</b></label>
+        <input type="range" id="sm_ref" min="0" max="40" step="0.5" value="6">
       </div>
-      <div class="empty hidden" id="empty">No streaks match those filters. Drop the minimum length or clear a chip.</div>
-      <button class="more hidden" id="more">Show more runs</button>
-    </section>
 
-      <section class="panel" id="panel-stats">
-        <div class="note">
-          Consistency, not sequence: a stat that landed in <b>at least 8 of the team's last 10
-          games</b> — 8/10, 9/10 or 10/10. A team that won 8 of 10 but lost the last two shows up
-          here and not in Streaks; a team on a 3-game run that has only hit 3 times in 10 shows up
-          in Streaks only. <span class="star">★</span> marks the selections that satisfy
-          <b>both</b> — a live streak and an 8-in-10 hit rate — and those carry the star in the
-          Streaks list as well. Every market is analysed, and where a team has fewer than ten games
-          on file the card states the real denominator (9/9, 8/8) instead of pretending it has ten.
+      <div>
+        <div class="card">
+          <h3>Live projection</h3>
+          <div class="grid g3" style="text-align:center">
+            <div><div class="hint">Daily spend</div><div class="bigne" id="o_daily">—</div></div>
+            <div><div class="hint">Clicks</div><div class="bigne" id="o_clicks">—</div></div>
+            <div><div class="hint">Expected sales</div><div class="bigne" id="o_sales">—</div></div>
+          </div>
+          <hr style="border-color:var(--line);margin:14px 0">
+          <div class="grid g3" style="text-align:center">
+            <div><div class="hint">Net revenue</div><div class="bigne" id="o_rev">—</div></div>
+            <div><div class="hint">Profit / loss</div><div class="bigne" id="o_pl">—</div></div>
+            <div><div class="hint">ROI</div><div class="bigne" id="o_roi">—</div></div>
+          </div>
+          <div id="o_verdict" style="margin-top:12px"></div>
         </div>
-        <div class="grid" id="statCards"></div>
-        <div class="table-wrap hidden" id="statTableWrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Hits</th>
-                <th>Team</th>
-                <th>Selection</th>
-                <th>Last 10</th>
-                <th>Live</th>
-                <th>Continue</th>
-                <th>Next match</th>
-                <th>When</th>
-              </tr>
-            </thead>
-            <tbody id="statTbody"></tbody>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Break-even &amp; minimum duration</h3>
+          <div id="o_breakeven"></div>
+          <div class="hint" style="margin-top:6px">Model includes a learning-phase penalty: the first days run ~25% worse on conversions while the platform optimizes — that’s why very short runs lose even on good offers.</div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Scenarios</h3>
+          <table id="scenTable">
+            <thead><tr><th></th><th>Sales</th><th>Net rev</th><th>Profit</th><th>ROI</th></tr></thead>
+            <tbody></tbody>
           </table>
         </div>
-        <div class="empty hidden" id="statEmpty">No selection has hit 8 of its last 10 games yet for this sport.</div>
-        <button class="more hidden" id="moreStats">Show more</button>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="panel" id="panel-rank">
-        <div class="note">
-          Runs most likely to continue, weighted towards the strongest competitions.
-          <b>Confidence</b> is the modelled chance the run survives the next match;
-          <b>break-even</b> is the minimum price worth taking (1 ÷ probability).
+  <!-- ================= LAUNCHES ================= -->
+  <section id="tab-launches" class="sec">
+    <div class="card">
+      <h3>🔥 Trending launches <span class="badge" id="launchStamp"></span></h3>
+      <div id="launchNote" class="hint"></div>
+      <div id="launchList" style="margin-top:10px"></div>
+    </div>
+  </section>
+
+  <!-- ================= HISTORY ================= -->
+  <section id="tab-history" class="sec">
+    <div class="card">
+      <h3>🗂️ Saved analyses</h3>
+      <div class="hint">Tick up to 3 offers to compare them side by side.</div>
+      <div id="histList" style="margin-top:10px"></div>
+    </div>
+    <div class="card hidden" id="cmpCard" style="margin-top:16px">
+      <h3>⚖️ Comparison</h3>
+      <div style="overflow-x:auto"><table id="cmpTable"><thead></thead><tbody></tbody></table></div>
+      <div class="hint" style="margin-top:8px" id="cmpVerdict"></div>
+    </div>
+  </section>
+
+  <!-- ================= SETTINGS ================= -->
+  <section id="tab-settings" class="sec">
+    <div class="grid g2">
+      <div class="card">
+        <h3>Score weights (drag — total auto-normalizes)</h3>
+        <div id="weightBox"></div>
+        <div class="hint">Sum: <b id="wSum">100</b> · relative ratios are what matter.</div>
+        <button class="btn-g" id="btn_resetw" style="margin-top:10px">Reset weights</button>
+      </div>
+      <div class="card">
+        <h3>General</h3>
+        <label>Exchange rate: XAF per 1 USD</label>
+        <input id="st_fx" type="number" min="1">
+        <label>Formspree endpoint (lead-capture form action — leave empty to hide the form)</label>
+        <input id="st_formspree" placeholder="https://formspree.io/f/xxxxxxx">
+        <label>Tier cost multipliers (vs Tier-1)</label>
+        <div class="grid g2">
+          <div><input id="st_t2" type="number" step="0.01" min="0.01" max="1"><div class="hint">Tier-2 factor</div></div>
+          <div><input id="st_t3" type="number" step="0.01" min="0.01" max="1"><div class="hint">Tier-3 factor</div></div>
         </div>
-        <div class="row-list" id="rankList"></div>
-      </section>
+        <button class="btn-p" id="btn_saveset" style="margin-top:14px">Save settings</button>
+        <div class="hint" id="setMsg"></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Ad network benchmarks (Tier-1, editable)</h3>
+      <div class="hint">CPC/CPM ranges in USD · Quality = traffic quality multiplier (0–1) applied to the offer’s conversion rate for that network. Click “Save settings” to persist.</div>
+      <div style="overflow-x:auto;margin-top:10px">
+        <table id="benchTable"><thead><tr><th>Network</th><th>Formats</th><th>CPC low–high</th><th>CPM low–high</th><th>Quality</th><th>MMO risk</th></tr></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </section>
 
-      <section class="panel" id="panel-high">
-        <div class="note">
-          Long-running selections the market should price generously. Higher odds mean
-          lower probability — treat these as value, not bankers.
-        </div>
-        <div class="row-list" id="highList"></div>
-      </section>
+  <!-- ===== lead capture (lead magnet) ===== -->
+  <section id="leadWrap" class="hidden" style="margin-top:26px">
+    <div class="card" style="text-align:center;background:linear-gradient(135deg,#10233a,#0b1220)">
+      <h3 style="color:var(--txt)">📬 Get my weekly “top 3 offers worth promoting”</h3>
+      <p class="hint">Free. One email a week. The exact offers + numbers I’d run.</p>
+      <form id="leadForm" class="row" style="max-width:480px;margin:8px auto 0;flex-wrap:nowrap">
+        <input type="email" required placeholder="your@email.com" style="flex:1">
+        <button class="btn-p" style="flex:none">Subscribe</button>
+      </form>
+      <div class="hint" id="leadMsg"></div>
+    </div>
+  </section>
 
-      <section class="panel" id="panel-acca">
-        <div class="note">
-          Three independent tickets built from every sport's streak model. A ticket takes the
-          strongest legs available, so it may mix sports — or end up all football, all basketball,
-          whatever the runs say that day. Every ticket carries <b>at least 15 legs</b>, the minimum
-          SportyBet's <b>Flexi</b> option wants, with <b>max 5 losses</b> as the insurance line. Only
-          markets SportyBet accepts on a Flexi slip are used — favourites/1X2, over–under goals,
-          both teams to score, corners, bookings, shots on target and handicaps — so the stat markets
-          it blocks (match shots, throw-ins, fouls, tackles, offsides) never appear. No
-          team appears twice on one ticket and the day's matches are shared out between the three
-          tickets, so they do not cannibalise each other (a second leg from the same match is marked
-          in the table when it is needed to reach 15). <b>Every leg kicks off inside the next 24
-          hours</b>: the day's stake settles and rolls into tomorrow, which is what makes the
-          compounding work. Every leg is priced at 1.50 or better.
-          <b>Only place a leg if SportyBet's price is at or above its break-even</b> — that is what
-          keeps the ticket value-positive. The Flexi figures are arithmetic on the modelled prices,
-          not SportyBet's internal split, so check their calculator before staking.
-        </div>
-        <div class="note" id="marketNote" style="display:none"></div>
-        <div id="accaList"></div>
-      </section>
+  <footer>
+    <div><b>OfferPilot</b> — heuristic decision support. Benchmarks are editable estimates, not guarantees; marketing always carries risk of loss. Verify an offer yourself before spending money.</div>
+  </footer>
+</div>
 
-    </main>
-  </div>
-    <script>
-const PAGE = 120;
-const SORTS = {
-  // streaks: how should the runs be lined up?
-  streaks: [["kickoff", "Kickoff"], ["length", "Longest"], ["runs", "Most runs"],
-            ["likely", "Likely"], ["team", "Team"]],
-  // consistency: a hit rate, so the count leads
-  stats: [["hits", "Best 10/10 first"], ["length", "Streak"], ["likely", "Likely"],
-          ["kickoff", "Kickoff"], ["team", "Team"]],
-};
+<div id="printArea"></div>
 
-const state = {
-  data: null,
-  q: "",
-  market: "all",
-  polarity: "all",
-  types: new Set(),
-  league: "",
-  minLen: 3,
-  when: "all",
-  sort: "length",
-  view: "cards",
-  window: 0,          // kickoff window in hours (0 = any)
-  sortStats: "hits",
-  minStreak: 0,
-  viewStats: "cards",
-  tab: "streaks",
-  sport: "football",
-  limit: PAGE,
-};
-
-const $ = (id) => document.getElementById(id);
-
-const NICK = {
-  "R. Racing Club": "Racing Santander",
-  Vallecano: "Rayo Vallecano",
-  "Ath Madrid": "Atlético Madrid",
-  "Ath Bilbao": "Athletic Club",
-  Espanol: "Espanyol",
-  "Man United": "Manchester United",
-  "Man City": "Manchester City",
-};
-
-const MARKET_FALLBACK = [
-  { id: "goals", label: "Goals / 1X2" },
-  { id: "corners", label: "Corners" },
-  { id: "cards", label: "Bookings" },
-  { id: "fouls", label: "Fouls" },
-  { id: "shots", label: "Shots / xG" },
-  { id: "throws", label: "Throw-ins" },
-  { id: "tackles", label: "Tackles" },
-  { id: "other", label: "Other" },
+<script>
+"use strict";
+/* =====================================================================
+   DATA — benchmarks (all editable in Settings). Ranges are Tier-1 USD.
+===================================================================== */
+const ADNET_DEF = [
+ // id, name, group, formats, [cpcLo,cpcHi]T1, [cpmLo,cpmHi]T1, quality, mmoRisk, note
+ ["fb","Facebook / Meta","Major platforms",["social","video"],[0.60,1.50],[8,20],0.92,"high","Strict on MMO/biz-opp claims — use a bridge page & compliant angles."],
+ ["google","Google Ads","Major platforms",["search"],[1.00,3.00],[10,35],1.00,"high","Highest intent, highest CPC. MMO claims limited."],
+ ["bing","Microsoft Ads","Major platforms",["search"],[0.50,1.50],[6,18],0.90,"med","Cheaper search traffic, older audience."],
+ ["tiktok","TikTok Ads","Major platforms",["social","video"],[0.30,0.90],[3,10],0.85,"high","Mobile-only, 18–34 skew, video creatives mandatory."],
+ ["xads","X (Twitter) Ads","Major platforms",["social"],[0.50,1.20],[4,12],0.72,"med","Mixed quality; test small."],
+ ["taboola","Taboola","Native",["native"],[0.30,0.80],[2,6],0.80,"low","Large minimum budgets; best with advertorial pages."],
+ ["outbrain","Outbrain","Native",["native"],[0.25,0.70],[2,6],0.80,"low","Similar to Taboola."],
+ ["mgid","MGID","Native",["native"],[0.05,0.25],[0.5,2],0.60,"low","Affiliate-friendly, cheap native, needs angle testing."],
+ ["revcontent","Revcontent","Native",["native"],[0.08,0.30],[1,3],0.62,"low",""],
+ ["propeller","PropellerAds","Push / Pop",["push","pop","banner"],[0.005,0.05],[0.5,3],0.45,"low","Push CPC & Pop CPM; huge volume, beginner-friendly."],
+ ["adsterra","Adsterra","Push / Pop",["push","pop","banner"],[0.004,0.04],[0.5,2.5],0.45,"low",""],
+ ["richads","RichAds","Push / Pop",["push","pop"],[0.005,0.05],[0.6,3],0.50,"low",""],
+ ["rollerads","RollerAds","Push / Pop",["push"],[0.004,0.04],[0.5,2.5],0.45,"low",""],
+ ["zeropark","Zeropark","Push / Pop",["pop","push"],[0.003,0.03],[0.4,2],0.40,"low",""],
+ ["popads","PopAds","Push / Pop",["pop"],[0.002,0.02],[0.3,2],0.35,"low","Cheapest popunder; heavy filtering needed."],
+ ["popcash","PopCash","Push / Pop",["pop"],[0.002,0.02],[0.3,1.8],0.35,"low",""],
+ ["hilltop","HilltopAds","Push / Pop",["pop","push"],[0.003,0.03],[0.4,2.2],0.40,"low",""],
+ ["admaven","AdMaven","Push / Pop",["push","pop"],[0.004,0.04],[0.5,2.5],0.42,"low",""],
+ ["clickadu","Clickadu","Push / Pop",["pop","push"],[0.003,0.035],[0.4,2.2],0.40,"low",""],
+ ["adcash","AdCash","Push / Pop",["pop","push","banner"],[0.005,0.04],[0.5,2.5],0.43,"low",""],
+ ["evadav","EvaDav","Push / Pop",["push","pop"],[0.003,0.03],[0.4,2],0.40,"low",""],
+ ["bidvertiser","Bidvertiser","Push / Pop",["pop","push","banner","native"],[0.002,0.02],[0.3,1.5],0.34,"low","Very cheap clicks — quality varies a lot by source id; whitelist aggressively."],
+ ["froggy","Froggy Ads","Push / Pop",["pop","push","banner","native"],[0.002,0.02],[0.3,1.5],0.32,"low","Small network — benchmarks are estimates; verify pacing early."],
+ ["udimi","Solo Ads (Udimi)","Email",["email"],[0.35,0.85],[0,0],0.70,"low","MMO email lists; buy clicks from sellers with sales-reported reviews."]
 ];
+const GROUPS = ["Major platforms","Native","Push / Pop","Email"];
 
-const WAT_TZ = "Africa/Lagos";   // everything on this page is WAT (UTC+1)
+const AFFNETS = {
+ warriorplus:{label:"WarriorPlus", domains:["warriorplus.com","warriorplus.com/o2"], fields:["sales","conv","vv","avg","refund","pulse"], hint:"Copy from the offer’s affiliate stats table."},
+ jvzoo:{label:"JVZoo", domains:["jvzoo.com","jvz1.com","jvz2.com"], fields:["sales","conv","epc","avg","refund"], hint:"From ‘Find Products’ stats."},
+ clickbank:{label:"ClickBank", domains:["clickbank.net","clickbank.com"], fields:["gravity","cbavg","cbinit","rebill","commpct"], hint:"From the Marketplace listing."},
+ digistore:{label:"Digistore24", domains:["digistore24.com","digistore24.com/redir"], fields:["price","commpct","conv","refund"], hint:"Conversion + cancellation from the marketplace entry."},
+ universal:{label:"Universal / any link", domains:[], fields:["price","commpct","commusd","conv","refund"], hint:"Price + your commission is enough; the rest is conservative estimates."}
+};
 
-function esc(s) {
-  return String(s ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+const NICHES = {
+ mmo:{label:"Make Money Online / Biz-opp", kw:["make money","income","commission","affiliate","passive income","side hustle","financial freedom","quit your job","earn cash","traffic system","done for you","reseller","plr","work from home","online business","ai profits","profit"], gender:["62% male","38% female"], age:[25,54], dev:"Mobile 60% / Desktop 40%", comp:"High restriction on Facebook/Google (biz-opp claims). Push, native & solo ads are the natural home."},
+ software:{label:"Software / SaaS tools", kw:["software","app","automation","tool","dashboard","plugin","ai writer","video creator","builder","cloud-based","platform","saas"], gender:["55% male","45% female"], age:[25,45], dev:"Desktop-weighted 55% / Mobile 45%", comp:"Low restriction; search & review content work well."},
+ health:{label:"Health (general supplements)", kw:["supplement","health","remedy","vitamin","joint","hearing","vision","blood sugar","prostate","gut","detox","tea"], gender:["50% male","50% female"], age:[35,65], dev:"Mobile 55% / Desktop 45%", comp:"High restriction on claims (FB/Google). Native + email foundations."},
+ weightloss:{label:"Weight loss / Fitness", kw:["weight loss","lose weight","fat burn","belly fat","keto","slim","metabolism","diet","fitness","workout","muscle"], gender:["35% male","65% female"], age:[25,55], dev:"Mobile-first 65% / Desktop 35%", comp:"Strict claims policies on FB/Google; native & push thrive."},
+ dating:{label:"Dating / Relationships", kw:["dating","relationship","ex back","soulmate","attraction","romance","marriage","text messages","obsession"], gender:["50% male","50% female"], age:[21,45], dev:"Mobile 70% / Desktop 30%", comp:"Restricted categories on FB; push/pop & email work."},
+ finance:{label:"Finance / Crypto / Trading", kw:["crypto","bitcoin","trading","forex","stocks","investment","debt","credit score","gold ira","retirement","signals"], gender:["70% male","30% female"], age:[28,60], dev:"Desktop-weighted 55% / Mobile 45%", comp:"Very restricted (licenses on Google/FB). Native & email plus compliant landers."},
+ selfhelp:{label:"Self-help / Manifestation", kw:["manifestation","law of attraction","abundance","mindset","meditation","happiness","success habits","brain","subconscious","moon reading","numerology"], gender:["40% male","60% female"], age:[25,60], dev:"Mobile 60% / Desktop 40%", comp:"Moderate; avoid guarantees. Email + native strong."},
+ survival:{label:"Survival / Prepper", kw:["survival","prepper","emp","blackout","food stockpile","bug out","self defense","water filter","off grid"], gender:["78% male","22% female"], age:[35,65], dev:"Mobile 55% / Desktop 45%", comp:"Native + email; older US male audience."},
+ pets:{label:"Pets", kw:["dog","puppy","cat","pet","training your dog","brain training for dogs","cat spray"], gender:["40% male","60% female"], age:[24,60], dev:"Mobile 60% / Desktop 40%", comp:"Broadly allowed; social + search friendly."},
+ ecom:{label:"E-commerce / Physical product", kw:["buy now","free shipping","add to cart","gadget","50% off","limited stock","order today"], gender:["50%","50%"], age:[18,55], dev:"Mobile-first 70%", comp:"Broadly allowed."},
+ education:{label:"Education / Skills courses", kw:["course","learn","masterclass","certification","training","tutorial","speak","language","piano","photography"], gender:["50%","50%"], age:[20,45], dev:"Mobile 55% / Desktop 45%", comp:"Broadly allowed."},
+ other:{label:"Other / unsure", kw:[], gender:["Broad","—"], age:[21,55], dev:"Mixed (mobile-first)", comp:"Check each platform’s policy."}
+};
+const MALE_KW=["prostate","testosterone","beard","dad bod","for men","his wife","men over","erectile","ed ","alpha male","survival","tactical","grill","beard"];
+const FEMALE_KW=["menopause","pregnancy","for women","her husband","women over","skincare","wrinkle","cellulite","postpartum","yoga for her","mom","mommy","floral","women who"];
+const AGE_OLD=["over 40","over 50","seniors","retirement","50+","60+","menopause","prostate","joint pain","hearing loss"];
+const AGE_YOUNG=["students","gen z","side hustle in your 20s","tiktok","dorm"];
+
+const DEFAULT_W = {conv:24, epv:22, refund:14, momentum:14, proof:10, fresh:16};
+const WK = {conv:"Conversion rate", epv:"Earnings / visitor", refund:"Refunds (low = good)", momentum:"Market momentum", proof:"Social proof (sales)", fresh:"Freshness"};
+
+let SETTINGS = load("op_settings") || {};
+SETTINGS = Object.assign({weights:Object.assign({},DEFAULT_W), fx:610, formspree:"", t2:0.35, t3:0.15, bench:{}}, SETTINGS);
+function load(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+function store(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+
+/* Effective (settings-overridden) benchmarks */
+function bench(id){
+  const d = ADNET_DEF.find(n=>n[0]===id);
+  const o = (SETTINGS.bench||{})[id]||{};
+  return {id:d[0],name:d[1],group:d[2],formats:d[3],cpc:o.cpc||d[4],cpm:o.cpm||d[5],q:o.q!=null?o.q:d[6],risk:d[7],note:d[8]};
 }
+const ALLNETS = ()=>ADNET_DEF.map(n=>bench(n[0]));
 
-function pretty(name) {
-  return NICK[name] || name;
+/* ================= helpers ================= */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const num=(v,d=0)=>{v=parseFloat(v);return isNaN(v)?d:v};
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const fmtusd=(n,dp=2)=>"$"+(+n).toLocaleString("en-US",{minimumFractionDigits:dp,maximumFractionDigits:dp});
+const pct=(n,dp=1)=>(+n).toFixed(dp)+"%";
+function knots(x,pts){x=num(x,0);if(x<=pts[0][0])return pts[0][1];for(let i=1;i<pts.length;i++){const p=pts[i-1],q=pts[i];if(x<=q[0]){return p[1]+(q[1]-p[1])*((x-p[0])/(q[0]-p[0]))}}return pts[pts.length-1][1]}
+const debounce=(f,ms)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>f(...a),ms)}};
+
+/* ================= field templates (with sliders) ================= */
+function fld(id,label,min,max,step,ph,est){
+  return `<label for="${id}">${label}${est?' <span class="badge est">estimate</span>':""}</label>
+  <div class="sl-wrap"><input type="range" id="${id}_r" min="${min}" max="${max}" step="${step}" data-pair="${id}">
+  <input class="sl-num" type="number" id="${id}" step="${step}" placeholder="${ph||""}"></div>`;
 }
-
-function crestHtml(badge, shortName) {
-  return `<div class="crest"><div class="abbr">${esc(shortName)}</div></div>`;
+function plainInp(id,label,ph,type="number",est){
+  return `<label for="${id}">${label}${est?' <span class="badge est">estimate</span>':""}</label><input id="${id}" type="${type}" placeholder="${ph||""}" ${type==="number"?'step="any"':''}>`;
 }
-
-function uniqueRecent(recent) {
-  const seen = new Set();
-  const out = [];
-  for (const r of recent || []) {
-    const k = `${r.date}|${r.score}|${r.stat || ""}`;
-    if (seen.has(k)) continue;
-    seen.add(k);
-    out.push(r);
+const FIELD_DEFS = {
+ sales:()=>plainInp("m_sales","Sales (units)","e.g. 753"),
+ conv:()=>fld("m_conv","Conversion rate %",0,30,0.1,"e.g. 4.5"),
+ vv:()=>fld("m_vv","Visitor value ($)",0,20,0.01,"e.g. 1.85"),
+ epc:()=>fld("m_vv","EPC ($)",0,20,0.01,"e.g. 1.20"),
+ avg:()=>fld("m_avg","Avg sale / price ($)",0,500,1,"e.g. 37"),
+ refund:()=>fld("m_refund","Refund rate %",0,40,0.5,"e.g. 6"),
+ pulse:()=>fld("m_pulse","Pulse score",0,260,1,"e.g. 112"),
+ gravity:()=>fld("m_gravity","Gravity",0,400,1,"e.g. 68"),
+ cbavg:()=>fld("m_cbavg","Avg $/sale ($)",0,500,1,"e.g. 63"),
+ cbinit:()=>plainInp("m_cbinit","Initial $/sale ($)","e.g. 55"),
+ rebill:()=>plainInp("m_rebill","Avg rebill total ($)","e.g. 120"),
+ commpct:()=>fld("m_commpct","Your commission %",0,100,1,"e.g. 50"),
+ commusd:()=>plainInp("m_commusd","OR commission $ per sale","e.g. 24"),
+ price:()=>fld("m_price","Product price ($)",0,1000,1,"e.g. 47"),
+};
+function renderDynFields(){
+  const net=$("in_affnet").value;
+  const f=AFFNETS[net].fields;
+  let html="";
+  if(net==="clickbank"){
+    html=f.map(k=>FIELD_DEFS[k]()).join("")+
+    `<div class="hint">ClickBank hides conversion &amp; refunds → I use a conservative <b>conversion estimate of 1.5%</b> and <b>refund estimate of 8%</b> (editable below).
+     </div>`+fld("m_conv","Conversion % (estimate)",0,30,0.1,"1.5",true)+fld("m_refund","Refund % (estimate)",0,40,0.5,"8",true);
+  } else if(net==="digistore"){
+    html = FIELD_DEFS.price()+FIELD_DEFS.commpct()
+      +fld("m_conv","Conversion % (marketplace value or estimate)",0,30,0.1,"e.g. 3",true)
+      +FIELD_DEFS.refund();
+  } else if(net==="universal"){
+    html = FIELD_DEFS.price()+FIELD_DEFS.commpct()+FIELD_DEFS.commusd()
+      +fld("m_conv","Conversion % (estimate)",0,30,0.1,"e.g. 1.5",true)
+      +fld("m_refund","Refund % (estimate)",0,40,0.5,"e.g. 5",true);
+  } else {
+    html=f.map(k=>FIELD_DEFS[k]?FIELD_DEFS[k]():"").join("");
   }
+  $("dynFields").innerHTML=html;
+  // wire pairs
+  $("dynFields").querySelectorAll('input[type=range]').forEach(r=>{
+    r.addEventListener("input",()=>{const n=$(r.dataset.pair); if(n){n.value=r.value; schedule();}});
+  });
+  $("dynFields").querySelectorAll('input[type=number]').forEach(n=>{
+    n.addEventListener("input",()=>{const r=$(n.id+"_r"); if(r && n.value!=="") r.value=n.value; schedule();});
+  });
+}
+
+/* ================= normalize form -> offer object ================= */
+function readOffer(){
+  const net=$("in_affnet").value;
+  const est=[];
+  const g=id=>num($(id)?.value,NaN);
+  const o={net,name:$("in_name").value.trim()||"Untitled offer",link:$("in_link").value.trim(),niche:$("in_niche").value,est};
+  o.price=g("m_avg")||g("m_price")||g("m_cbavg")||0;
+  o.sales=g("m_sales")||0;
+  o.refund=g("m_refund");
+  o.conv=g("m_conv");
+  o.pulse=g("m_pulse"); o.gravity=g("m_gravity");
+  const commPct=g("m_commpct"), commUsd=g("m_commusd");
+
+  // launch age
+  const rd=$("in_release").value;
+  o.ageDays = rd? Math.floor((Date.now()-new Date(rd).getTime())/86400000) : NaN;
+
+  // commission per sale
+  if(net==="clickbank") o.commission = g("m_cbavg")||0;
+  else if(commUsd) o.commission = commUsd;
+  else if(commPct && o.price) o.commission = o.price*commPct/100;
+  else o.commission = NaN;
+
+  // missing conv → conservative default, always flagged as estimate
+  if(isNaN(o.conv)){ o.conv = (net==="clickbank"||net==="universal")?1.5:3; est.push("conversion"); }
+  // missing refund
+  if(isNaN(o.refund)){ o.refund = net==="clickbank"?8:5; est.push("refunds"); }
+  // earnings/visitor
+  if(!isNaN(g("m_vv")) ) o.epv = g("m_vv");
+  else if(!isNaN(o.commission)) { o.epv = o.commission*o.conv/100; if(net!=="warriorplus"&&net!=="jvzoo") est.push("visitor value"); }
+  else o.epv = NaN;
+  // commission back-derive for WP/JVZoo if not set
+  if(isNaN(o.commission)){
+    if(o.conv>0 && !isNaN(o.epv)) o.commission = o.epv/(o.conv/100);
+    else if(o.price){ o.commission=o.price*0.5; est.push("commission"); } else o.commission=25; 
+  }
+  // second pass: if epv was unknown but commission is, derive it now
+  if(isNaN(o.epv)&&!isNaN(o.commission)) o.epv=o.commission*o.conv/100;
+  // raw snapshot (for History → Load round-trip)
+  o.raw={};
+  ["m_sales","m_conv","m_vv","m_refund","m_pulse","m_gravity","m_avg","m_price","m_commpct","m_commusd","m_cbavg","m_cbinit","m_rebill"].forEach(id=>{const el=$(id);if(el&&el.value!=="")o.raw[id]=el.value;});
+  o.release=$("in_release").value;
+  o.pageGender=window._pageGender||null;
+  // momentum normalize
+  o.momentumN = NaN;
+  if(net==="warriorplus" && !isNaN(o.pulse)) o.momentumN=knots(o.pulse,[[0,5],[20,20],[40,35],[60,50],[80,63],[100,74],[130,85],[160,93],[220,100]]);
+  else if(net==="clickbank" && !isNaN(o.gravity)) o.momentumN=knots(o.gravity,[[0,5],[10,20],[20,40],[50,65],[100,85],[200,96],[300,100]]);
+  else if(net==="jvzoo" && o.sales) o.momentumN=0.6*knots(o.sales,[[0,0],[50,20],[200,45],[500,65],[1500,85],[5000,100]])+0.4*knots(o.epv||0,[[0,0],[0.5,30],[1,55],[2,75],[4,95]]);
+  else if(net==="digistore" && !isNaN(o.conv)) o.momentumN=knots(o.conv,[[0,0],[1,25],[2,45],[4,70],[7,90],[10,100]]);
+  if(isNaN(o.momentumN)){ o.momentumN=40; est.push("momentum"); }
+  if(!o.sales) est.push("social proof");
+  if(isNaN(o.ageDays)) est.push("freshness");
+  o.hasData = (!isNaN(o.epv)&&o.epv>0)||o.conv>0||!isNaN(g("m_pulse"))||!isNaN(g("m_gravity"))||o.price>0;
+  return o;
+}
+
+/* ================= scoring ================= */
+function scoreOffer(o){
+  const W=SETTINGS.weights, sumW=Object.values(W).reduce((a,b)=>a+b,0)||1;
+  const parts={
+    conv: knots(o.conv,[[0,0],[1,20],[2,45],[3,62],[5,82],[7,93],[10,100]]),
+    epv: knots(o.epv||0,[[0,0],[0.5,25],[1,50],[1.5,68],[2.5,85],[4,95],[6,100]]),
+    refund: knots(o.refund??10,[[0,95],[3,95],[5,85],[7,70],[10,45],[15,15],[20,0]]),
+    momentum: o.momentumN,
+    proof: knots(o.sales||0,[[0,35],[25,38],[50,45],[100,55],[250,70],[500,82],[1000,92],[2500,100]]),
+    fresh: isNaN(o.ageDays)?40:knots(o.ageDays,[[-30,60],[0,88],[7,92],[14,100],[30,96],[60,85],[90,70],[120,55],[180,38],[270,22],[365,10]])
+  };
+  let total=0; for(const k in parts) total+= (W[k]||0)*parts[k];
+  total=Math.round(total/sumW);
+  let conf=100 - o.est.length*12; conf=clamp(conf,30,100);
+  return {total,parts,conf};
+}
+
+/* ================= flags / verdict ================= */
+function flagList(o){
+  const F=[];
+  const g=(t)=>F.push({l:"good",t}), w=(t)=>F.push({l:"warn",t}), b=(t)=>F.push({l:"bad",t});
+  if(o.conv>=5) g(`Excellent conversion (${pct(o.conv)}) — page sells.`);
+  else if(o.conv<1) b(`Conversion under 1% — this page rarely converts cold traffic.`);
+  else if(o.conv<2) w(`Weak conversion (${pct(o.conv)}) — risky for paid clicks.`);
+  if(o.epv>=2) g(`Strong visitor value (${fmtusd(o.epv)}) — paid traffic viable.`);
+  else if(o.epv>0&&o.epv<0.6) b(`Visitor value ${fmtusd(o.epv)} — most clicks cost more than you earn back.`);
+  if(o.refund<=4) g(`Very low refunds (${pct(o.refund)}).`);
+  else if(o.refund>20) b(`Refund rate ${pct(o.refund)} — danger zone, expect clawbacks & angry buyers.`);
+  else if(o.refund>12) b(`High refunds (${pct(o.refund)}).`);
+  else if(o.refund>7) w(`Refunds ${pct(o.refund)} — watch it.`);
+  if(o.net==="warriorplus"&&!isNaN(o.pulse)&&o.pulse>=120) g(`High marketplace momentum (Pulse ${o.pulse}).`);
+  if(o.net==="warriorplus"&&!isNaN(o.pulse)&&o.pulse<30) b(`Pulse ${o.pulse} — dead momentum.`);
+  if(o.net==="clickbank"&&!isNaN(o.gravity)&&o.gravity>100) g(`Gravity ${o.gravity} — many affiliates profit from this.`);
+  if(!isNaN(o.ageDays)&&o.ageDays<=45&&o.sales>=100) g(`Fresh launch with traction.`);
+  if(!isNaN(o.ageDays)&&o.ageDays>180) w(`Offer is ${o.ageDays} days old — saturation risk; angles may be burned.`);
+  if(o.sales>0&&o.sales<50) w(`Only ${o.sales} sales — limited proof, small sample.`);
+  if(o.refund===0&&o.sales>0&&o.sales<100) w(`0% refunds on low sales — data not meaningful yet.`);
+  if(!isNaN(o.ageDays)&&o.ageDays<0) b(`Not launched yet (${Math.abs(o.ageDays)} days away) — all stats are speculative.`);
+  if(o.est.length) w(`Estimated fields: ${o.est.join(", ")} — replace with real numbers when you can.`);
+  return F;
+}
+function decision(o,score){
+  const S=score.total;
+  const go = S>=78 && o.conv>=3 && o.epv>=1.5 && o.refund<=7 && o.sales>=150 && (isNaN(o.ageDays)||(o.ageDays>=0&&o.ageDays<=120));
+  if(go) return {cls:"go",txt:"🚀 GREEN LIGHT — metrics are strong across the board. You may run straight (a 1–2 day micro-pilot is still wise)." };
+  if(S>=60) return {cls:"test",txt:"🧪 TEST FIRST — promising but unproven for YOUR traffic. Fund a small structured test before scaling."};
+  return {cls:"skip",txt:"⛔ SKIP paid traffic — numbers don’t support buying clicks. Promote only free/organic (or pick a better offer)."};
+}
+
+/* ================= fit per ad network ================= */
+function netFit(net,o){
+  let s=50; const why=[];
+  const p = o.conv/100 || 0.001;
+  const effP = p*clamp(net.q,0.1,1);         // quality-adjusted conversion
+  const effEpv = (o.commission||0)*effP*(1-(o.refund||0)/100);
+  const cpcMid = (net.cpc[0]+net.cpc[1])/2 || 0.01;
+  const ratio = effEpv/cpcMid;
+  if(ratio>2){s+=28;why.push(`value/click ≈ ${ratio.toFixed(1)}× CPC`);}
+  else if(ratio>1.3){s+=18;why.push(`comfortable margin vs ~${fmtusd(cpcMid)} CPC`);}
+  else if(ratio>1.0){s+=5;why.push(`thin margin vs CPC`);}
+  else if(ratio>0.7){s-=12;why.push(`margin too thin (≈${fmtusd(effEpv)}/click vs ${fmtusd(cpcMid)} CPC)`);}
+  else {s-=32;why.push(`clicks cost more than they return (≈${fmtusd(effEpv)}/click)`);}
+  const restrict = ["mmo","health","weightloss","finance"].includes(o.niche);
+  if(restrict&&net.risk==="high"){s-=25;why.push("strict ad policies for this niche (ban risk)");}
+  if(restrict&&net.risk==="low"){s+=10;why.push("affiliate-friendly policies");}
+  const price=o.price|| (o.commission? o.commission*2:30);
+  if(price<40 && (net.formats.includes("push")||net.formats.includes("pop"))) {s+=8;why.push("low-ticket impulse price suits push/pop");}
+  if(price>=60 && net.formats.includes("search")) {s+=8;why.push("higher ticket suits search intent");}
+  if(price>=60 && net.formats.includes("native")) {s+=5;why.push("advertorial-friendly price point");}
+  if(o.niche==="mmo"&&net.id==="udimi"){s+=18;why.push("MMO email lists = the classic channel for this niche");}
+  if(o.conv>=5){s+=4;why.push("strong page conversion");}
+  s=clamp(Math.round(s),0,100);
+  return {s,why,label:s>=70?"Great":s>=55?"Good":s>=40?"Risky":"Avoid",cls:s>=70?"fit-great":s>=55?"fit-good":s>=40?"fit-risky":"fit-avoid",effEpv,cpcMid};
+}
+function pricingAdvice(net,o){
+  const fmts=net.formats.join(", ");
+  if(net.group==="Email") return {model:"CPC (per unique click delivered)",why:"Solo ads are bought per click — simple & trackable.",fmts};
+  const hasCPM=net.cpm[1]>0;
+  if(!hasCPM) return {model:"CPC",why:"This network is CPC-only for its main formats.",fmts};
+  const CTR={push:0.015,pop:0.001,banner:0.002,native:0.004,social:0.012,video:0.012,search:0.04,email:0};
+  const bestFmt=net.formats[0], ctr=CTR[bestFmt]||0.005;
+  const cpmMid=(net.cpm[0]+net.cpm[1])/2;
+  const implied=cpmMid/(ctr*1000);
+  const cpcMid=(net.cpc[0]+net.cpc[1])/2||0.01;
+  if(bestFmt==="pop") return {model:"CPM / CPV (per view)",why:`Popunders are priced per impression — expect ~${fmtusd(cpmMid,2)} CPM. Budget by views, not clicks.`,fmts};
+  if(implied<cpcMid*0.75) return {model:"CPM",why:`At ~${pct(ctr*100,1)} CTR for ${bestFmt}, CPM ≈ ${fmtusd(implied,3)}/click vs ${fmtusd(cpcMid,3)} CPC — cheaper IF your creative pulls clicks.`,fmts};
+  return {model:"CPC",why:`CPC is safer here: implied CPM cost ≈ ${fmtusd(implied,3)}/click ≥ listed CPC ~${fmtusd(cpcMid,3)}.`,fmts};
+}
+function audience(o){
+  const n=NICHES[o.niche]||NICHES.other;
+  const price=o.price||30;
+  let age=[...n.age];
+  if(price>97){age=[Math.max(age[0],30),Math.max(age[1],50)];}
+  else if(price<25){age=[Math.max(18,age[0]-3),Math.min(age[1],44)];}
+  let dev=n.dev;
+  if(price>100) dev="Desktop-weighted 60% / Mobile 40% (research purchases)";
+  else if(price<30&&n.label!=="Make Money Online / Biz-opp") dev="Mobile-first 70%";
+  let devNote="";
+  let geo;
+  if((o.epv||0)>=2) geo="<b>Tier-1:</b> US, UK, CA, AU, NZ";
+  else if((o.epv||0)>=1) geo="<b>Tier-1 core</b> (US, UK, CA, AU) + test ZA, IE, SG";
+  else geo="<b>Low-cost English tiers:</b> ZA, PH, IN, MY + solo/email (Tier-1 paid clicks won’t pencil out)";
+  if(o.pageGender){devNote+=` Page scan suggests <b>${o.pageGender}</b> skew — gender below adjusted. `;}
+  geo+=` · <span class="hint">T2 costs ≈ ×${SETTINGS.t2}, T3 ≈ ×${SETTINGS.t3} of T1 prices</span>`;
+  devNote+=` ${n.comp}`;
+  return {geo,age:`${age[0]}–${age[1]}`,gender:o.pageGender?o.pageGender:n.gender.join(" / "),dev,note:devNote};
+}
+
+/* ================= kill / scale rules ================= */
+function rules(o,net){
+  const profit=Math.max(o.commission||0,1);
+  const price=o.price||profit*2;
+  const cps=(o.conv/100)||0.015;
+  const killClicks = cps>0.0005 ? Math.ceil(Math.log(0.05)/Math.log(1-Math.min(cps,0.5))) : 500; // ~95% conf
+  const cpcMid=((net.cpc[0]+net.cpc[1])/2)||0.5;
+  const killSpend=killClicks*cpcMid;
+  const kill2=2.5*profit;
+  const kill=Math.max(Math.min(killSpend,kill2*1.6),15);
+  return `
+  <div class="flag bad">🔪 <span><b>Kill rule:</b> zero sales after <b>${killClicks} clicks</b> (${fmtusd(killClicks*cpcMid,0)} spend) — at ${pct(cps*100,1)} conv, that means a 95% chance something is broken. <b>OR</b> spend exceeds <b>${fmtusd(Math.max(kill,kill2),0)}</b> (~2.5× profit/sale). Kill, no mercy.</span></div>
+  <div class="flag warn">⏸️ <span><b>Checkpoint day 2–3:</b> if CPC is above ${fmtusd(cpcMid*1.3,2)} or landing CTR unusually low, fix the creative before spending more.</span></div>
+  <div class="flag good">📈 <span><b>Scale rule:</b> ≥5 sales AND ROI ≥ +25% → raise daily budget <b>20–30% every 48h</b>. Never double overnight — it resets platform learning.</span></div>
+  <div class="flag good">💰 <span><b>Profit guard:</b> break-even CPC is <b>${fmtusd(profit*cps*(1-o.refund/100),3)}</b>. If your real CPC stays above this → the math can never work on this network.</span></div>`;
+}
+
+/* ================= RENDER ================= */
+let current=null; // {o,score,dec}
+function analyze(){
+  const o=readOffer();
+  if(!o.hasData){ $("resEmpty").classList.remove("hidden"); $("resBody").classList.add("hidden"); $("agentWrap").classList.add("hidden"); current=null; return; }
+  const score=scoreOffer(o);
+  const dec=decision(o,score);
+  current={o,score,dec};
+
+  $("resEmpty").classList.add("hidden"); $("resBody").classList.remove("hidden"); $("agentWrap").classList.remove("hidden");
+  $("r_name").innerHTML=esc(o.name)+(o.link?` <a href="${esc(o.link)}" target="_blank" rel="noopener" style="font-size:.75rem">🔗 page</a>`:"");
+  $("r_chips").innerHTML=[AFFNETS[o.net].label, NICHES[o.niche]?.label||"—",
+     `conv ${pct(o.conv)}`,`${fmtusd(o.epv||0)}/visitor`,`comm. ${fmtusd(o.commission||0)}`,`refund ${pct(o.refund)}`,
+     o.sales?`${o.sales} sales`:"", !isNaN(o.ageDays)?(o.ageDays>=0?`${o.ageDays}d old`:`launches in ${-o.ageDays}d`):""].filter(Boolean).map(c=>`<span class="chip">${esc(c)}</span>`).join("");
+  const c=score.total>=80?"var(--good)":score.total>=65?"var(--acc)":score.total>=50?"var(--warn)":"var(--bad)";
+  $("gauge").style.setProperty("--p",score.total); $("gauge").style.setProperty("--c",c);
+  $("g_num").textContent=score.total;
+  $("r_conf").innerHTML=`Confidence ${score.conf}% · parts: conv <b>${Math.round(score.parts.conv)}</b> · value <b>${Math.round(score.parts.epv)}</b> · refunds <b>${Math.round(score.parts.refund)}</b> · momentum <b>${Math.round(score.parts.momentum)}</b> · proof <b>${Math.round(score.parts.proof)}</b> · freshness <b>${Math.round(score.parts.fresh)}</b>`;
+  $("r_verdict").innerHTML=`<span class="verdict" style="color:${c}">${score.total>=80?"STRONG PROMOTE":score.total>=65?"PROMOTE (WITH TEST)":score.total>=50?"MARGINAL":"AVOID"}</span>`;
+  $("r_decision").className="banner "+dec.cls; $("r_decision").textContent=dec.txt;
+  $("r_flags").innerHTML=flagList(o).map(f=>`<div class="flag ${f.l}">${f.l==="good"?"✅":f.l==="warn"?"⚠️":"🚨"} <span>${f.t}</span></div>`).join("");
+
+  // networks ranking
+  const fits=ALLNETS().map(n=>{const f=netFit(n,o);return {n,f}}).sort((a,b)=>b.f.s-a.f.s);
+  const top=fits.slice(0,4), avoid=fits.filter(x=>x.f.label==="Avoid").slice(-3);
+  $("netCards").innerHTML=top.map(({n,f},i)=>`
+    <div class="netcard">
+      <h4>${i===0?"🏆 ":""}${esc(n.name)} <span class="fit-pill ${f.cls}">${f.label} · ${f.s}</span></h4>
+      <div class="meter"><i style="width:${f.s}%"></i></div>
+      <div class="hint">Formats: <b>${n.formats.join(", ")}</b> · est CPC ${fmtusd(n.cpc[0],3)}–${fmtusd(n.cpc[1],2)} ${n.cpm[1]?`· est CPM ${fmtusd(n.cpm[0],2)}–${fmtusd(n.cpm[1],2)}`:""} · quality ×${n.q}</div>
+      <ul style="font-size:.78rem;color:var(--dim);padding-left:16px;margin-top:5px">${f.why.map(w=>`<li>${esc(w)}</li>`).join("")}${n.note?`<li>${esc(n.note)}</li>`:""}</ul>
+    </div>`).join("");
+  $("avoidList").innerHTML=avoid.length?`<div class="hint">🚫 <b>Avoid for this offer:</b> ${avoid.map(({n,f})=>`${esc(n.name)} (${f.why[0]||"poor unit economics"})`).join(" · ")}</div>`:"";
+  // dropdown (once filled, keep selection)
+  const sel=$("in_adnet");
+  if(!sel.options.length){
+    sel.innerHTML=GROUPS.map(g=>`<optgroup label="${g}">${ALLNETS().filter(n=>n.group===g).map(n=>`<option value="${n.id}">${esc(n.name)}</option>`).join("")}</optgroup>`).join("");
+  }
+  if(!fits.length)return;
+  const bestId=top[0].n.id;
+  if(!sel.dataset.touched) sel.value=bestId;
+  renderPlan();
+  syncSim(true);
+}
+function renderPlan(){
+  if(!current)return;
+  const {o}=current;
+  const net=bench($("in_adnet").value||"propeller");
+  const fit=netFit(net,o);
+  const pa=pricingAdvice(net,o);
+  const aud=audience(o);
+  const cps=o.conv/100||0.001;
+  const cpcMid=((net.cpc[0]+net.cpc[1])/2)||0.01;
+  const minClicks= cps>0.0005 ? Math.max(150,Math.ceil(3/cps)) : 250;
+  const testBudget=Math.max(20,Math.ceil(minClicks*cpcMid/10)*10);
+  const bankroll=num($("in_bankroll").value,0);
+  const fx=SETTINGS.fx||600;
+  const bankUSD=$("in_currency").value==="XAF"?bankroll/fx:bankroll;
+  let money="";
+  if(!bankroll) money=`<div class="flag warn">💵 <span>Suggested test budget: <b>${fmtusd(testBudget,0)}</b> on ${esc(net.name)} (≈${minClicks} clicks of data). Enter your bankroll for a personalised cap-check.</span></div>`;
+  else if(bankUSD<testBudget) money=`<div class="flag bad">💵 <span>Your bankroll (${fmtusd(bankUSD,0)}) can’t fund the minimum data test (≈<b>${fmtusd(testBudget,0)}</b>). Either pick a cheaper network from the dropdown, negotiate the budget down to ${fmtusd(Math.max(testBudget*0.5,20),0)} with a shorter checklist, or build funds with free traffic first.</span></div>`;
+  else if(testBudget>bankUSD*0.3) money=`<div class="flag warn">💵 <span>Test needs ${fmtusd(testBudget,0)} = ${(testBudget/bankUSD*100).toFixed(0)}% of your bankroll — above the 30% risk cap. Halve the test or choose a cheaper network.</span></div>`;
+  else money=`<div class="flag good">💵 <span>Test budget <b>${fmtusd(testBudget,0)}</b> fits safely within ${fmtusd(bankUSD,0)} bankroll (${(testBudget/bankUSD*100).toFixed(0)}%). Scale-path after a win: 3–5× test budget in ${fmtusd(testBudget*3,0)}–${fmtusd(testBudget*5,0)} steps.</span></div>`;
+  $("planBox").innerHTML=`
+    <div style="margin-top:6px">
+      <div class="flag ${fit.cls==="fit-avoid"||fit.cls==="fit-risky"?"warn":"good"}">🎯 <span><b>${esc(net.name)}</b> fit: <b>${fit.label} (${fit.s}/100)</b> — ${esc(fit.why[0]||"")}</span></div>
+      <div class="flag good">🧾 <span><b>Buying model: ${pa.model}.</b> ${esc(pa.why)} Formats: ${pa.fmts}.</span></div>
+      ${money}
+    </div>`;
+  $("aud_geo").innerHTML=aud.geo; $("aud_age").innerHTML=aud.age+" years";
+  $("aud_gender").innerHTML=aud.gender; $("aud_dev").innerHTML=aud.dev;
+  $("aud_note").textContent=aud.note;
+  $("rulesBox").innerHTML=rules(o,net);
+}
+
+/* ================= SIMULATOR ================= */
+let simSynced=false;
+function simVals(){
+  return {budget:num($("sm_budget").value),days:num($("sm_days").value,1),cpc:num($("sm_cpc").value,0.01),conv:num($("sm_conv").value)/100,profit:num($("sm_profit").value),ref:num($("sm_ref").value)/100};
+}
+function syncSim(force){
+  if(!current)return;
+  if(simSynced&&!force)return;
+  const {o}=current;
+  $("sm_conv").value=clamp(o.conv||3,0.1,15);
+  $("sm_profit").value=clamp(o.commission||28,1,500);
+  $("sm_ref").value=clamp(o.refund??6,0,40);
+  const net=bench($("in_adnet").value||"propeller");
+  $("sm_cpc").value=clamp((net.cpc[0]+net.cpc[1])/2||0.5,0.005,3);
+  $("sm_cpcsrc").textContent="(default = "+net.name+" mid)";
+  simSynced=true; simRun();
+}
+function dailyPL(v,day){ // learning-phase: conversions penalized early
+  const clicks=v.budget/v.days/v.cpc;
+  const pen= day<=5? (0.72+0.056*day):1;   // ramps .72→1 over 5 days
+  const sales=clicks*v.conv*pen;
+  const rev=sales*v.profit;
+  const claw=rev*v.ref;
+  return {clicks,sales,net:rev-claw,spend:v.budget/v.days,pl:rev-claw-(v.budget/v.days)};
+}
+function cumPL(v,days){let r={clicks:0,sales:0,net:0,spend:0};for(let d=1;d<=days;d++){const x=dailyPL(v,d);r.clicks+=x.clicks;r.sales+=x.sales;r.net+=x.net;r.spend+=x.spend}r.pl=r.net-r.spend;return r}
+function simRun(){
+  const v=simVals();
+  $("lb_budget").textContent=fmtusd(v.budget,0);
+  $("lb_days").textContent=v.days+" days";
+  $("lb_cpc").textContent="$"+v.cpc.toFixed(3);
+  $("lb_conv").textContent=v.conv*100>=1?(v.conv*100).toFixed(1)+"%":(v.conv*100).toFixed(2)+"%";
+  $("lb_profit").textContent=fmtusd(v.profit,2);
+  $("lb_ref").textContent=(v.ref*100).toFixed(1)+"%";
+  if(v.cpc<=0||v.budget<=0){["o_daily","o_clicks","o_sales","o_rev","o_pl","o_roi"].forEach(i=>$(i).textContent="—");$("o_verdict").innerHTML="";$("o_breakeven").innerHTML="";return;}
+  const t=cumPL(v,v.days);
+  $("o_daily").textContent=fmtusd(v.budget/v.days,2);
+  $("o_clicks").textContent=Math.round(t.clicks).toLocaleString();
+  $("o_sales").textContent=t.sales.toFixed(1);
+  $("o_rev").textContent=fmtusd(t.net,2);
+  const pl=$("o_pl"); pl.textContent=t.pl>=0?"+"+fmtusd(t.pl,2):"−"+fmtusd(-t.pl,2);
+  pl.className="bigne "+(t.pl>=0?"pos":"neg");
+  const roi=t.spend?t.pl/t.spend*100:0;
+  $("o_roi").textContent=(roi>=0?"+":"")+roi.toFixed(1)+"%";
+  $("o_roi").className="bigne "+(roi>=0?"pos":"neg");
+  const p1=1-Math.pow(1-v.conv,t.clicks);
+  $("o_verdict").innerHTML=`<div class="flag ${t.pl>=0?"good":"bad"}">${t.pl>=0?"✅":"⚠️"} <span>Probability of ≥1 sale over the run: <b>${(p1*100).toFixed(1)}%</b> · keepsale-adjusted margin: <b>${fmtusd(v.profit*(1-v.ref),2)}/sale</b></span></div>`;
+  // break-even analysis across 60 days
+  let firstGreen=null,maxWeek=null;
+  const row=[];let cum=0;
+  for(let d=1;d<=Math.max(v.days,30);d++){cum+=dailyPL(v,d).pl;if(firstGreen===null&&cum>0)firstGreen=d;row.push(cum)}
+  const minClicks=Math.max(150,Math.ceil(3/v.conv));
+  const dataDays=Math.ceil(minClicks/(v.budget/v.days/v.cpc));
+  const beCPC=v.profit*v.conv*(1-v.ref);
+  let html="";
+  if(row[row.length-1]<0 && firstGreen===null){
+    html=`<div class="flag bad">📉 <span><b>No viable path:</b> the model stays negative at every duration up to ${row.length} days. Break-even CPC is <b>${fmtusd(beCPC,3)}</b> but you’re paying ${fmtusd(v.cpc,3)}. Cheaper network or better offer needed.</span></div>`;
+  } else if(firstGreen){
+    html=`<div class="flag ${firstGreen>v.days?"bad":"good"}">${firstGreen>v.days?"🚨":"📈"} <span>Cumulative profit crosses <b>zero around day ${firstGreen}</b> (learning-phase included). ${firstGreen>v.days?`Your ${v.days}-day plan ends <b>before</b> break-even → extend to ≥${firstGreen+3} days or raise the daily clicks.`:`Anything under ~${Math.max(firstGreen-2,1)} days is very likely a loss — don’t judge early.`}</span></div>`;
+  }
+  if(dataDays>v.days) html+=`<div class="flag warn">📊 <span>Statistical minimum: ~<b>${minClicks} clicks</b> before judging → that needs <b>≥${dataDays} days</b> at this budget. Below that, results are luck, not data.</span></div>`;
+  if(v.budget/v.days<5) html+=`<div class="flag warn">🐌 <span>Daily spend under $5 → too few clicks/day to ever exit the learning phase. Concentrate budget into fewer days, or pick a cheaper network.</span></div>`;
+  $("o_breakeven").innerHTML=html+`<div class="hint">Break-even CPC (keep-sale adjusted): <b>${fmtusd(beCPC,3)}</b></div>`;
+  // scenarios
+  const mk=(multC,multQ)=>{const vv=Object.assign({},v,{conv:v.conv*multC});const t=cumPL(vv,v.days);return t};
+  const rows=[["Pessimistic (−40% conv)",mk(0.6)],["Expected",mk(1)],["Optimistic (+30% conv)",mk(1.3)]];
+  $("scenTable").querySelector("tbody").innerHTML=rows.map(([n,t])=>`<tr><td>${n}</td><td>${t.sales.toFixed(1)}</td><td>${fmtusd(t.net,0)}</td><td class="${t.pl>=0?'pos':'neg'}">${t.pl>=0?"+":"−"}${fmtusd(Math.abs(t.pl),0)}</td><td>${(t.pl/t.spend*100).toFixed(0)}%</td></tr>`).join("");
+}
+
+/* ================= copy plan / save / print ================= */
+function planText(){
+  if(!current)return"";
+  const {o,score,dec}=current;
+  const net=bench($("in_adnet").value||"propeller");
+  const fit=netFit(net,o), pa=pricingAdvice(net,o), aud=audience(o);
+  const strip=s=>s.replace(/<[^>]+>/g,"");
+  return `OFFERPILOT CAMPAIGN PLAN — ${o.name}
+Network preset: ${AFFNETS[o.net].label} | Niche: ${(NICHES[o.niche]||{}).label||"-"}
+Link: ${o.link||"-"}
+Score: ${score.total}/100 (confidence ${score.conf}%) — ${dec.txt.replace(/^[^\s]+\s/,"")}
+Numbers: conv ${o.conv}% | ${"$"+o.epv.toFixed(2)}/visitor | commission $${o.commission.toFixed(2)} | refund ${o.refund}% | sales ${o.sales||"-"} | age ${isNaN(o.ageDays)?"-":o.ageDays+"d"}
+
+AD NETWORK: ${net.name} (fit ${fit.s}/100 — ${fit.label})
+Buying model: ${pa.model} — ${pa.why}
+Formats: ${pa.fmts}
+AUDIENCE: geo = ${strip(aud.geo)} | age = ${aud.age} | gender = ${aud.gender} | devices = ${aud.dev}
+
+RULES:
+${strip($("rulesBox").innerHTML).replace(/\s+/g," ")}
+Generated by OfferPilot`;
+}
+$("btn_copy").onclick=async()=>{try{await navigator.clipboard.writeText(planText());$("saveMsg").textContent="✅ Copied to clipboard.";}catch(e){$("saveMsg").textContent="Copy failed — use Print/PDF instead.";}};
+$("btn_print").onclick=()=>{ if(!current)return; $("printArea").innerHTML=`<h2>OfferPilot Campaign Plan</h2><pre style="white-space:pre-wrap;font-size:12px">${esc(planText())}</pre>`; window.print(); };
+$("btn_save").onclick=()=>{
+  if(!current)return;
+  const hist=load("op_history")||[];
+  hist.unshift({t:Date.now(),o:current.o,score:current.score.total});
+  store("op_history",hist.slice(0,60));
+  $("saveMsg").textContent="💾 Saved — see the History tab."; renderHistory();
+};
+
+/* ================= history & compare ================= */
+function renderHistory(){
+  const hist=load("op_history")||[];
+  if(!hist.length){$("histList").innerHTML=`<div class="hint">Nothing saved yet — analyze an offer and hit “Save analysis”.</div>`;$("cmpCard").classList.add("hidden");return;}
+  $("histList").innerHTML=`<table><thead><tr><th></th><th>Offer</th><th>Network</th><th>Niche</th><th>Score</th><th>Saved</th><th></th></tr></thead><tbody>${hist.map((h,i)=>{
+    const c=h.score>=80?"pos":h.score>=65?"mid":h.score>=50?"mid":"neg";
+    return `<tr><td><input type="checkbox" class="cmpbox" data-i="${i}"></td>
+    <td><b>${esc(h.o.name)}</b></td><td>${esc(AFFNETS[h.o.net]?.label||h.o.net)}</td><td>${esc(NICHES[h.o.niche]?.label||"-")}</td>
+    <td class="${c}"><b>${h.score}</b></td><td class="hint">${new Date(h.t).toLocaleDateString()}</td>
+    <td><button class="btn-g" data-load="${i}" style="padding:4px 10px;font-size:.75rem">Load</button>
+    <button class="btn-danger" data-del="${i}" style="padding:4px 10px;font-size:.75rem">✕</button></td></tr>`}).join("")}</tbody></table>`;
+  document.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{const h=load("op_history")||[];h.splice(+b.dataset.del,1);store("op_history",h);renderHistory();});
+  document.querySelectorAll("[data-load]").forEach(b=>b.onclick=()=>loadOffer(+b.dataset.load));
+  document.querySelectorAll(".cmpbox").forEach(c=>c.onchange=renderCompare);
+}
+function loadOffer(i){
+  const h=(load("op_history")||[])[i]; if(!h)return;
+  const o=h.o;
+  $("in_affnet").value=o.net; renderDynFields();
+  $("in_name").value=o.name==="Untitled offer"?"":o.name;
+  $("in_link").value=o.link||""; $("in_niche").value=o.niche;
+  Object.entries(o.raw||{}).forEach(([id,v])=>{const el=$(id);if(el){el.value=v;const r=$(id+"_r");if(r)r.value=v;}});
+  if(o.release)$("in_release").value=o.release;
+  switchTab("analyzer"); schedule();
+}
+function renderCompare(){
+  const hist=load("op_history")||[];
+  const idx=[...document.querySelectorAll(".cmpbox:checked")].map(c=>+c.dataset.i).slice(0,3);
+  if(!idx.length){$("cmpCard").classList.add("hidden");return;}
+  $("cmpCard").classList.remove("hidden");
+  const H=idx.map(i=>hist[i]); 
+  const rows=[
+    ["Score",h=>h.score,(a,b)=>b-a,v=>`<b>${v}</b>/100`],
+    ["Conversion",h=>h.o.conv,(a,b)=>b-a,v=>v+"%"],
+    ["Earnings/visitor",h=>h.o.epv,(a,b)=>b-a,v=>"$"+(+v).toFixed(2)],
+    ["Commission/sale",h=>h.o.commission,(a,b)=>b-a,v=>"$"+(+v).toFixed(2)],
+    ["Refunds",h=>h.o.refund,(a,b)=>a-b,v=>v+"%"],
+    ["Momentum (norm)",h=>Math.round(h.o.momentumN),(a,b)=>b-a,v=>v],
+    ["Sales",h=>h.o.sales||0,(a,b)=>b-a,v=>v||"—"],
+    ["Age (days)",h=>isNaN(h.o.ageDays)?9999:h.o.ageDays,(a,b)=>a-b,v=>v===9999?"—":v],
+  ];
+  $("cmpTable").querySelector("thead").innerHTML=`<tr><th>Metric</th>${H.map(h=>`<th>${esc(h.o.name)}</th>`).join("")}</tr>`;
+  $("cmpTable").querySelector("tbody").innerHTML=rows.map(([label,fn,better,fmt])=>{
+    const vals=H.map(fn); const best=vals.reduce((a,v)=>better(a,v)<=0?a:v,vals[0]);
+    return `<tr><td>${label}</td>${vals.map(v=>`<td class="${v===best?"best":""}">${fmt(v)}</td>`).join("")}</tr>`;
+  }).join("");
+  const winner=H.reduce((a,h)=>h.score>a.score?h:a,H[0]);
+  $("cmpVerdict").innerHTML=`🏆 Agent pick: <b>${esc(winner.o.name)}</b> (score ${winner.score}). Compare the highlighted cells — the best offer usually wins on <i>refunds</i> and <i>earnings/visitor</i>, not just raw conversion.`;
+}
+
+/* ================= link scanning ================= */
+function detectFromURL(url){
+  const out={niche:null,conf:0,via:"URL signals"};
+  try{const u=new URL(url); const host=u.hostname.toLowerCase(), path=(u.pathname+" "+u.search).toLowerCase();
+    // network hints
+    for(const id in AFFNETS){ if((AFFNETS[id].domains||[]).some(d=>host.includes(d.split("/")[0]))){ out.netHint=id; } }
+    const text=host.replace(/\./g," ")+" "+path.replace(/[\/\-_=&?%.\d]+/g," ");
+    let best=0,second=0,key=null;
+    for(const k in NICHES){let s=0;for(const w of (NICHES[k].kw||[])){if(text.includes(w))s+=w.split(" ").length}if(s>best){second=best;best=s;key=k}else if(s>second){second=s}}
+    if(best>0){out.niche=key;out.conf=clamp(Math.round(best/(best+second+1)*90),40,85);out.sig=best;}
+    if(out.netHint==="warriorplus"&&!out.niche){out.niche="mmo";out.conf=70;out.via="WarriorPlus ≈ always MMO";}
+    if(out.netHint==="jvzoo"&&!out.niche){out.niche="mmo";out.conf=55;out.via="JVZoo ⇒ likely MMO/software";}
+  }catch(e){}
   return out;
 }
-
-function formHtml(form) {
-  return [...(form || "")].map((c) => `<span class="dot-${c}">${c}</span>`).join("");
+function classifyText(txt){
+  txt=(" "+txt.toLowerCase()+" ").replace(/\s+/g," ").slice(0,9000);
+  const scores={};
+  for(const k in NICHES){let s=0;for(const w of (NICHES[k].kw||[])){let i=txt.indexOf(w);while(i>-1){s+=w.split(" ").length;i=txt.indexOf(w,i+1)}}scores[k]=s;}
+  const sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+  const top=sorted[0], second=sorted[1]||["",0];
+  const hit=kw=>kw.some(w=>txt.includes(w));
+  const male=MALE_KW.filter(w=>txt.includes(w)).length, female=FEMALE_KW.filter(w=>txt.includes(w)).length;
+  let gender=null;
+  if(male>=2&&male>female+1)gender="male-skewed"; if(female>=2&&female>male+1)gender="female-skewed";
+  const oldSig=AGE_OLD.filter(w=>txt.includes(w)).length, youngSig=AGE_YOUNG.filter(w=>txt.includes(w)).length;
+  return {niche:top[1]>0?top[0]:null, conf:top[1]>0?clamp(Math.round(top[1]/(top[1]+second[1]+1)*100),45,95):0, gender, oldSig:oldSig>1, youngSig:youngSig>1, raw:scores};
 }
-
-function nextBits(n) {
-  if (!n) return { headline: "No upcoming fixture in loaded competitions", when: [], venue: "", today: false };
-  const bits = [n.kickoffLabel, n.comp, n.home ? "Home" : "Away"].filter(Boolean);
-  const home = pretty(n.homeTeam || "");
-  const away = pretty(n.awayTeam || n.opponent || "");
-  return {
-    headline: home && away ? `${home} vs ${away}` : pretty(n.headline || n.opponent || ""),
-    when: bits,
-    venue: n.venue || "",
-    today: !!n.today,
-  };
+async function fetchViaProxies(url){
+  const prox=[u=>`https://r.jina.ai/${u}`,u=>`https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,u=>`https://corsproxy.io/?url=${encodeURIComponent(u)}`];
+  for(const p of prox){
+    try{
+      const ctl=new AbortController();const to=setTimeout(()=>ctl.abort(),9000);
+      const r=await fetch(p(url),{signal:ctl.signal});clearTimeout(to);
+      if(!r.ok)continue;
+      const t=await r.text(); if(t&&t.length>200)return t;
+    }catch(e){/* next */}
+  }
+  return null;
 }
-
-function nz(x) {
-  return String(x).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
-
-function filtered() {
-  if (!state.data) return [];
-  const q = nz(state.q.trim());
-  let rows = state.data.streaks.filter((s) => {
-    if (s.length < state.minLen) return false;
-    if (state.market !== "all" && s.market !== state.market) return false;
-    if (state.polarity !== "all" && s.polarity !== state.polarity) return false;
-    if (state.types.size && !state.types.has(s.type)) return false;
-    if (state.league && s.league !== state.league) return false;
-    const nxt = s.next;
-    if (state.when === "today" && !(nxt && nxt.today)) return false;
-    if (state.when === "home" && !(nxt && nxt.home)) return false;
-    if (state.when === "away" && !(nxt && nxt.home === false)) return false;
-    if (state.window > 0) {
-      if (!nxt || typeof nxt.ts !== "number") return false;
-      const hrs = (nxt.ts * 1000 - Date.now()) / 3600000;
-      if (hrs < -0.5 || hrs > state.window) return false;
+async function scanLink(){
+  const url=$("in_link").value.trim();
+  if(!url||!/^https?:\/\//i.test(url)){$("scanBox").classList.add("on");$("scanStatus").innerHTML="⚠️ Paste a full link starting with http(s)://";return;}
+  $("scanBox").classList.add("on");
+  // layer 1
+  const l1=detectFromURL(url);
+  if(l1.netHint&&$("in_affnet").value!==l1.netHint&&AFFNETS[l1.netHint]){$("in_affnet").value=l1.netHint;renderDynFields();}
+  $("scanStatus").innerHTML=`🔎 URL signals: ${l1.niche?`likely <b>${esc(NICHES[l1.niche].label)}</b> (${l1.conf}% sure, via ${esc(l1.via||"keywords in URL")})`:"no strong keyword hints"} — trying a live page scan… <span class="spin"></span>`;
+  if(l1.niche){$("in_niche").value=l1.niche;schedule();}
+  // layer 2
+  const html=await fetchViaProxies(url);
+  if(!html){
+    $("scanStatus").innerHTML=`${l1.niche?`✅ Using URL-based guess: <b>${esc(NICHES[l1.niche].label)}</b> (${l1.conf}%).`:"❌ Couldn’t auto-read this page."} <span class="hint"> Page blocked or offline (in the file preview there’s no network access). Fallback: pick the niche manually — everything else still works.</span>`;
+    return;
+  }
+  let text=html,title="";
+  try{
+    if(/<\s*html/i.test(html)){
+      const doc=new DOMParser().parseFromString(html,"text/html");
+      title=(doc.querySelector("title")?.textContent||"").trim();
+      const md=doc.querySelector('meta[name="description"]')?.getAttribute("content")||"";
+      doc.querySelectorAll("script,style").forEach(e=>e.remove());
+      text=(title+" "+md+" "+(doc.body?.textContent||"")).replace(/\s+/g," ");
     }
-    if (q) {
-      const blob = `${s.team} ${pretty(s.team)} ${s.league} ${s.typeLabel} ${s.market || ""} ${nxt ? nxt.headline : ""} ${nxt ? pretty(nxt.opponent) : ""} ${nxt ? pretty(nxt.homeTeam) : ""} ${nxt ? pretty(nxt.awayTeam) : ""}`;
-      if (!nz(blob).includes(q)) return false;
-    }
-    return true;
-  });
-  return sortRuns(rows);
-}
-
-function filteredStats() {
-  const rows = (state.data?.stats || []).filter((s) => {
-    const nxt = s.next || null;
-    if (state.market !== "all" && (s.market || "") !== state.market) return false;
-    if (state.types.size && !state.types.has(s.type)) return false;
-    if ((s.streak || 0) < state.minStreak) return false;
-    if (state.polarity !== "all" && s.polarity !== state.polarity) return false;
-    if (state.league && s.league !== state.league) return false;
-    if (state.when === "today" && !(nxt && nxt.today)) return false;
-    if (state.when === "home" && !(nxt && nxt.home)) return false;
-    if (state.when === "away" && !(nxt && nxt.home === false)) return false;
-    if (state.window > 0) {
-      if (!nxt || typeof nxt.ts !== "number") return false;
-      const hrs = (nxt.ts * 1000 - Date.now()) / 3600000;
-      if (hrs < -0.5 || hrs > state.window) return false;
-    }
-    const q = nz(state.q.trim());
-    if (q) {
-      const blob = `${s.team} ${pretty(s.team)} ${s.league} ${s.typeLabel} ${s.market || ""} `
-        + `${nxt ? nxt.headline : ""} ${nxt ? pretty(nxt.opponent) : ""}`;
-      if (!nz(blob).includes(q)) return false;
-    }
-    return true;
-  });
-  const ts = (s) => (s.next && typeof s.next.ts === "number") ? s.next.ts : 9e15;
-  const conf = (s) => (typeof s.confidence === "number" ? s.confidence : -1);
-  const key = state.sortStats;
-  rows.sort((a, b) => {
-    if (key === "team") return a.team.localeCompare(b.team) || b.hits - a.hits;
-    if (key === "kickoff") return ts(a) - ts(b) || b.hits - a.hits;
-    if (key === "likely") return conf(b) - conf(a) || b.hits - a.hits || ts(a) - ts(b);
-    if (key === "length") return (b.streak || 0) - (a.streak || 0) || b.hits - a.hits;
-    return b.hits - a.hits || b.pct - a.pct || ts(a) - ts(b);
-  });
-  return rows;
-}
-
-function renderStatsTable(rows) {
-  $("statTbody").innerHTML = rows
-    .map((s) => {
-      const n = nextBits(s.next);
-      const ticks = (s.recent || [])
-        .map((r) => `<span class="${r.hit ? "h" : "m"}">${r.hit ? "✓" : "✗"}</span>`)
-        .join("");
-      const conf = (typeof s.confidence === "number")
-        ? `${s.confidence.toFixed(0)}%` + (s.fairOdds ? ` · ${s.fairOdds}` : "") : "—";
-      return `<tr>
-        <td class="num">${s.hits}<span style="color:var(--muted)">/${s.games}</span></td>
-        <td><div class="team-cell">${crestHtml(s.badge, s.teamShort)}<div><b>${esc(pretty(s.team))}</b>${starHtml(s.alsoStreak, "Also on a live streak — both criteria", true)}<div style="color:var(--muted);font-size:11px">${esc(s.market || "")} · ${esc(s.league)}${s.country ? " · " + esc(s.country) : ""}</div></div></div></td>
-        <td>${esc(s.typeLabel)}</td>
-        <td class="recent-ticks">${ticks || "—"}</td>
-        <td>${s.streak ? s.streak : "—"}</td>
-        <td>${conf}</td>
-        <td>${esc(n.headline)}</td>
-        <td>${esc(s.next?.kickoffLabel || "—")}${s.next?.today ? " · TODAY" : ""}</td>
-      </tr>`;
-    })
-    .join("");
-}
-
-function renderStats() {
-  const rows = filteredStats();
-  const shown = rows.slice(0, state.limit);
-  $("statAll").textContent = rows.length;
-  $("statToday").textContent = rows.filter((s) => s.next && s.next.today).length;
-  $("statEmpty").classList.toggle("hidden", rows.length > 0);
-  const more = $("moreStats");
-  more.classList.toggle("hidden", shown.length >= rows.length);
-  more.textContent = `Show more (${shown.length} of ${rows.length})`;
-  if (state.viewStats === "table") {
-    $("statCards").classList.add("hidden");
-    $("statTableWrap").classList.remove("hidden");
-    renderStatsTable(shown);
+  }catch(e){}
+  const res=classifyText(text);
+  if(res.niche){
+    $("in_niche").value=res.niche;
+    let extra=[];
+    if(res.gender){current&&(current.o.pageGender=res.gender); window._pageGender=res.gender;extra.push(res.gender==="male-skewed"?"copy signals: men":"copy signals: women")}
+    if(res.oldSig)extra.push("older audience hints"); if(res.youngSig)extra.push("younger audience hints");
+    if(title&&!$("in_name").value){$("in_name").value=title.split(/[-|–—]/)[0].trim().slice(0,60);}
+    $("scanStatus").innerHTML=`✅ <b>Detected: ${esc(NICHES[res.niche].label)}</b> — ${res.conf}% confidence (${esc(extra.join(", ")||"keyword match")}). <span class="hint">Wrong? Just change the niche dropdown.</span>`;
   } else {
-    $("statCards").classList.remove("hidden");
-    $("statTableWrap").classList.add("hidden");
-    $("statCards").innerHTML = shown.map(renderStatCard).join("");
+    $("scanStatus").innerHTML=`🤷 Page read OK but niche unclear. Pick it manually below.`;
   }
+  schedule();
 }
 
-function visibleTypes() {
-  const all = state.data?.types || [];
-  if (state.market === "all") return all;
-  return all.filter((t) => t.market === state.market);
-}
-
-function renderSortSeg() {
-  const tab = state.tab === "stats" ? "stats" : "streaks";
-  const items = SORTS[tab];
-  const active = tab === "stats" ? state.sortStats : state.sort;
-  if (!items.some(([k]) => k === active)) {
-    if (tab === "stats") state.sortStats = items[0][0]; else state.sort = items[0][0];
-  }
-  const key = tab === "stats" ? state.sortStats : state.sort;
-  syncLengthControl();
-  const seg = $("sortSeg");
-  seg.innerHTML = items.map(([id, label]) =>
-    `<button data-sort="${id}" class="${id === key ? "active" : ""}">${esc(label)}</button>`).join("");
-}
-
-function runCounts() {
-  // how many active runs each team has in the list on screen.
-  // Built once per dataset: the cache is keyed on the data itself, never on the
-  // team being asked about. Keying it on the team made the comparator rebuild
-  // the whole map on nearly every comparison, which froze football (13k runs)
-  // for over a minute. Never put an O(n) call back inside a comparator.
-  const runs = (state.data && state.data.streaks) || [];
-  if (!state._runCounts || state._runCountsRef !== runs) {
-    const counts = {};
-    for (let i = 0; i < runs.length; i++) {
-      const t = runs[i].team;
-      counts[t] = (counts[t] || 0) + 1;
-    }
-    state._runCounts = counts;
-    state._runCountsRef = runs;
-  }
-  return state._runCounts;
-}
-
-function sortRuns(rows) {
-  // Decorate-sort-undecorate: every key a row needs is read ONCE, then the
-  // sort itself only compares plain numbers and strings. At 13k runs this is
-  // the difference between ~15 ms and a frozen tab.
-  const key = state.sort;
-  const counts = key === "runs" ? runCounts() : null;
-  const dec = new Array(rows.length);
-  for (let i = 0; i < rows.length; i++) {
-    const s = rows[i];
-    const nxt = s.next;
-    dec[i] = {
-      s,
-      ts: (nxt && typeof nxt.ts === "number") ? nxt.ts : 9e15,
-      conf: (typeof s.confidence === "number") ? s.confidence : -1,
-      len: s.length || 0,
-      runs: counts ? (counts[s.team] || 0) : 0,
-      name: String(s.team || "").toLowerCase(),
-    };
-  }
-  const byName = (a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
-  const byTs = (a, b) => a.ts - b.ts || b.len - a.len;
-  if (key === "team") {
-    dec.sort((a, b) => byName(a, b) || b.len - a.len);
-  } else if (key === "kickoff") {
-    dec.sort(byTs);
-  } else if (key === "likely") {
-    dec.sort((a, b) => b.conf - a.conf || b.len - a.len || a.ts - b.ts);
-  } else if (key === "runs") {
-    dec.sort((a, b) => b.runs - a.runs || b.len - a.len || a.ts - b.ts);
-  } else if (state.window > 0) {
-    dec.sort(byTs);                     // a kickoff window pins the list to soonest-first
-  } else {
-    dec.sort((a, b) => b.len - a.len || byName(a, b));
-  }
-  const out = new Array(dec.length);
-  for (let i = 0; i < dec.length; i++) out[i] = dec[i].s;
-  return out;
-}
-
-function applyStars(data) {
-  // "both criteria" = the same team + competition + type is in the streaks list
-  // and in the 8-of-10 consistency list. Worked out here so the payload stays lean.
-  if (!data) return data;
-  const key = (x) => `${x.team}|${x.league || ""}|${x.type}`;
-  const statKeys = new Set((data.stats || []).map(key));
-  const streakKeys = new Set((data.streaks || []).map(key));
-  for (const r of (data.streaks || [])) r.alsoStats = statKeys.has(key(r));
-  for (const e of (data.stats || [])) e.alsoStreak = streakKeys.has(key(e));
-  return data;
-}
-
-function renderChips() {
-  const markets = [{ id: "all", label: "All markets" }, ...(state.data?.markets || MARKET_FALLBACK)];
-  $("markets").innerHTML = markets
-    .map((m) => `<button class="chip ${state.market === m.id ? "active" : ""}" data-m="${m.id}" data-id="${m.id}">${esc(m.label)}</button>`)
-    .join("");
-  $("markets").onclick = (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    state.market = b.dataset.id;
-    state.types = new Set();
-    renderChips();
-    resetLimitAndRender();
-  };
-
-  const items = [
-    ["all", "All"],
-    ["hot", "Hot"],
-    ["spicy", "Lines"],
-    ["cold", "Slumps"],
-  ];
-  $("polarity").innerHTML = items
-    .map(([id, lab]) => `<button class="chip ${state.polarity === id ? "active" : ""}" data-pol="${id}" data-id="${id}">${lab}</button>`)
-    .join("");
-  $("polarity").onclick = (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    state.polarity = b.dataset.id;
-    renderChips();
-    resetLimitAndRender();
-  };
-
-  const tdefs = visibleTypes();
-  $("types").innerHTML = tdefs
-    .map((t) => `<button class="chip ${state.types.has(t.id) ? "active" : ""}" data-pol="${t.polarity}" data-m="${t.market || ""}" data-id="${t.id}">${esc(t.label)}</button>`)
-    .join("");
-  $("types").onclick = (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    if (state.types.has(b.dataset.id)) state.types.delete(b.dataset.id);
-    else state.types.add(b.dataset.id);
-    renderChips();
-    resetLimitAndRender();
-  };
-
-  const w = [
-    ["all", "Any"],
-    ["today", "Today"],
-    ["home", "Next is home"],
-    ["away", "Next is away"],
-  ];
-  $("when").innerHTML = w
-    .map(([id, lab]) => `<button class="chip ${state.when === id ? "active" : ""}" data-id="${id}">${lab}</button>`)
-    .join("");
-  $("when").onclick = (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    state.when = b.dataset.id;
-    renderChips();
-    resetLimitAndRender();
-  };
-}
-
-function starHtml(flag, why, small) {
-  return flag
-    ? `<span class="star${small ? " sm" : ""}" title="${esc(why)}" aria-label="both criteria">★</span>`
-    : "";
-}
-
-function renderStatCard(s) {
-  const n = nextBits(s.next);
-  const when = n.when.length ? n.when.map((x) => `<span>${esc(x)}</span>`).join("") : "<span>Date TBC</span>";
-  const recent = (s.recent || [])
-    .map((r) => {
-      const loc = r.home ? "vs" : "@";
-      const right = r.stat ? esc(r.stat) : `${esc(r.score)} ${r.result}`;
-      return `<div class="mini ${r.hit ? "hit" : "miss"}">
-        <span class="tick">${r.hit ? "✓" : "✗"}</span>
-        <span>${esc(r.date || "")} ${loc} ${esc(pretty(r.opp))}</span><b>${right}</b></div>`;
-    })
-    .join("");
-  const mkt = s.market || "goals";
-  const pct = Math.max(0, Math.min(100, s.pct || 0));
-  const perfect = s.hits >= s.games;
-  return `<article class="card ${s.polarity} m-${mkt}${s.alsoStreak ? " both" : ""}" data-id="${esc(s.id)}">
-    <div class="card-head">
-      ${crestHtml(s.badge, s.teamShort)}
-      <div class="team-meta">
-        <h3>${esc(pretty(s.team))} ${starHtml(s.alsoStreak, "Also on a live streak — both criteria")}</h3>
-        <p><span class="market-tag">${esc(mkt)}</span>${esc(s.league)}${s.country ? " · " + esc(s.country) : ""}</p>
-      </div>
-      <div class="len stats"><b>${s.hits}<span>/${s.games}</span></b><span>last ${s.games} games</span></div>
-    </div>
-    <div class="type-row">
-      <div class="label">${esc(s.typeLabel)}</div>
-      <div class="form">${formHtml(s.form)}</div>
-    </div>
-    <div class="hitbar">
-      <div class="track"><div class="fill ${perfect ? "perfect" : ""}" style="width:${pct}%"></div></div>
-      <div class="games">${s.pct}%${s.streak ? ` · live streak ${s.streak}` : " · no live streak"}</div>
-    </div>
-    <div class="hero">
-      <div class="kicker">Next match ${n.today ? '<span class="now">TODAY</span>' : ""}</div>
-      <h4>${esc(n.headline)}</h4>
-      <div class="when">${when}${n.venue ? `<span>${esc(n.venue)}</span>` : ""}</div>
-    </div>
-    <div class="recent">${recent || "<div class='mini'>No line-by-line results</div>"}</div>
-    <button class="toggle">Show the last ${Math.min(10, s.games)} games</button>
-  </article>`;
-}
-
-function renderCard(s) {
-  const n = nextBits(s.next);
-  const when = n.when.length ? n.when.map((x) => `<span>${esc(x)}</span>`).join("") : "<span>Date TBC</span>";
-  const recent = uniqueRecent(s.recent)
-    .map((r) => {
-      const loc = r.home ? "vs" : "@";
-      const right = r.stat ? esc(r.stat) : `${esc(r.score)} ${r.result}`;
-      return `<div class="mini"><span>${esc(r.date || "")} ${loc} ${esc(pretty(r.opp))}</span><b>${right}</b></div>`;
-    })
-    .join("");
-  const mkt = s.market || "goals";
-  return `<article class="card ${s.polarity} m-${mkt}${s.alsoStats ? " both" : ""}" data-id="${esc(s.id)}">
-    <div class="card-head">
-      ${crestHtml(s.badge, s.teamShort)}
-      <div class="team-meta">
-        <h3>${esc(pretty(s.team))} ${starHtml(s.alsoStats, "Also 8+ of its last 10 — see the Consistency tab")}</h3>
-        <p><span class="market-tag">${esc(mkt)}</span>${esc(s.league)}${s.country ? " · " + esc(s.country) : ""}${typeof s.confidence === "number" ? ` · ${s.confidence}% to continue` : ""}</p>
-      </div>
-      <div class="len">${s.length}</div>
-    </div>
-    <div class="type-row">
-      <div class="label">${esc(s.typeLabel)}</div>
-      <div class="form">${formHtml(s.form)}</div>
-    </div>
-    <div class="hero">
-      <div class="kicker">Next match ${n.today ? '<span class="now">TODAY</span>' : ""}</div>
-      <h4>${esc(n.headline)}</h4>
-      <div class="when">${when}${n.venue ? `<span>${esc(n.venue)}</span>` : ""}</div>
-    </div>
-    <div class="recent">${recent || "<div class='mini'>No line-by-line results</div>"}</div>
-    <button class="toggle">Show run details</button>
-  </article>`;
-}
-
-function renderTable(rows) {
-  $("tbody").innerHTML = rows
-    .map((s) => {
-      const n = nextBits(s.next);
-      return `<tr>
-        <td class="num">${s.length}</td>
-        <td><div class="team-cell">${crestHtml(s.badge, s.teamShort)}<div><b>${esc(pretty(s.team))}</b>${starHtml(s.alsoStats, "Also 8+ of its last 10 games — see the Consistency tab", true)}<div style="color:var(--muted);font-size:11px">${esc(s.market || "")} · ${esc(s.league)}</div></div></div></td>
-        <td>${esc(s.typeLabel)}</td>
-        <td class="form">${formHtml(s.form)}</td>
-        <td>${esc(n.headline)}</td>
-        <td>${esc(s.next?.kickoffLabel || "—")}${s.next?.today ? " · TODAY" : ""}</td>
-        <td>${esc(s.next?.venue || "—")}</td>
-      </tr>`;
-    })
-    .join("");
-}
-
-function render() {
-  const rows = filtered();
-  const shown = rows.slice(0, state.limit);
-  $("statAll").textContent = rows.length;
-  $("statToday").textContent = rows.filter((s) => s.next?.today).length;
-  $("empty").classList.toggle("hidden", rows.length > 0);
-  $("more").classList.toggle("hidden", shown.length >= rows.length);
-  $("more").textContent = `Show more runs (${shown.length} of ${rows.length})`;
-  if (state.view === "cards") {
-    $("cards").classList.remove("hidden");
-    $("tableWrap").classList.add("hidden");
-    $("cards").innerHTML = shown.map(renderCard).join("");
-  } else {
-    $("cards").classList.add("hidden");
-    $("tableWrap").classList.remove("hidden");
-    renderTable(shown);
-  }
-}
-
-function renderActiveList() {
-  if (state.tab === "stats") renderStats(); else render();
-}
-
-function syncViewSeg() {
-  const listTab = state.tab === "streaks" || state.tab === "stats";
-  const seg = $("viewSeg");
-  seg.classList.toggle("hidden", !listTab);
-  const on = state.tab === "stats" ? state.viewStats : state.view;
-  [...seg.children].forEach((x) => x.classList.toggle("active", x.dataset.view === on));
-}
-
-function syncLengthControl() {
-  const onStats = state.tab === "stats";
-  $("lenLabel").textContent = onStats ? "Minimum live streak" : "Minimum length";
-  const inp = $("minLen");
-  inp.min = onStats ? "0" : "2";
-  const v = onStats ? state.minStreak : state.minLen;
-  inp.value = v;
-  $("minVal").textContent = (onStats && v === 0) ? "Any" : v;
-  $("statAllLabel").textContent = onStats ? "Consistent" : "Streaks shown";
-}
-
-function resetLimitAndRender() {
-  state.limit = PAGE;
-  if (state.tab === "stats") renderStats(); else render();
-}
-
-function bindTapProbe() {
-  const probe = () => document.getElementById("tapProbe");
-  document.addEventListener("pointerdown", (e) => {
-    const t = probe();
-    if (!t) return;
-    const b = e.target && e.target.closest ? e.target.closest("#sports button, #tabs button") : null;
-    t.textContent = b
-      ? `tap reached the page: ${b.dataset.sport || b.dataset.tab} ✓`
-      : "tap reached the page (not on a button)";
-  }, true);
-  document.addEventListener("click", (e) => {
-    const t = probe();
-    if (!t) return;
-    if (t.textContent.startsWith("tap reached")) t.textContent += " · click handled ✓";
-  }, true);
-}
-
-function bind() {
-  $("search").addEventListener("input", (e) => {
-    state.q = e.target.value;
-    resetLimitAndRender();
-  });
-  $("league").addEventListener("change", (e) => {
-    state.league = e.target.value;
-    resetLimitAndRender();
-  });
-  $("minLen").addEventListener("input", (e) => {
-    const v = Number(e.target.value);
-    if (state.tab === "stats") state.minStreak = v; else state.minLen = v;
-    $("minVal").textContent = (state.tab === "stats" && v === 0) ? "Any" : v;
-    resetLimitAndRender();
-  });
-  $("kickoff").addEventListener("change", (e) => {
-    state.window = Number(e.target.value);
-    resetLimitAndRender();
-  });
-  $("sports").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    selectSport(b.dataset.sport);
-  });
-  $("tabs").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    state.tab = b.dataset.tab;
-    state.limit = PAGE;
-    [...$("tabs").children].forEach((x) => x.classList.toggle("active", x === b));
-    document.body.classList.toggle("no-side", !["streaks", "stats"].includes(state.tab));
-    ["streaks", "stats", "rank", "high", "acca"].forEach((t) => {
-      $("panel-" + t).classList.toggle("on", t === state.tab);
+/* ================= launches (offers.json from GitHub Action) ================= */
+async function loadLaunches(){
+  try{
+    const r=await fetch("offers.json",{cache:"no-store"});
+    if(!r.ok)throw 0;
+    const d=await r.json();
+    if(!d.offers||!d.offers.length)throw 0;
+    $("launchStamp").textContent="updated "+(d.generated||"").slice(0,10);
+    $("launchNote").innerHTML="Auto-crawled from public launch calendars by a GitHub Action. Click “Load” to send an offer to the Analyzer.";
+    $("launchList").innerHTML=`<table><thead><tr><th>Offer</th><th>Network</th><th>Niche (guess)</th><th>Launch</th><th></th></tr></thead><tbody>${d.offers.slice(0,40).map((of,i)=>`<tr>
+      <td><b>${esc(of.name)}</b><div class="hint">${of.url?`<a href="${esc(of.url)}" target="_blank" rel="noopener">${esc(of.url.slice(0,60))}…</a>`:""}</div></td>
+      <td>${esc(of.network||"—")}</td><td>${esc(NICHES[of.niche]?.label||of.niche||"—")}</td><td class="hint">${esc(of.launch||"")}</td>
+      <td><button class="btn-g" style="padding:4px 10px;font-size:.75rem" data-lau="${i}">Load</button></td></tr>`).join("")}</tbody></table>`;
+    document.querySelectorAll("[data-lau]").forEach(b=>b.onclick=()=>{
+      const of=d.offers[+b.dataset.lau];
+      switchTab("analyzer");
+      $("in_name").value=of.name||"";$("in_link").value=of.url||"";
+      if(of.niche&&NICHES[of.niche])$("in_niche").value=of.niche;
+      schedule(); window.scrollTo({top:0,behavior:"smooth"});
     });
-    // the sort menu is the way the list is arranged: kickoff, longest run, most
-    // runs, likelihood of continuing - different menu on the consistency tab
-    const listTab = state.tab === "streaks" || state.tab === "stats";
-    renderSortSeg();
-    $("sortSeg").classList.toggle("hidden", !listTab);
-    syncViewSeg();
-    $("kickoff").classList.toggle("hidden", !listTab);
-    if (state.tab === "streaks") render();
-    else if (state.tab === "stats") renderStats();
-    else {
-      const a = state.data?.analysis || {};
-      if (state.tab === "rank") renderRankings(a.powerRankings || []);
-      if (state.tab === "high") renderHighOdds(a.highOdds || []);
-      if (state.tab === "acca") renderAccas(a.accumulators || [], a);
-    }
-  });
-  $("sortSeg").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    if (state.tab === "stats") state.sortStats = b.dataset.sort; else state.sort = b.dataset.sort;
-    [...$("sortSeg").children].forEach((x) => x.classList.toggle("active", x === b));
-    resetLimitAndRender();
-  });
-  $("viewSeg").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    if (state.tab === "stats") {
-      state.viewStats = b.dataset.view;
-      renderStats();
-    } else {
-      state.view = b.dataset.view;
-      render();
-    }
-    syncViewSeg();
-  });
-  $("more").addEventListener("click", () => {
-    state.limit += PAGE;
-    render();
-  });
-  const expand = (e) => {
-    const btn = e.target.closest(".toggle");
-    if (!btn) return;
-    const card = btn.closest(".card");
-    card.classList.toggle("open");
-    btn.textContent = card.classList.contains("open") ? "Hide details" : btn.dataset.label || "Show details";
-  };
-  $("cards").addEventListener("click", expand);
-  $("statCards").addEventListener("click", expand);
-  $("moreStats").addEventListener("click", () => { state.limit += PAGE; renderStats(); });
-  $("openFilters").addEventListener("click", () => {
-    $("sidebar").classList.add("open");
-    $("backdrop").classList.add("on");
-  });
-  $("backdrop").addEventListener("click", () => {
-    $("sidebar").classList.remove("open");
-    $("backdrop").classList.remove("on");
-  });
-}
-
-function kickoffText(ts) {
-  if (!ts) return "—";
-  const d = new Date(ts * 1000);
-  const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-  return `${days[d.getDay()]} ${d.getDate()} ${d.toLocaleString("en-GB",{month:"short"})} · ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`;
-}
-
-function selRow(r, rank) {
-  // keep the rank cell in place even when unranked: .rrow is a 3-column grid
-  // (36px | 1fr | auto), so dropping it squeezed the whole row into 36px.
-  return `<article class="rrow">
-    <div class="rk">${rank === null || rank === undefined ? "" : rank}</div>
-    <div>
-      <h5>${esc(r.team)} <span class="market-tag">${esc(r.market || "")}</span></h5>
-      <div class="meta">${esc(r.typeLabel)} · run of <b>${r.run}</b> · ${esc(r.league)}
-        · ${esc(r.headline || "")} ${r.date ? "· " + esc(kickoffText(r.ts)) : ""}</div>
-    </div>
-    <div class="right">
-      <div class="big">${r.confidence}%</div>
-      <div class="small">odds ${r.estOdds} · break-even ${r.fairOdds}<br>${esc(r.record || "")} hit</div>
-    </div>
-  </article>`;
-}
-
-function renderRankings(rows) {
-  $("rankList").innerHTML = rows.length
-    ? rows.map((r) => selRow(r, r.rank)).join("")
-    : `<div class="note">No rankings yet — they are rebuilt on the next data update.</div>`;
-}
-
-function renderHighOdds(rows) {
-  $("highList").innerHTML = rows.length
-    ? rows.map((r) => selRow(r, null)).join("")
-    : `<div class="note">No long-priced selections right now.</div>`;
-}
-
-function renderCrossSportTickets(payload) {
-  const tickets = payload.tickets || [];
-  if (!tickets.length) return false;
-  const mn = $("marketNote");
-  if (mn && payload.excludedMarkets) {
-    const keys = Object.keys(payload.excludedMarkets);
-    const total = keys.reduce((n, k) => n + payload.excludedMarkets[k], 0);
-    if (total) {
-      const top = keys.slice(0, 5).map((k) => `${esc(k.split("/")[1] || k)} ${payload.excludedMarkets[k]}`).join(" · ");
-      mn.textContent = `${payload.marketPolicy || ""} Skipped today: ${total} selections (${top}).`;
-      mn.style.display = "";
-    }
+  }catch(e){
+    $("launchNote").innerHTML="No <code>offers.json</code> feed found yet. Enable the GitHub Action (see README → “Cloud layer”) and this tab fills itself daily.";
   }
-  $("accaList").innerHTML = tickets.map((t) => {
-    const f = t.flexi || {}, o = t.outcomes || {};
-    const mix = Object.entries(t.sportBreakdown || {})
-      .map(([k, v]) => `${SPORT_ICON[Object.keys(SPORT_ICON).find((s) => SPORT_ICON[s] && k.toLowerCase().startsWith(s.slice(0, 4))) ] || ""} ${esc(k)} ${v}`.trim())
-      .join(" · ");
-    const legs = t.legs.map((l, i) => `<tr>
-        <td>${i + 1}</td>
-        <td>${esc(l.kickoff)}</td>
-        <td><span class="sport-tag">${SPORT_ICON[l.sport] || ""} ${esc(l.sportLabel || l.sport)}</span> ${esc(l.headline)}
-          <div style="color:var(--muted);font-size:11px">${esc(l.league)}</div></td>
-        <td>${esc(l.team)} — ${esc(l.typeLabel)}
-          <div style="color:var(--muted);font-size:11px">run of ${l.run} · ${esc(l.form || "")}</div></td>
-        <td>${l.confidence}%</td>
-        <td class="odds">${l.odds}</td>
-        <td class="be">${l.fairOdds}</td>
-      </tr>`).join("");
-    const legCount = f.legs || t.legs.length;
-    const minLegs = t.minLegs || 15;
-    const short = t.meetsMinimum === false || legCount < minLegs;
-    return `<section class="ticket">
-      <h4>${esc(t.name)} <span class="window-tag">next ${t.windowHours || 24}h</span>${short
-        ? ` <span class="warn-tag">only ${legCount} legs — under the ${minLegs}-leg Flexi minimum</span>`
-        : ` <span class="ok-tag">Flexi ready · ${legCount} ≥ ${minLegs} legs</span>`}</h4>
-      <div class="sub">${legCount} legs from ${t.distinctMatches || "?"} matches${t.sharedLegs ? ` (${t.sharedLegs} second leg${t.sharedLegs > 1 ? "s" : ""} from a match already on this ticket)` : ""} · ${mix} · generated ${esc(payload.generatedAt || "")} · kickoffs WAT</div>
-      <div class="kv">
-        <div><b>${legCount} / ${minLegs}</b><span>legs (SportyBet Flexi minimum)</span></div>
-        <div><b>Flexi-safe</b><span>${esc((payload.marketPolicy || "handicaps, goals, BTTS, corners, bookings, shots on target").split(":")[0])}</span></div>
-        <div><b>${f.totalOdds}</b><span>total odds (all legs)</span></div>
-        <div><b>${o.anyReturnPct}%</b><span>chance of a Flexi return at max ${payload.maxLosses} losses</span></div>
-        <div><b>${f.worstCaseOdds}</b><span>return if exactly ${payload.maxLosses} legs lose</span></div>
-        <div><b>${o.expectedLosses}</b><span>expected losing legs</span></div>
-        <div><b>${f.minLegOdds}–${f.maxLegOdds}</b><span>leg odds range</span></div>
-      </div>
-      <table class="legtable">
-        <thead><tr><th>#</th><th>Kickoff</th><th>Sport / match</th><th>Selection</th><th>Conf.</th><th>Odds</th><th>Break-even</th></tr></thead>
-        <tbody>${legs}</tbody>
-      </table>
-    </section>`;
-  }).join("");
-  return true;
 }
 
-function renderAccas(tickets, analysis) {
-  if (ticketsPayload && (ticketsPayload.tickets || []).length && renderCrossSportTickets(ticketsPayload)) {
-    return;
-  }
-  if (!tickets.length) {
-    $("accaList").innerHTML = `<div class="note">No tickets could be built from the current run set.</div>`;
-    return;
-  }
-  $("accaList").innerHTML = tickets.map((t) => {
-    const f = t.flexi || {}, o = t.outcomes || {};
-    const legs = t.legs.map((l, i) => `<tr>
-        <td>${i + 1}</td>
-        <td>${esc(l.kickoff)}</td>
-        <td>${esc(l.headline)}<div style="color:var(--muted);font-size:11px">${esc(l.league)}</div></td>
-        <td>${esc(l.typeLabel)}<div style="color:var(--muted);font-size:11px">run of ${l.run} · ${esc(l.form || "")}</div></td>
-        <td>${l.confidence}%</td>
-        <td class="odds">${l.odds}</td>
-        <td class="be">${l.fairOdds}</td>
-      </tr>`).join("");
-    return `<section class="ticket">
-      <h4>${esc(t.name)}</h4>
-      <div class="sub">${f.legs} legs · ${(t.leagues || []).length} competitions · generated ${esc(analysis.generatedAt || "")}</div>
-      <div class="kv">
-        <div><b>${f.totalOdds}</b><span>total odds (all ${f.legs || t.legs.length})</span></div>
-        <div><b>${o.anyReturnPct}%</b><span>chance of a Flexi return at max ${analysis.maxLosses || 5} losses</span></div>
-        <div><b>${o.expectedLosses}</b><span>expected losing legs</span></div>
-        <div><b>${o.breakEvenAvgOdds}</b><span>break-even avg odds per leg</span></div>
-        <div><b>${f.minLegOdds}–${f.maxLegOdds || f.minLegOdds}</b><span>leg odds range</span></div>
-      </div>
-      <table class="legtable">
-        <thead><tr><th>#</th><th>Kickoff</th><th>Match</th><th>Selection</th><th>Conf.</th><th>Odds</th><th>Break-even</th></tr></thead>
-        <tbody>${legs}</tbody>
-      </table>
-    </section>`;
-  }).join("");
+/* ================= settings UI ================= */
+function renderSettings(){
+  const W=SETTINGS.weights;
+  $("weightBox").innerHTML=Object.keys(DEFAULT_W).map(k=>`
+    <label>${WK[k]}: <b id="wv_${k}">${W[k]}</b></label>
+    <input type="range" min="0" max="50" step="1" value="${W[k]}" data-w="${k}">`).join("");
+  const upd=()=>{let s=0;$("weightBox").querySelectorAll("[data-w]").forEach(r=>{SETTINGS.weights[r.dataset.w]=+r.value;$("wv_"+r.dataset.w).textContent=r.value;s+=+r.value});$("wSum").textContent=s;schedule();};
+  $("weightBox").querySelectorAll("[data-w]").forEach(r=>r.addEventListener("input",upd));
+  $("wSum").textContent=Object.values(W).reduce((a,b)=>a+b,0);
+  $("st_fx").value=SETTINGS.fx; $("st_formspree").value=SETTINGS.formspree;
+  $("st_t2").value=SETTINGS.t2; $("st_t3").value=SETTINGS.t3;
+  $("benchTable").querySelector("tbody").innerHTML=ALLNETS().map(n=>`<tr>
+    <td><b>${esc(n.name)}</b><div class="hint">${esc(n.group)}</div></td>
+    <td class="hint">${n.formats.join(", ")}</td>
+    <td><div class="row" style="flex-wrap:nowrap"><input style="width:64px" step="any" type="number" data-b="${n.id}|cpc|0" value="${n.cpc[0]}"><span>–</span><input style="width:64px" step="any" type="number" data-b="${n.id}|cpc|1" value="${n.cpc[1]}"></div></td>
+    <td><div class="row" style="flex-wrap:nowrap"><input style="width:64px" step="any" type="number" data-b="${n.id}|cpm|0" value="${n.cpm[0]}"><span>–</span><input style="width:64px" step="any" type="number" data-b="${n.id}|cpm|1" value="${n.cpm[1]}"></div></td>
+    <td><input style="width:64px" type="number" step="0.05" min="0.1" max="1" data-b="${n.id}|q" value="${n.q}"></td>
+    <td class="hint">${esc(n.risk)}</td></tr>`).join("");
 }
-
-let footballData = null;
-let sportsPayload = null;
-let ticketsPayload = null;      // cross-sport tickets (data/tickets.json)
-
-const SPORT_ICON = {
-  football: "⚽", basketball: "🏀", tennis: "🎾", baseball: "⚾",
-  icehockey: "🏒", amfootball: "🏈", tabletennis: "🏓",
+$("btn_saveset").onclick=()=>{
+  SETTINGS.fx=num($("st_fx").value,600)||600;
+  SETTINGS.formspree=$("st_formspree").value.trim();
+  SETTINGS.t2=clamp(num($("st_t2").value,0.35),0.01,1);
+  SETTINGS.t3=clamp(num($("st_t3").value,0.15),0.01,1);
+  SETTINGS.bench={};
+  document.querySelectorAll("[data-b]").forEach(inp=>{
+    const [id,what,ix]=inp.dataset.b.split("|");
+    SETTINGS.bench[id]=SETTINGS.bench[id]||{};
+    if(what==="q")SETTINGS.bench[id].q=clamp(num(inp.value,0.4),0.1,1);
+    else{SETTINGS.bench[id][what]=SETTINGS.bench[id][what]||[0,0];SETTINGS.bench[id][what][+ix]=num(inp.value,0);}
+  });
+  store("op_settings",SETTINGS);
+  // refresh network dropdown values defined by bench
+  $("setMsg").textContent="✅ Saved. Recommendations recalculated.";
+  applyLead(); schedule(); simRun();
 };
+$("btn_resetw").onclick=()=>{SETTINGS.weights=Object.assign({},DEFAULT_W);renderSettings();schedule();};
 
-const SPORT_META = {
-  basketball: { name: "Basketball", note: "NBA · WNBA · NCAA" },
-  tennis: { name: "Tennis", note: "ATP · WTA" },
-  tabletennis: { name: "Table tennis", note: "WTT" },
-  icehockey: { name: "Ice hockey", note: "NHL" },
-  baseball: { name: "Baseball", note: "MLB" },
-  amfootball: { name: "American football", note: "NFL · NCAA" },
-};
-
-async function ensureTickets() {
-  if (ticketsPayload !== null) return ticketsPayload;
-  try {
-    const res = await fetch(`./data/tickets.json?t=${Date.now()}`, { cache: "no-store" });
-    ticketsPayload = res.ok ? await res.json() : { tickets: [] };
-  } catch (err) {
-    ticketsPayload = { tickets: [] };
-  }
-  return ticketsPayload;
+/* lead capture */
+function applyLead(){
+  const on=!!SETTINGS.formspree;
+  $("leadWrap").classList.toggle("hidden",!on);
 }
+$("leadForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const email=e.target.querySelector("input[type=email]").value;
+  if(!SETTINGS.formspree)return;
+  $("leadMsg").textContent="Subscribing…";
+  try{
+    const r=await fetch(SETTINGS.formspree,{method:"POST",headers:{"Accept":"application/json"},body:new URLSearchParams({email})});
+    $("leadMsg").textContent=r.ok?"🎉 You’re in! Check your inbox.":"Hmm — the form service returned an error. Try again later.";
+    if(r.ok)e.target.reset();
+  }catch(_){$("leadMsg").textContent="Network error — try again later.";}
+});
 
-async function ensureSports() {
-  if (sportsPayload) return sportsPayload;
-  const res = await fetch(`./data/sports.json?t=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error("no sports data");
-  sportsPayload = await res.json();
-  return sportsPayload;
+/* ================= nav & wiring ================= */
+function switchTab(t){
+  document.querySelectorAll("nav.tabs button").forEach(b=>b.classList.toggle("on",b.dataset.t===t));
+  document.querySelectorAll(".sec").forEach(s=>s.classList.toggle("on",s.id==="tab-"+t));
+  if(t==="history")renderHistory();
+  if(t==="launches")loadLaunches();
 }
+document.querySelectorAll("nav.tabs button").forEach(b=>b.onclick=()=>switchTab(b.dataset.t));
 
-function fmtDay(iso) {
-  if (!iso) return "";
-  const d = new Date(iso);
-  if (isNaN(d)) return "";
-  // the page runs on WAT (Africa/Lagos) throughout - pin the zone here too, so a
-  // phone set to another timezone cannot shift a kickoff onto the neighbouring day
-  return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: WAT_TZ });
-}
+const schedule=debounce(()=>{analyze();},300);
+["in_affnet","in_name","in_niche","in_release","in_bankroll","in_currency"].forEach(id=>{
+  $(id).addEventListener("input",()=>{ if(id==="in_affnet")renderDynFields(); schedule();});
+});
+$("in_link").addEventListener("input",debounce(()=>{const v=$("in_link").value.trim();if(v.length>12)scanLink();},900));
+$("btn_scan").onclick=scanLink;
+$("in_adnet").addEventListener("input",()=>{$("in_adnet").dataset.touched="1";renderPlan();simSynced=false;syncSim(true);});
+$("btn_sync").onclick=()=>{simSynced=false;syncSim(true)};
+["sm_budget","sm_days","sm_cpc","sm_conv","sm_profit","sm_ref"].forEach(id=>$(id).addEventListener("input",simRun));
 
-let lgShowAll = false;
-
-function leaguePill(lg) {
-  const games = (lg.games || 0).toLocaleString("en-GB");
-  const soon = !!lg.nextGame && (new Date(lg.nextGame) - Date.now()) < 14 * 864e5;
-  const cls = soon ? "live" : (lg.games ? "" : "soon");
-  let tail;
-  if (lg.nextGame) {
-    tail = `next ${fmtDay(lg.nextGame)}`;
-  } else if (lg.games) {
-    tail = `last played ${fmtDay(lg.lastGame)} · no fixtures yet`;
-  } else {
-    tail = "no games stored yet";
-  }
-  return `<span class="lg ${cls}" title="${esc(lg.label)}${lg.country ? " · " + esc(lg.country) : ""}: ` +
-    `${games} games stored, ${lg.runs || 0} runs"><i class="dot"></i>` +
-    `<b>${esc(lg.label)}</b> ${games} games · ${tail}</span>`;
-}
-
-function renderLeagueStrip(info) {
-  const strip = $("leagueStrip");
-  if (!info || !info.length) { strip.innerHTML = ""; return; }
-  // with 49 competitions tracked the strip would be a wall of pills, so the
-  // default view is the ones playing in the next week - the rest sit behind a toggle
-  const soon = (lg) => lg.nextGame && (new Date(lg.nextGame) - Date.now()) < 7 * 864e5;
-  const week = info.filter(soon);
-  const shown = lgShowAll ? info : (week.length >= 6 ? week : info.slice(0, 14));
-  const hidden = info.length - shown.length;
-  strip.innerHTML = shown.map(leaguePill).join("") +
-    (hidden > 0
-      ? `<button class="lg lgmore" id="lgMore">＋ ${hidden} more competition${hidden > 1 ? "s" : ""}</button>`
-      : (lgShowAll ? `<button class="lg lgmore" id="lgFewer">− show fewer</button>` : ""));
-  const more = $("lgMore"), fewer = $("lgFewer");
-  if (more) more.onclick = () => { lgShowAll = true; renderLeagueStrip(info); };
-  if (fewer) fewer.onclick = () => { lgShowAll = false; renderLeagueStrip(info); };
-}
-
-function fillLeagues(list) {
-  const sel = $("league");
-  sel.innerHTML = '<option value="">All competitions</option>';
-  for (const lg of list || []) {
-    const o = document.createElement("option");
-    o.value = lg;
-    o.textContent = lg;
-    sel.appendChild(o);
-  }
-}
-
-function showSportMessage(text) {
-  $("cards").innerHTML = `<div class="note" style="grid-column:1/-1">${esc(text)}</div>`;
-  $("tableWrap").classList.add("hidden");
-  $("cards").classList.remove("hidden");
-  $("statAll").textContent = "0";
-  $("statToday").textContent = "0";
-}
-
-async function selectSport(key) {
-  state.sport = key;
-  [...$("sports").children].forEach((b) => b.classList.toggle("active", b.dataset.sport === key));
-  const isFootball = key === "football";
-  // rankings and high odds come from the football model; the accumulator tab is
-  // cross-sport now, so it stays available whichever sport is selected.
-  const ALWAYS = new Set(["streaks", "stats", "acca"]);     // available for every sport
-  [...$("tabs").children].forEach((b) => {
-    const keep = ALWAYS.has(b.dataset.tab);
-    b.classList.toggle("hidden", !isFootball && !keep);
-    if (!isFootball && !keep) b.classList.remove("active");
-  });
-  if (!isFootball && !ALWAYS.has(state.tab)) {
-    state.tab = "streaks";
-    [...$("tabs").children][0].classList.add("active");
-    ["streaks", "stats", "rank", "high", "acca"].forEach((t) => $("panel-" + t).classList.toggle("on", t === state.tab));
-  }
-  renderSortSeg();
-
-  state.types = new Set();
-  state.market = "all";
-  state.polarity = "all";
-  state.league = "";
-  state.limit = PAGE;
-
-  if (isFootball) {
-    applyStars(footballData);
-    renderLeagueStrip(footballData.leagueInfo && footballData.leagueInfo.length
-      ? footballData.leagueInfo
-      : [{ label: "Football", games: footballData.eventCount,
-           runs: footballData.streakCount, nextGame: null, lastGame: footballData.asOf }]);
-    state.data = footballData;
-    $("subtitle").textContent = `${footballData.streakCount} runs · ${footballData.teamCount} teams · ${footballData.eventCount} matches · as of ${footballData.asOf} · kickoffs WAT`;
-    fillLeagues(footballData.leagues);
-    renderChips();
-    renderActiveList();
-    return;
-  }
-
-  let payload;
-  try {
-    payload = await ensureSports();
-  } catch (err) {
-    showSportMessage("data/sports.json is not available yet — it is written by the same nightly workflow.");
-    return;
-  }
-  const sec = (payload.sports || {})[key];
-  if (!sec) { showSportMessage("No data for this sport."); return; }
-  renderLeagueStrip(sec.leagueInfo || []);
-  if (!sec.available || !(sec.streaks || []).length) {
-    showSportMessage(`${SPORT_META[key]?.name || key}: ${sec.reason || "no data yet"} — the pipeline retries on every run.`);
-    $("subtitle").textContent = `${SPORT_META[key]?.name || key} · awaiting data`;
-    fillLeagues([]);
-    return;
-  }
-  state.data = applyStars({
-    streakCount: sec.streakCount, teamCount: sec.teamCount, eventCount: sec.eventCount,
-    asOf: sec.asOf, leagues: sec.leagues || [], types: sec.types || [],
-    markets: sec.markets || [], streaks: sec.streaks,
-    stats: sec.stats || [], statsCount: sec.statsCount || (sec.stats || []).length,
-  });
-  $("subtitle").textContent =
-    `${SPORT_META[key]?.name || key} (${SPORT_META[key]?.note || ""}) · ${sec.streakCount} runs · ${sec.teamCount} teams · ${sec.eventCount} games · as of ${sec.asOf} · kickoffs WAT`;
-  fillLeagues(sec.leagues);
-  renderChips();
-  renderActiveList();
-}
-
-async function loadData() {
-  if (window.__STREAKS__ && window.__STREAKS__.streaks) return window.__STREAKS__;
-  const res = await fetch(`./data/streaks.json?t=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error("missing data");
-  return res.json();
-}
-
-async function init() {
-  bind();
-  bindTapProbe();
-  renderChips();
-  renderSortSeg();
-  ensureTickets().then(() => {
-    if (state.tab === "acca") {
-      const a = state.data?.analysis || {};
-      renderAccas(a.accumulators || [], a);
-    }
-  }).catch(() => {});
-  try {
-    state.data = await loadData();
-  } catch (err) {
-    $("subtitle").textContent = (location.protocol === "file:")
-      ? "Opened as a local file, so the browser blocks loading data/streaks.json. Serve the folder (python3 -m http.server) or use the live site."
-      : "Could not load data/streaks.json — it is rebuilt nightly by GitHub Actions; check the Actions tab if this persists.";
-    return;
-  }
-  footballData = applyStars(state.data);
-  $("subtitle").textContent = `${state.data.streakCount} runs · ${state.data.teamCount} teams · ${state.data.eventCount} matches · as of ${state.data.asOf} · kickoffs WAT`;
-  fillLeagues(state.data.leagues);
-  renderChips();
-  render();
-  // grey out sports the last build could not reach (e.g. a blocked source)
-  ensureSports().then((p) => {
-    for (const b of $("sports").children) {
-      const sec = (p.sports || {})[b.dataset.sport];
-      if (b.dataset.sport === "football" || !sec) continue;
-      if (!sec.available || !(sec.streaks || []).length) {
-        b.classList.add("soon");
-        b.title = sec.reason || "no data yet";
-        if (!sec.available && !/soon/.test(b.textContent)) b.textContent += " (soon)";
-      }
-    }
-  }).catch(() => {});
-}
-
-init();
-
-  </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3bbf1483d2026a4',t:'MTc4OTUyMDUxMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+/* init selects */
+$("in_affnet").innerHTML=Object.keys(AFFNETS).map(k=>`<option value="${k}">${AFFNETS[k].label}</option>`).join("");
+$("in_niche").innerHTML=Object.keys(NICHES).map(k=>`<option value="${k}">${NICHES[k].label}</option>`).join("");
+$("nicheHint").textContent="Used for audience defaults & compliance rules — the scan pre-fills it.";
+renderDynFields(); renderSettings(); applyLead(); renderHistory(); loadLaunches();
+</script>
+</body>
 </html>
