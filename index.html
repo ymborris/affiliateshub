@@ -126,7 +126,7 @@ summary{cursor:pointer;color:var(--acc2);font-weight:600;font-size:.85rem}
     <div class="logo">OP</div>
     <div>
       <h1>OfferPilot</h1>
-      <div class="tag">Affiliate offer analyzer &amp; campaign agent — WarriorPlus · JVZoo · ClickBank · Digistore24 · Any link</div>
+      <div class="tag">Affiliate offer analyzer &amp; campaign agent — WarriorPlus · JVZoo · ClickBank · Digistore24 · Any link <span class="badge">v1.1</span></div>
     </div>
   </div>
 </header>
@@ -1046,22 +1046,27 @@ function renderLaunchTable(d){
 }
 async function loadLaunches(){
   let d=null,note="";
-  try{
-    const r=await fetch("offers.json",{cache:"no-store"});
-    if(r.ok){const j=await r.json();if(j&&j.offers&&j.offers.length){d=j;note="📡 Live feed — refreshed daily by the GitHub Action. “Load” sends an offer to the Analyzer (price &amp; commission pre-filled)."}}
-  }catch(e){}
-  if(!d && typeof EMBEDDED_FEED!=="undefined"){
-    d=EMBEDDED_FEED;
-    note="📦 Offline snapshot from "+(d.generated||"").slice(0,10)+" (real crawled launches). This preview can’t reach the live file — once deployed to GitHub Pages with the Action enabled, this becomes a daily live feed.";
-  }
-  if(!d){
-    $("launchStamp").textContent="";
-    $("launchNote").innerHTML="";
+  // 1) render the embedded snapshot IMMEDIATELY — never wait on network
+  if(typeof EMBEDDED_FEED!=="undefined" && EMBEDDED_FEED && EMBEDDED_FEED.offers && EMBEDDED_FEED.offers.length){
+    note="📦 Offline snapshot from "+(EMBEDDED_FEED.generated||"").slice(0,10)+" (real crawled launches). Once deployed to GitHub Pages with the Action enabled, this becomes a daily live feed.";
+    $("launchNote").innerHTML=note;
+    renderLaunchTable(EMBEDDED_FEED);
+  } else {
     $("launchList").innerHTML=`<div class="banner test">🛠️ <b>Feed not active yet</b> — 3 steps: ① push this project to GitHub &amp; enable Pages ② repo → Settings → Actions → General → Workflow permissions → “Read and write” ③ Actions tab → “OfferPilot launch feed” → Run workflow once. Then it refreshes itself daily.</div>`;
-    return;
   }
-  $("launchNote").innerHTML=note;
-  renderLaunchTable(d);
+  // 2) try the live file (with a hard timeout) and replace if fresher
+  try{
+    const ctl=new AbortController();const to=setTimeout(()=>ctl.abort(),8000);
+    const r=await fetch("offers.json",{cache:"no-store",signal:ctl.signal});
+    clearTimeout(to);
+    if(r.ok){
+      const j=await r.json();
+      if(j&&j.offers&&j.offers.length){
+        $("launchNote").innerHTML="📡 Live feed — refreshed daily by the GitHub Action. “Load” sends an offer to the Analyzer (price &amp; commission pre-filled).";
+        renderLaunchTable(j);
+      }
+    }
+  }catch(e){/* keep snapshot */}
 }
 
 /* ================= settings UI ================= */
@@ -1144,5 +1149,5 @@ $("in_niche").innerHTML=Object.keys(NICHES).map(k=>`<option value="${k}">${NICHE
 $("nicheHint").textContent="Used for audience defaults & compliance rules — the scan pre-fills it.";
 renderDynFields(); renderSettings(); applyLead(); renderHistory(); loadLaunches();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3e24086fb6c656e',t:'MTc4OTkyMjIxOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
