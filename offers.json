@@ -1,14 +1,14 @@
 {
- "generated": "2026-09-20T16:35:18Z",
+ "generated": "2026-09-21T11:53:45Z",
  "offers": [
   {
-   "name": "CueVue",
-   "url": "https://muncheye.com/unreal-ai",
-   "network": "JVZoo",
+   "name": "Jikan Nazo",
+   "url": "https://muncheye.com/jikan-nazo-time-crime-whodunit-amazon-kdp-software-2001-k-in-prizes",
+   "network": "WarriorPlus",
    "niche": "software",
-   "launch": "2026-09-20",
-   "details": "$147 at 50%",
-   "price": 147.0,
+   "launch": "2026-09-23",
+   "details": "$19 at 50%",
+   "price": 19.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -20,17 +20,6 @@
    "launch": "2026-09-23",
    "details": "$37 at 50%",
    "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Jikan Nazo",
-   "url": "https://muncheye.com/jikan-nazo-time-crime-whodunit-amazon-kdp-software-2001-k-in-prizes",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-23",
-   "details": "$19 at 50%",
-   "price": 19.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -218,6 +207,17 @@
    "launch": "2026-10-30",
    "details": "37 at 50%",
    "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RocketToons AI",
+   "url": "https://muncheye.com/tim-verdouw-et-al-rockettoons-ai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-31",
+   "details": "$27 at 50%",
+   "price": 27.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -431,17 +431,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "Big Launch",
-   "url": "https://muncheye.com/adrian-isfan-big-launch-3",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-12-16",
-   "details": "67 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "FinalBells",
    "url": "https://muncheye.com/pankaj-malav-deepanker-r-finalbells",
    "network": "JVZoo",
@@ -449,6 +438,17 @@
    "launch": "2026-12-16",
    "details": "$47 at 50%",
    "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Big Launch",
+   "url": "https://muncheye.com/adrian-isfan-big-launch-3",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-12-16",
+   "details": "67 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -585,79 +585,79 @@
    "source": "MunchEye"
   },
   {
-   "name": "Profit Partnership",
-   "url": "https://muncheye.com/profit-partnership-plr-mrr-included",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-09-19",
-   "details": "$1 at 50%",
-   "price": 1.0,
+   "name": "WellNest AI",
+   "url": "https://muncheye.com/instabook-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-09-20",
+   "details": "$17 at 50%",
+   "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "CineClaw",
-   "url": "https://muncheye.com/cineclaw-art-flair",
+   "name": "CueVue",
+   "url": "https://muncheye.com/unreal-ai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-09-20",
+   "details": "$147 at 50%",
+   "price": 147.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Link To Infographics",
+   "url": "https://muncheye.com/kdp-side-hustle",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-09-20",
+   "details": "9.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] 48-Hour Micro-Membership",
+   "url": "https://muncheye.com/jason-oickle-48-hour-micro-membership-plr-package",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-09-20",
+   "details": "$7.97 at 75%",
+   "price": 7.97,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Shorts Cash Formula PLR",
+   "url": "https://muncheye.com/https-plr-monster-shorts-cash-formula-partners",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-09-20",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Halloween Cozy Horror Book Writer (PLR)",
+   "url": "https://muncheye.com/halloween-cozy-horror-book-writer-plr",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-09-20",
+   "details": "11.95-16.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "BizPilot",
+   "url": "https://muncheye.com/bizpilot-launch",
    "network": "Launchpad",
    "niche": "other",
-   "launch": "2026-09-19",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "GiggleDeck",
-   "url": "https://muncheye.com/giggledeck-turn-one-keyword-into-a-complete-60-page-joke-book",
-   "network": "",
-   "niche": "other",
-   "launch": "2026-09-19",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "(PLR) Prompt Engineering Hand Drawn Videos",
-   "url": "https://muncheye.com/plr-prompt-engineering-hand-drawn-videos",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-09-19",
-   "details": "14.95 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "DubForge",
-   "url": "https://muncheye.com/dubforge",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-09-19",
-   "details": "47 at 60%",
-   "price": 0,
-   "commPct": 60.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "QuestTrail Detective Scavenger Hunt Creator",
-   "url": "https://muncheye.com/questtrail-detective-scavenger-hunt-creator",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-09-19",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "FableFoxAi",
-   "url": "https://muncheye.com/fablefoxai",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-09-18",
-   "details": "$47 at 50%",
-   "price": 47.0,
+   "launch": "2026-09-20",
+   "details": "$17 at 50%",
+   "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
