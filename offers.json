@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22T10:54:24Z",
+ "generated": "2026-09-23T10:42:24Z",
  "offers": [
   {
    "name": "Jikan Nazo",
@@ -46,17 +46,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "LeadsGorilla 3.0 APEX AI",
-   "url": "https://muncheye.com/adrian-isfan-leadsgorilla-3-0-apex-ai",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-01",
-   "details": "47 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "ShopEmpire",
    "url": "https://muncheye.com/neil-napier-shopempire",
    "network": "JVZoo",
@@ -65,6 +54,17 @@
    "details": "$37 at 50%",
    "price": 37.0,
    "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "History Co-Author",
+   "url": "https://muncheye.com/history-coauthor",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-02",
+   "details": "$17 at 75%",
+   "price": 17.0,
+   "commPct": 75.0,
    "source": "MunchEye"
   },
   {
@@ -97,6 +97,17 @@
    "launch": "2026-10-08",
    "details": "$27 at 50%",
    "price": 27.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AiBizEngine",
+   "url": "https://muncheye.com/aibizengine-platform",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-09",
+   "details": "$37 at 50%",
+   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -134,7 +145,7 @@
    "source": "MunchEye"
   },
   {
-   "name": "Guaranteed Launch Date",
+   "name": "ViralDashboardAi",
    "url": "https://muncheye.com/guaranteed-launch",
    "network": "JVZoo",
    "niche": "other",
@@ -163,6 +174,17 @@
    "launch": "2026-10-21",
    "details": "$37 at 50%",
    "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "LeadsGorilla 3.0 APEX AI",
+   "url": "https://muncheye.com/adrian-isfan-leadsgorilla-3-0-apex-ai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-22",
+   "details": "47 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -563,101 +585,79 @@
    "source": "MunchEye"
   },
   {
-   "name": "Travelio",
-   "url": "https://muncheye.com/mike-radu-travelio",
-   "network": "Launchpad",
-   "niche": "other",
-   "launch": "2026-09-21",
-   "details": "$17 at 51%",
-   "price": 17.0,
-   "commPct": 51.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "TeeLab AI - AI Editable Designs",
    "url": "https://muncheye.com/teelab-ai",
    "network": "WarriorPlus",
    "niche": "software",
-   "launch": "2026-09-21",
+   "launch": "2026-09-22",
    "details": "$17 at 50%",
    "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "[PLR Firesale] The Sales Funnel Engine",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-the-sales-funnel-engine",
+   "name": "Ghost Mystery Writer GPT",
+   "url": "https://muncheye.com/ghost-mystery-writer-gpt",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-09-22",
+   "details": "17 at 60%",
+   "price": 0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Site Builder PLR",
+   "url": "https://muncheye.com/new-plr-launch-11",
    "network": "WarriorPlus",
    "niche": "mmo",
-   "launch": "2026-09-21",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
+   "launch": "2026-09-22",
+   "details": "$10 at 100%",
+   "price": 10.0,
+   "commPct": 100.0,
    "source": "MunchEye"
   },
   {
-   "name": "(PLR) AI Answers Ranking Builder",
-   "url": "https://muncheye.com/larry-kearney-plr-ai-answers-ranking-builder",
+   "name": "Local Content Machine",
+   "url": "https://muncheye.com/chad-eljisr-et-al-local-content-machine",
    "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-21",
-   "details": "9.95 at 50%",
+   "niche": "other",
+   "launch": "2026-09-22",
+   "details": "$27 at 50%",
+   "price": 27.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Mastering Claude: The Complete Guide To Anthropic",
+   "url": "https://muncheye.com/mastering-claude-the-complete-guide-to-anthropics-al",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-09-22",
+   "details": "9.95 at 60%",
    "price": 0,
-   "commPct": 50.0,
+   "commPct": 60.0,
    "source": "MunchEye"
   },
   {
-   "name": "NicheGoldmine AI",
-   "url": "https://muncheye.com/nichegoldmine-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-21",
-   "details": "27 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "1150+ Editable Pinterest Canva Templates",
-   "url": "https://muncheye.com/1150-editable-pinterest-canva-templates",
-   "network": "WarriorPlus",
+   "name": "GPTAstraMax",
+   "url": "https://muncheye.com/pranshu-gupta-et-al-22-sept-2026",
+   "network": "Launchpad",
    "niche": "other",
-   "launch": "2026-09-21",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "KDP Setup Secrets",
-   "url": "https://muncheye.com/kdp-setup-secrets",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-09-21",
-   "details": "$12.99 at 50%",
-   "price": 12.99,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AnonMeta",
-   "url": "https://muncheye.com/launch-anonmeta-saas-70-recurring-comm-1000-cash-launch-contest",
-   "network": "",
-   "niche": "software",
-   "launch": "2026-09-21",
-   "details": "$39 at 70%",
-   "price": 39.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Halloween Creator Studio",
-   "url": "https://muncheye.com/halloween-creator-studio",
-   "network": "",
-   "niche": "other",
-   "launch": "2026-09-21",
+   "launch": "2026-09-22",
    "details": "$17 at 50%",
    "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "1380 Kids Chore Charts Prompts",
+   "url": "https://muncheye.com/pixelcrafter-1380-kids-chore-charts-prompts",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-09-22",
+   "details": "9 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
