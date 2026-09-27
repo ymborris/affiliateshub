@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T10:44:52Z",
+ "generated": "2026-09-27T11:19:37Z",
  "offers": [
   {
    "name": "Blog2Vid",
@@ -57,10 +57,10 @@
    "source": "MunchEye"
   },
   {
-   "name": "WowClips",
-   "url": "https://muncheye.com/pankaj-malav-deepanker-r-wowclips",
+   "name": "Superplug AI",
+   "url": "https://muncheye.com/pankaj-malav-deepanker-r-superplug",
    "network": "JVZoo",
-   "niche": "other",
+   "niche": "software",
    "launch": "2026-10-07",
    "details": "$37 at 50%",
    "price": 37.0,
@@ -178,6 +178,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "Studio4",
+   "url": "https://muncheye.com/studio4",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-24",
+   "details": "37 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "AIAgentic",
    "url": "https://muncheye.com/aiagentic",
    "network": "JVZoo",
@@ -185,17 +196,6 @@
    "launch": "2026-10-27",
    "details": "$67 at 50%",
    "price": 67.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Pitch Ai",
-   "url": "https://muncheye.com/pitch-ai",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-30",
-   "details": "37 at 50%",
-   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -486,6 +486,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "AgenticAiSoftware",
+   "url": "https://muncheye.com/newaisoftware",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-01-17",
+   "details": "37 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "AI AutoBots Pro 2.0",
    "url": "https://muncheye.com/karthik-ramani-aiautobotspro",
    "network": "JVZoo",
@@ -563,102 +574,91 @@
    "source": "MunchEye"
   },
   {
-   "name": "Canva Paradise [PLR]",
-   "url": "https://muncheye.com/canvaparadiseplr",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-09-25",
-   "details": "$17 at 60%",
-   "price": 17.0,
-   "commPct": 60.0,
+   "name": "MorphStudio",
+   "url": "https://muncheye.com/morphstudioai",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-09-26",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "ModelMax",
-   "url": "https://muncheye.com/seun-ogundele-modelmax",
+   "name": "SiteOptimizer Pro",
+   "url": "https://muncheye.com/larry-kearney-siteoptimizer-pro",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-09-26",
+   "details": "29.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AstrAI",
+   "url": "https://muncheye.com/astrai-justin-opay",
    "network": "Launchpad",
    "niche": "other",
-   "launch": "2026-09-25",
+   "launch": "2026-09-26",
    "details": "$17 at 50%",
    "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "(PLR) LowComp Book Hunter",
-   "url": "https://muncheye.com/larry-kearney-plr-lowcomp-book-hunter",
+   "name": "PromptDex AI",
+   "url": "https://muncheye.com/arifianto-rahardi-promptdex-ai",
    "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-09-25",
-   "details": "19.95 at 50%",
+   "niche": "software",
+   "launch": "2026-09-26",
+   "details": "$15 at 50%",
+   "price": 15.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Picture Comprehension Prompt Vault",
+   "url": "https://muncheye.com/picture-comprehension-prompt-vault",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-09-26",
+   "details": "17 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "[PLR Firesale] Strengthen Every Relationship",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-strengthen-every-relationship",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-09-25",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
+   "name": "Hostora AI",
+   "url": "https://muncheye.com/confirmed-launch",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-09-26",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "NewsletterPilot AI",
-   "url": "https://muncheye.com/im-wealth-builders-newsletterpilot-ai",
+   "name": "Creator Action Suite",
+   "url": "https://muncheye.com/creator-action-suite",
    "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-25",
-   "details": "17 at 75%",
-   "price": 0,
+   "niche": "other",
+   "launch": "2026-09-26",
+   "details": "$1 at 75%",
+   "price": 1.0,
    "commPct": 75.0,
    "source": "MunchEye"
   },
   {
-   "name": "Prompts To Profit AI",
-   "url": "https://muncheye.com/prompts-to-profit-ai",
+   "name": "75 AI Micro-Funnel Ideas - PLR Dimesale",
+   "url": "https://muncheye.com/75-ai-micro-funnel-ideas-plr-dimesale",
    "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-25",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Audio Royalty Formula - PLR",
-   "url": "https://muncheye.com/ai-audio-royalty-formula-plr",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-25",
-   "details": "14.97 at 47%",
-   "price": 0,
-   "commPct": 47.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "StoryCraft KDP AI",
-   "url": "https://muncheye.com/new-kdp-saas-launch-storycraft-kdp-ai-create-childrens-books-coloring-books-puzzles-more-with-ai",
-   "network": "",
-   "niche": "software",
-   "launch": "2026-09-25",
-   "details": "14.55 at 50%",
+   "niche": "mmo",
+   "launch": "2026-09-26",
+   "details": "$ 12.99 at 50%",
    "price": 0,
    "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Reels Rush",
-   "url": "https://muncheye.com/reels-rush",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-09-25",
-   "details": "$7 at 100%",
-   "price": 7.0,
-   "commPct": 100.0,
    "source": "MunchEye"
   }
  ]
