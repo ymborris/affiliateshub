@@ -1,17 +1,6 @@
 {
- "generated": "2026-09-27T11:19:37Z",
+ "generated": "2026-09-28T12:48:37Z",
  "offers": [
-  {
-   "name": "Blog2Vid",
-   "url": "https://muncheye.com/blog2vid",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-09-27",
-   "details": "47 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "ProductsPilot",
    "url": "https://muncheye.com/productspilot",
@@ -574,6 +563,72 @@
    "source": "MunchEye"
   },
   {
+   "name": "AI God Mode",
+   "url": "https://muncheye.com/supergoodproduct-aigodmode",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-09-27",
+   "details": "$9.97 at 70%",
+   "price": 9.97,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Affinova",
+   "url": "https://muncheye.com/pallab-ghosal",
+   "network": "Launchpad",
+   "niche": "other",
+   "launch": "2026-09-27",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Blog2Vid",
+   "url": "https://muncheye.com/blog2vid",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-09-27",
+   "details": "47 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] AI Ethics & Compliance For Marketers",
+   "url": "https://muncheye.com/jason-oickle-ai-ethics-compliance-for-marketers-plr-package",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-09-27",
+   "details": "$7.97 at 75%",
+   "price": 7.97,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Vintage Botanical Ephemera & Junk Journal Studio",
+   "url": "https://muncheye.com/nguyen-van-tu-vintage-botanical-ephemera-junk-journal-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-09-27",
+   "details": "$9.95 at %",
+   "price": 9.95,
+   "commPct": 0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Wealth By Stelios Growth Collection",
+   "url": "https://muncheye.com/wealth-by-stelios-8-evergreen-ebooks",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-09-27",
+   "details": "24$ at 70%",
+   "price": 0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "MorphStudio",
    "url": "https://muncheye.com/morphstudioai",
    "network": "JVZoo",
@@ -603,61 +658,6 @@
    "launch": "2026-09-26",
    "details": "$17 at 50%",
    "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "PromptDex AI",
-   "url": "https://muncheye.com/arifianto-rahardi-promptdex-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-09-26",
-   "details": "$15 at 50%",
-   "price": 15.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Picture Comprehension Prompt Vault",
-   "url": "https://muncheye.com/picture-comprehension-prompt-vault",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-09-26",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Hostora AI",
-   "url": "https://muncheye.com/confirmed-launch",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-09-26",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Creator Action Suite",
-   "url": "https://muncheye.com/creator-action-suite",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-09-26",
-   "details": "$1 at 75%",
-   "price": 1.0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "75 AI Micro-Funnel Ideas - PLR Dimesale",
-   "url": "https://muncheye.com/75-ai-micro-funnel-ideas-plr-dimesale",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-09-26",
-   "details": "$ 12.99 at 50%",
-   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
