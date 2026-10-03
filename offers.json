@@ -1,28 +1,6 @@
 {
- "generated": "2026-10-02T11:49:09Z",
+ "generated": "2026-10-03T11:02:26Z",
  "offers": [
-  {
-   "name": "ShopEmpire",
-   "url": "https://muncheye.com/neil-napier-shopempire",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-02",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "History Co-Author",
-   "url": "https://muncheye.com/history-coauthor",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-02",
-   "details": "$17 at 75%",
-   "price": 17.0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
   {
    "name": "BuyerEngine AI",
    "url": "https://muncheye.com/buyerengineai",
@@ -552,111 +530,133 @@
    "source": "MunchEye"
   },
   {
+   "name": "Unlimited AI",
+   "url": "https://muncheye.com/unlimited-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-02",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ShopEmpire",
+   "url": "https://muncheye.com/neil-napier-shopempire",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-02",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] Rise Stronger",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-the-identity-flip-playbook-2",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-02",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "LessonMiner AI",
+   "url": "https://muncheye.com/lessonminer-ai-complete-ai-classroom-resource-generator",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-02",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Ghost AI",
+   "url": "https://muncheye.com/james-and-maxs-next-product",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-02",
+   "details": "11 at 100%",
+   "price": 0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "75 AI Micro-Funnel Ideas - PLR Dimesale",
+   "url": "https://muncheye.com/75-ai-micro-funnel-ideas-plr-dimesale",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-02",
+   "details": "$ 12.99 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "History Co-Author",
+   "url": "https://muncheye.com/history-coauthor",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-02",
+   "details": "$17 at 75%",
+   "price": 17.0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Niche & Offer Toolkit",
+   "url": "https://muncheye.com/niche-offer-toolkit",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-02",
+   "details": "$47.00 at 50%",
+   "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "QuickBooks Accounting Care - Monthly Subscription",
+   "url": "https://muncheye.com/quickbooks-accounting-care-monthly-subscription",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-02",
+   "details": "$139.00 at 50%",
+   "price": 139.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Professional Accountant - Industry Ready (INDIA)",
+   "url": "https://muncheye.com/professional-accountant-industry-ready-india",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-02",
+   "details": "$10.00 at 50%",
+   "price": 10.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI App Independence",
+   "url": "https://muncheye.com/ai-app-independence",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-02",
+   "details": "$7 at 100%",
+   "price": 7.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Product Genie AI",
    "url": "https://muncheye.com/kurt-chrisler-product-genie-ai",
    "network": "WarriorPlus",
    "niche": "software",
    "launch": "2026-10-01",
    "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Bookpilot",
-   "url": "https://muncheye.com/venkatesh-bookpilot",
-   "network": "Launchpad",
-   "niche": "other",
-   "launch": "2026-10-01",
-   "details": "$27 at 50%",
-   "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Video To Ebook",
-   "url": "https://muncheye.com/link-to-profit",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-01",
-   "details": "9 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR] Short Drama Creator AI",
-   "url": "https://muncheye.com/tekcloudllc-short-drama-creator-ai-with-plr",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-01",
-   "details": "$5.95 (Its Dime Sale Price) at 50%",
-   "price": 5.95,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "SalesLadder Secrets",
-   "url": "https://muncheye.com/salesladder-secrets",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-01",
-   "details": "7 at 90%",
-   "price": 0,
-   "commPct": 90.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Affiliate Hq",
-   "url": "https://muncheye.com/affiliate-hq",
-   "network": "JVZoo",
-   "niche": "mmo",
-   "launch": "2026-10-01",
-   "details": "7 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Current Account Secrets",
-   "url": "https://muncheye.com/current-account-secrets",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-01",
-   "details": "2.99 at 80%",
-   "price": 0,
-   "commPct": 80.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Serial Muse",
-   "url": "https://muncheye.com/serial-muse-jv",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-01",
-   "details": "17 at 60%",
-   "price": 0,
-   "commPct": 60.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[3-in-1] The Business Growth Collection",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-the-traffic-acquisition-blueprint-2",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-01",
-   "details": "$10-$197 at 70%",
-   "price": 10.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Winter Printable Seller Collection",
-   "url": "https://muncheye.com/winter-printable-seller-bundle",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-01",
-   "details": "9.99 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
