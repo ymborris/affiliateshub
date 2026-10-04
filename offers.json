@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T11:02:26Z",
+ "generated": "2026-10-04T11:44:04Z",
  "offers": [
   {
    "name": "BuyerEngine AI",
@@ -9,17 +9,6 @@
    "launch": "2026-10-06",
    "details": "37.00 at 50%",
    "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Superplug AI",
-   "url": "https://muncheye.com/pankaj-malav-deepanker-r-superplug",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-07",
-   "details": "$37 at 50%",
-   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -58,7 +47,7 @@
   },
   {
    "name": "October Launch",
-   "url": "https://muncheye.com/october-launch-3",
+   "url": "https://muncheye.com/confirmed-launch-2",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-10-15",
@@ -178,10 +167,10 @@
    "source": "MunchEye"
   },
   {
-   "name": "Framme",
-   "url": "https://muncheye.com/pankaj-malav-deepanker-framme",
+   "name": "Superplug AI",
+   "url": "https://muncheye.com/pankaj-malav-deepanker-r-superplugai",
    "network": "JVZoo",
-   "niche": "other",
+   "niche": "software",
    "launch": "2026-11-04",
    "details": "$47 at 50%",
    "price": 47.0,
@@ -530,6 +519,61 @@
    "source": "MunchEye"
   },
   {
+   "name": "KidsVerse Studio",
+   "url": "https://muncheye.com/seo-agents-snitch",
+   "network": "Launchpad",
+   "niche": "other",
+   "launch": "2026-10-03",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Phonics & Handwriting Tracing Adventure Studio",
+   "url": "https://muncheye.com/puzzlepouttalon-phonics-handwriting-tracing-adventure-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-03",
+   "details": "$9.95 at %",
+   "price": 9.95,
+   "commPct": 0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Director AI",
+   "url": "https://muncheye.com/steve-tari-director-ai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-03",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "IntelliDezign AI Carousel",
+   "url": "https://muncheye.com/intellidezign-ai-carousel",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-03",
+   "details": "$17 at 75%",
+   "price": 17.0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The Money Reset - 30 Days to Take Control of Your Finances",
+   "url": "https://muncheye.com/the-money-reset-30-days-to-control-of-your-finances",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-03",
+   "details": "7.99 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Unlimited AI",
    "url": "https://muncheye.com/unlimited-ai",
    "network": "Launchpad",
@@ -614,50 +658,6 @@
    "launch": "2026-10-02",
    "details": "$47.00 at 50%",
    "price": 47.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "QuickBooks Accounting Care - Monthly Subscription",
-   "url": "https://muncheye.com/quickbooks-accounting-care-monthly-subscription",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-02",
-   "details": "$139.00 at 50%",
-   "price": 139.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Professional Accountant - Industry Ready (INDIA)",
-   "url": "https://muncheye.com/professional-accountant-industry-ready-india",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-02",
-   "details": "$10.00 at 50%",
-   "price": 10.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI App Independence",
-   "url": "https://muncheye.com/ai-app-independence",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-02",
-   "details": "$7 at 100%",
-   "price": 7.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Product Genie AI",
-   "url": "https://muncheye.com/kurt-chrisler-product-genie-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-01",
-   "details": "17 at 50%",
-   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
