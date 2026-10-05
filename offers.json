@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T11:44:04Z",
+ "generated": "2026-10-05T13:29:53Z",
  "offers": [
   {
    "name": "BuyerEngine AI",
@@ -519,6 +519,28 @@
    "source": "MunchEye"
   },
   {
+   "name": "Chat 6.0 Astra",
+   "url": "https://muncheye.com/mike-radu-chat60-astra",
+   "network": "Launchpad",
+   "niche": "other",
+   "launch": "2026-10-04",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] AI Project Kit Monetization",
+   "url": "https://muncheye.com/jason-oickle-ai-project-kit-monetization-plr-package",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-04",
+   "details": "$7.97 at 75%",
+   "price": 7.97,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "KidsVerse Studio",
    "url": "https://muncheye.com/seo-agents-snitch",
    "network": "Launchpad",
@@ -549,17 +571,6 @@
    "details": "$37 at 50%",
    "price": 37.0,
    "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "IntelliDezign AI Carousel",
-   "url": "https://muncheye.com/intellidezign-ai-carousel",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-03",
-   "details": "$17 at 75%",
-   "price": 17.0,
-   "commPct": 75.0,
    "source": "MunchEye"
   },
   {
@@ -648,17 +659,6 @@
    "details": "$17 at 75%",
    "price": 17.0,
    "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Niche & Offer Toolkit",
-   "url": "https://muncheye.com/niche-offer-toolkit",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-02",
-   "details": "$47.00 at 50%",
-   "price": 47.0,
-   "commPct": 50.0,
    "source": "MunchEye"
   }
  ]
