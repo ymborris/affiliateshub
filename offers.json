@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T12:34:57Z",
+ "generated": "2026-10-08T12:44:41Z",
  "offers": [
   {
    "name": "AIProspectGenie",
@@ -35,8 +35,8 @@
    "source": "MunchEye"
   },
   {
-   "name": "October Launch",
-   "url": "https://muncheye.com/confirmed-launch-2",
+   "name": "Postonomous",
+   "url": "https://muncheye.com/postonomous",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-10-15",
@@ -409,6 +409,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "GUARANTEED LAUNCH DATE",
+   "url": "https://muncheye.com/firas-alameh-comingsoon",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-01-05",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "EvilAI",
    "url": "https://muncheye.com/evilai",
    "network": "JVZoo",
@@ -508,6 +519,83 @@
    "source": "MunchEye"
   },
   {
+   "name": "Book Series AI",
+   "url": "https://muncheye.com/book-series-ai-justin-opay",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-07",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] The Courage-To-Act Blueprint",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-the-courage-to-act-blueprint",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-07",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Digital Product Profit System: Create, Package &amp; Launch Your Digital Prod",
+   "url": "https://muncheye.com/ai-digital-product-profit-system-create-package-launch-your-digital-product-faster-with-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-07",
+   "details": "$9.95 at 40%",
+   "price": 9.95,
+   "commPct": 40.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Halloween Activity Book Builder",
+   "url": "https://muncheye.com/thien-nhan-halloween-activity-book-builder",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-07",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The 5 Day List Launch White Label",
+   "url": "https://muncheye.com/the-5-day-list-launch-white-label",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-07",
+   "details": "12.97 at 100%",
+   "price": 0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RoyaltyAI",
+   "url": "https://muncheye.com/royaltyai-ai-romance-storybook-system",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-07",
+   "details": "$11.97 at 100%",
+   "price": 11.97,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "(PLR) Rebrand PLR with Gemini AI",
+   "url": "https://muncheye.com/plr-rebrand-plr-with-gemini-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-07",
+   "details": "14.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "OmniBrain",
    "url": "https://muncheye.com/seyi-adeleke-omnibrain",
    "network": "JVZoo",
@@ -570,94 +658,6 @@
    "launch": "2026-10-06",
    "details": "$27 at 50%",
    "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "BookForge: Q4-to-Year-Round Publishing Software",
-   "url": "https://muncheye.com/bookforge-q4-to-year-round-publishing",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-06",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Niche Trends PLR Formulator",
-   "url": "https://muncheye.com/niche-trends-plr-formulator",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-06",
-   "details": "$19.95 at 50%",
-   "price": 19.95,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "FableForge - Print-Ready Kids",
-   "url": "https://muncheye.com/fableforge-print-ready-kids-fable-books-from-your-chatgpt-2",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-06",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "KidStar Personalized Storybook",
-   "url": "https://muncheye.com/kidstar-personalized-storybook-machine",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-06",
-   "details": "$14 at 75%",
-   "price": 14.0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Mystery Forge Tap Few Buttons Get Unlimited Mystery Puzzles",
-   "url": "https://muncheye.com/mystery-forge",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-06",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Impossible Mockups App",
-   "url": "https://muncheye.com/impossible-mockups-app",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-06",
-   "details": "8.29 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Printables Prompt Factory",
-   "url": "https://muncheye.com/ai-printables-prompt-factory",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-06",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Video Deck",
-   "url": "https://muncheye.com/maulanamalik-videodeck",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-05",
-   "details": "$17 at 50%",
-   "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
