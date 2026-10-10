@@ -1,24 +1,13 @@
 {
- "generated": "2026-10-09T12:30:58Z",
+ "generated": "2026-10-10T11:50:35Z",
  "offers": [
-  {
-   "name": "AiBizEngine",
-   "url": "https://muncheye.com/aibizengine-platform",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-09",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "Sell Like Crazy",
    "url": "https://muncheye.com/sell-like-crazy",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-10-13",
-   "details": "47 at 50%",
+   "details": "37 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
@@ -343,8 +332,8 @@
    "source": "MunchEye"
   },
   {
-   "name": "FinalBells",
-   "url": "https://muncheye.com/pankaj-malav-deepanker-r-finalbells",
+   "name": "Ziggy",
+   "url": "https://muncheye.com/pankaj-malav-deepanker-r-ziggy",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-12-16",
@@ -508,6 +497,127 @@
    "source": "MunchEye"
   },
   {
+   "name": "AiBizEngine",
+   "url": "https://muncheye.com/aibizengine-platform",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-09",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "PLR Spooky Printable Empire",
+   "url": "https://muncheye.com/sam-arief-coloring-book",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-09",
+   "details": "$16 at 50%",
+   "price": 16.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ViralToon AI",
+   "url": "https://muncheye.com/viraltoon",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "24.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Viral AI Health Reels",
+   "url": "https://muncheye.com/viral-ai-health-reels-bundle",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] See What",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-see-whats-possible",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-09",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Simple Click Tracker Pro",
+   "url": "https://muncheye.com/jen-perdew-simple-click-tracker-pro-saas",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "$9 /$27/$47 at 50%",
+   "price": 9.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Execution Engine",
+   "url": "https://muncheye.com/aiee",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "$47 at 50%",
+   "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "QuestChart AI - Kids",
+   "url": "https://muncheye.com/questchart-ai-kids-chore-chart-printables-etsy-kdp",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "$17 at 60%",
+   "price": 17.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Affiliate Review Agents",
+   "url": "https://muncheye.com/ai-affiliate-review-agents",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "$17 at 60%",
+   "price": 17.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Kids Journey To Mars AI",
+   "url": "https://muncheye.com/kids-journey-to-mars-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-09",
+   "details": "$17.00 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Bullet Campaigns",
+   "url": "https://muncheye.com/bullet-campaigns",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-09",
+   "details": "$7 at 100%",
+   "price": 7.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Everyday Resilience w/ Unrestricted PLR",
    "url": "https://muncheye.com/everyday-resilience-w-unrestricted-plr",
    "network": "WarriorPlus",
@@ -549,116 +659,6 @@
    "details": "$27 at 50%",
    "price": 27.0,
    "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Ancient Mysteries AI",
-   "url": "https://muncheye.com/giggledeck-turn-one-keyword-into-a-complete-60-page-joke-book-2",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-08",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AllyOtter Kit",
-   "url": "https://muncheye.com/allyotter-kit",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-08",
-   "details": "49 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR] Essential Womens Health",
-   "url": "https://muncheye.com/doctor-loy-plr-premium-medical-content-by-doctor-loy-healthy-aging",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-08",
-   "details": "$17 at 100%",
-   "price": 17.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "QuickSheets AI",
-   "url": "https://muncheye.com/quicksheet-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-08",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "300 Agentic Prompts for Tiny Worlds Coloring Books",
-   "url": "https://muncheye.com/300-agentic-prompts-for-tiny-worlds-coloring-books",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-08",
-   "details": "$17.00 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Book Series AI",
-   "url": "https://muncheye.com/book-series-ai-justin-opay",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-07",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR Firesale] The Courage-To-Act Blueprint",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-the-courage-to-act-blueprint",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-07",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Digital Product Profit System: Create, Package &amp; Launch Your Digital Prod",
-   "url": "https://muncheye.com/ai-digital-product-profit-system-create-package-launch-your-digital-product-faster-with-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-07",
-   "details": "$9.95 at 40%",
-   "price": 9.95,
-   "commPct": 40.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Halloween Activity Book Builder",
-   "url": "https://muncheye.com/thien-nhan-halloween-activity-book-builder",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-07",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The 5 Day List Launch White Label",
-   "url": "https://muncheye.com/the-5-day-list-launch-white-label",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-07",
-   "details": "12.97 at 100%",
-   "price": 0,
-   "commPct": 100.0,
    "source": "MunchEye"
   }
  ]
