@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T12:02:30Z",
+ "generated": "2026-10-12T14:19:23Z",
  "offers": [
   {
    "name": "Sell Like Crazy",
@@ -18,8 +18,8 @@
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-10-15",
-   "details": "$37 at 50%",
-   "price": 37.0,
+   "details": "$347 at 50%",
+   "price": 347.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -497,6 +497,61 @@
    "source": "MunchEye"
   },
   {
+   "name": "FaithForge AI",
+   "url": "https://muncheye.com/faithforge-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-11",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "BotifyAI – AI Business Automation Suite",
+   "url": "https://muncheye.com/botifyai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-11",
+   "details": "12.59 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] AI Media For Marketers",
+   "url": "https://muncheye.com/jason-oickle-ai-media-for-marketers-plr-package",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-11",
+   "details": "7.97 at 75%",
+   "price": 0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Logic Rails",
+   "url": "https://muncheye.com/logic-rails",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-11",
+   "details": "27 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "5.1 Reading Adventure Worksheet Vault",
+   "url": "https://muncheye.com/5-1-reading-adventure-worksheet-vault",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-11",
+   "details": "$17.00 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "DeckCraft Kids",
    "url": "https://muncheye.com/supergoodproduct-deckcraftkids",
    "network": "WarriorPlus",
@@ -603,61 +658,6 @@
    "launch": "2026-10-10",
    "details": "17.97 at 50%",
    "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Coding PLR",
-   "url": "https://muncheye.com/ai-coding-plr",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-10",
-   "details": "$ 7 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Nurgan",
-   "url": "https://muncheye.com/nurgan",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-10",
-   "details": "$370.00 at 50%",
-   "price": 370.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The 2026 KDP Niche Blackbook",
-   "url": "https://muncheye.com/the-2026-kdp-niche-blackbook",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-10",
-   "details": "$17.00 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Alphabet and Number Tracing Workbook for Kids",
-   "url": "https://muncheye.com/alphabet-and-number-tracing-workbook-for-kids",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-10",
-   "details": "$9.99 at 50%",
-   "price": 9.99,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AiBizEngine",
-   "url": "https://muncheye.com/aibizengine-platform",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-09",
-   "details": "$37 at 50%",
-   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
