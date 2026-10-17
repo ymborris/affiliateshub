@@ -1,17 +1,6 @@
 {
- "generated": "2026-10-16T10:37:13Z",
+ "generated": "2026-10-17T10:05:52Z",
  "offers": [
-  {
-   "name": "Pin2Profit Ai",
-   "url": "https://muncheye.com/pin2profit-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-16",
-   "details": "27 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "ViralDashboardAi",
    "url": "https://muncheye.com/guaranteed-launch",
@@ -57,14 +46,25 @@
    "source": "MunchEye"
   },
   {
-   "name": "AIAgentic",
-   "url": "https://muncheye.com/aiagentic",
+   "name": "VirialForge",
+   "url": "https://muncheye.com/viralforge",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-10-27",
-   "details": "$67 at 50%",
-   "price": 67.0,
+   "details": "$37 at 50%",
+   "price": 37.0,
    "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RebranderClub",
+   "url": "https://muncheye.com/im-wealth-builders-rebranderclub",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-27",
+   "details": "27 at 75%",
+   "price": 0,
+   "commPct": 75.0,
    "source": "MunchEye"
   },
   {
@@ -464,6 +464,149 @@
    "source": "MunchEye"
   },
   {
+   "name": "UniMaker AI",
+   "url": "https://muncheye.com/unimaker-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] Multiply Your Joy",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-multiply-your-joy",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-16",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Funny Pet Junk Journals",
+   "url": "https://muncheye.com/funny-pet-junk-journals",
+   "network": "WarriorPlus",
+   "niche": "pets",
+   "launch": "2026-10-16",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Pin2Profit Ai",
+   "url": "https://muncheye.com/pin2profit-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "27 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "MysteryForge AI",
+   "url": "https://muncheye.com/mysteryforge-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "9.97 at 100%",
+   "price": 0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RoyaltyAI",
+   "url": "https://muncheye.com/royaltyai-ai-romance-storybook-system",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "$11.97 at 100%",
+   "price": 11.97,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "QuestBook AI",
+   "url": "https://muncheye.com/questbook-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "$21 at 50%",
+   "price": 21.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "SiteForge",
+   "url": "https://muncheye.com/arifianto-rahardi-siteforge",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-16",
+   "details": "$9.97 at 60%",
+   "price": 9.97,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Kids Journey to Mars AI",
+   "url": "https://muncheye.com/kids-journey-to-mars-ai-create-complete-childrens-space-adventure-books",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Custom GPT to Site Salvager",
+   "url": "https://muncheye.com/custom-gpt-to-site-salvager",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-16",
+   "details": "12.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Traffic Elite",
+   "url": "https://muncheye.com/ai-traffic-elite-2",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Affiliate HQ",
+   "url": "https://muncheye.com/affiliate-hq-2",
+   "network": "JVZoo",
+   "niche": "mmo",
+   "launch": "2026-10-16",
+   "details": "$7 at 100%",
+   "price": 7.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The Not-Just-For-Advent Calendar! (The Revenue Rescue Kit)",
+   "url": "https://muncheye.com/the-not-just-for-advent-calendar-wordpress-plugin-2",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-16",
+   "details": "17.00 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Whop Engine",
    "url": "https://muncheye.com/whop-engine",
    "network": "Launchpad",
@@ -515,149 +658,6 @@
    "launch": "2026-10-15",
    "details": "$17.00 at 50%",
    "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Ultimate 2027 Digital Planner Mega Bundle",
-   "url": "https://muncheye.com/pixelcrafter-the-ultimate-2027-digital-planner-mega-bundle",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-15",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Lead Magnet Factory",
-   "url": "https://muncheye.com/ai-lead-magnet-factory",
-   "network": "",
-   "niche": "software",
-   "launch": "2026-10-15",
-   "details": "$1 at 50%",
-   "price": 1.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Grandma & Grandpa Story Sheet Engine",
-   "url": "https://muncheye.com/grandma-grandpa-story-sheet-engine",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-15",
-   "details": "14.95$ at 54%",
-   "price": 0,
-   "commPct": 54.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Weird Animal Fact Sheet",
-   "url": "https://muncheye.com/weird-animal-fact-sheet",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-14",
-   "details": "13 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Hero Comic Prompt Studio",
-   "url": "https://muncheye.com/hero-comic-prompt-studio",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-14",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "GumEtsy AI",
-   "url": "https://muncheye.com/gumetsyai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-14",
-   "details": "$19 at 50%",
-   "price": 19.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR Firesale] Chain Reaction Secrets",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-the-launch-presentation-engine-2",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-14",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "30-Day Home Physique Kickstart",
-   "url": "https://muncheye.com/30-day-home-physique-kickstart-37-80-commissions-oct-14-2026",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-14",
-   "details": "$37 at 80%",
-   "price": 37.0,
-   "commPct": 80.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The 5-Step AI Subscriber System",
-   "url": "https://muncheye.com/5-step-ai-subscriber-system-jv",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-14",
-   "details": "$9.97 at 75%",
-   "price": 9.97,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR] The Book-to-Bot Blueprint",
-   "url": "https://muncheye.com/jason-oickle-the-book-to-bot-blueprint-plr-lead-magnet-package",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-14",
-   "details": "$1 at 100%",
-   "price": 1.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Not-Just-For-Advent Calendar! (The Revenue Rescue Kit)",
-   "url": "https://muncheye.com/the-not-just-for-advent-calendar-wordpress-plugin",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-14",
-   "details": "17.00 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Revenue Rescue Kit: The Not-Just-For-Advent Calendar",
-   "url": "https://muncheye.com/the-revenue-rescue-kit-the-not-just-for-advent-calendar",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-14",
-   "details": "$17.00 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Romantasy Story Forge™",
-   "url": "https://muncheye.com/romantasy-story-forge",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-14",
-   "details": "17 at 50%",
-   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
