@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T10:19:24Z",
+ "generated": "2026-10-19T12:00:27Z",
  "offers": [
   {
    "name": "ViralDashboardAi",
@@ -354,8 +354,8 @@
    "source": "MunchEye"
   },
   {
-   "name": "Guaranteed Launch Date",
-   "url": "https://muncheye.com/firas-alameh-comingsoon",
+   "name": "WowClips",
+   "url": "https://muncheye.com/wowclips",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2027-01-05",
@@ -464,6 +464,94 @@
    "source": "MunchEye"
   },
   {
+   "name": "Locus AI",
+   "url": "https://muncheye.com/pallab-ghosal-locusai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-18",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Kids Storybook & Fable Picture Book Studio",
+   "url": "https://muncheye.com/puzzlepouttalon-kids-storybook-fable-picture-book-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-18",
+   "details": ".95 at %",
+   "price": 0,
+   "commPct": 0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] The AI Continuity Vault",
+   "url": "https://muncheye.com/jason-oickle-the-ai-continuity-vault-plr-package",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-18",
+   "details": "$7.97 at 75%",
+   "price": 7.97,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "WelcomeBook Studio",
+   "url": "https://muncheye.com/welcome-book-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-18",
+   "details": "$16 at 50%",
+   "price": 16.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Animal Village Junk Journal",
+   "url": "https://muncheye.com/animal-village-junk-journal",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-18",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "E-commerce Seller Toolkit (Standard)",
+   "url": "https://muncheye.com/e-commerce-seller-toolkit-standard-ai-prompts-seo-worksheets-store-templates",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-18",
+   "details": "$9 at 50%",
+   "price": 9.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "E-commerce Seller Toolkit PLR Edition",
+   "url": "https://muncheye.com/e-commerce-seller-toolkit-plr-edition-ai-prompts-seo-worksheets-editable-templates",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-18",
+   "details": "$14.99 at 50%",
+   "price": 14.99,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ChronicleCraft AI",
+   "url": "https://muncheye.com/chroniclecraft-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-18",
+   "details": "12.99 at 100%",
+   "price": 0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "FusionEtsy",
    "url": "https://muncheye.com/astroblu-x",
    "network": "WarriorPlus",
@@ -569,94 +657,6 @@
    "niche": "software",
    "launch": "2026-10-17",
    "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Revenue Stack",
-   "url": "https://muncheye.com/ai-revenue-stack",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-17",
-   "details": "$27 at 40%",
-   "price": 27.0,
-   "commPct": 40.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "(PLR) Budget Wardrobe w/Gemini Notebook (LIFESKILLS V1)",
-   "url": "https://muncheye.com/plr-lifeskills-v1-budget-wardrobe-with-gemini",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-17",
-   "details": "14.95 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Kids Christmas Around the World Book Factory: 500 Picture Book Ideas, 25 Countri",
-   "url": "https://muncheye.com/kids-christmas-around-the-world-book-factory-500-picture-book-seeds-25-countries",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-17",
-   "details": "$14 at 75%",
-   "price": 14.0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Halloween Build-a-Craft Vault",
-   "url": "https://muncheye.com/halloween-build-a-craft-vault",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-17",
-   "details": "$1 at 50%",
-   "price": 1.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "UniMaker AI",
-   "url": "https://muncheye.com/unimaker-ai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-16",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR Firesale] Multiply Your Joy",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-multiply-your-joy",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-16",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Funny Pet Junk Journals",
-   "url": "https://muncheye.com/funny-pet-junk-journals",
-   "network": "WarriorPlus",
-   "niche": "pets",
-   "launch": "2026-10-16",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Pin2Profit Ai",
-   "url": "https://muncheye.com/pin2profit-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-16",
-   "details": "27 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
