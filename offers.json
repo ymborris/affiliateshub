@@ -1,17 +1,6 @@
 {
- "generated": "2026-10-19T12:00:27Z",
+ "generated": "2026-10-20T10:52:48Z",
  "offers": [
-  {
-   "name": "ViralDashboardAi",
-   "url": "https://muncheye.com/guaranteed-launch",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "47 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "ProfitMaps AI",
    "url": "https://muncheye.com/profit-maps",
@@ -464,6 +453,149 @@
    "source": "MunchEye"
   },
   {
+   "name": "ViralDashboardAi",
+   "url": "https://muncheye.com/guaranteed-launch",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-19",
+   "details": "47 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Retirement Activity Prints",
+   "url": "https://muncheye.com/retirement-activity-prints",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-19",
+   "details": "19 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] Release The Past",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-release-the-past",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-19",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Urban Fantasy Royalties Bot",
+   "url": "https://muncheye.com/andreas-quintana-urban-fantasy-royalties-bot",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-19",
+   "details": "17.88 at 100%",
+   "price": 0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "MysteryForge AI",
+   "url": "https://muncheye.com/mysteryforge-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-19",
+   "details": "9.97 at 100%",
+   "price": 0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "TeleCash AI",
+   "url": "https://muncheye.com/telecash-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-19",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "MysteryQuest Kids AI",
+   "url": "https://muncheye.com/mysteryquest-kids-ai",
+   "network": "",
+   "niche": "software",
+   "launch": "2026-10-19",
+   "details": "$11.97 at 100%",
+   "price": 11.97,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RoyaltyAI",
+   "url": "https://muncheye.com/royaltyai-ai-romance-storybook-system",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-19",
+   "details": "$11.97 at 100%",
+   "price": 11.97,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Timeline AI",
+   "url": "https://muncheye.com/chris-et-al-traffic-xray",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-19",
+   "details": "267 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The Second Prime Transformation",
+   "url": "https://muncheye.com/the-second-prime-transformation",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-19",
+   "details": "$497.00 at 25%",
+   "price": 497.0,
+   "commPct": 25.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ProfitPilot",
+   "url": "https://muncheye.com/profitpilot-launch",
+   "network": "Launchpad",
+   "niche": "other",
+   "launch": "2026-10-19",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Nonogram Story Studio",
+   "url": "https://muncheye.com/nonogram-story-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-19",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The Spy Puzzle Generator",
+   "url": "https://muncheye.com/the-spy-academy-5-in-1-spy-puzzle-book-generator",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-19",
+   "details": "37 at 60%",
+   "price": 0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Locus AI",
    "url": "https://muncheye.com/pallab-ghosal-locusai",
    "network": "Launchpad",
@@ -526,138 +658,6 @@
    "launch": "2026-10-18",
    "details": "$9 at 50%",
    "price": 9.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "E-commerce Seller Toolkit PLR Edition",
-   "url": "https://muncheye.com/e-commerce-seller-toolkit-plr-edition-ai-prompts-seo-worksheets-editable-templates",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-18",
-   "details": "$14.99 at 50%",
-   "price": 14.99,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "ChronicleCraft AI",
-   "url": "https://muncheye.com/chroniclecraft-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-18",
-   "details": "12.99 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "FusionEtsy",
-   "url": "https://muncheye.com/astroblu-x",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-17",
-   "details": "15 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Science Infographic Poster Prompt Vault",
-   "url": "https://muncheye.com/quotes-coloring-plr-pack",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-17",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Influencer Pro",
-   "url": "https://muncheye.com/venkatesh-ai-influencer-pro",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-17",
-   "details": "$27 at 50%",
-   "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "BizInGPT",
-   "url": "https://muncheye.com/biz-in-gpt",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-17",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "OfferBank OS",
-   "url": "https://muncheye.com/omnimind-ai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-17",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Prompt Engineer PLR",
-   "url": "https://muncheye.com/new-plr-launch-13",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-17",
-   "details": "$10 at 100%",
-   "price": 10.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Mastering Your Finances in 2026",
-   "url": "https://muncheye.com/mastering-your-finances-in-2026",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-17",
-   "details": "$9.99 at 15%",
-   "price": 9.99,
-   "commPct": 15.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Forbidden Science Prompt Generator",
-   "url": "https://muncheye.com/forbidden-science-prompt-generator",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-17",
-   "details": "17.00 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "One Dollar SuperIntelligent Traffic",
-   "url": "https://muncheye.com/one-dollar-superintelligent-traffic",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-17",
-   "details": "1 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Hard Drive Goldmine AI",
-   "url": "https://muncheye.com/hard-drive-goldmine-ai-17-front-end-%c2%b7-50-commission-%c2%b7-launches-oct-17-2026-8am-est",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-17",
-   "details": "17 at 50%",
-   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
