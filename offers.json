@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T10:52:48Z",
+ "generated": "2026-10-21T11:05:30Z",
  "offers": [
   {
    "name": "ProfitMaps AI",
@@ -174,6 +174,17 @@
    "launch": "2026-11-18",
    "details": "$47 at 50%",
    "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Nazo Box",
+   "url": "https://muncheye.com/nazo-box-murder-mystery-nonogram-amazon-kdp-software-2001-in-prizes",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-11-23",
+   "details": "$21 at 50%",
+   "price": 21.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -453,6 +464,127 @@
    "source": "MunchEye"
   },
   {
+   "name": "Explaindio 5 AI",
+   "url": "https://muncheye.com/explaindio",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-20",
+   "details": "$37 ($297 bundle) at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Side Hustle AI Agents w/ Unrestricted PLR",
+   "url": "https://muncheye.com/side-hustle-ai-agents-w-unrestricted-plr",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-20",
+   "details": "$5 at 60%",
+   "price": 5.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Wonderkids Game Studio [PLR]",
+   "url": "https://muncheye.com/wonderkidsgamestudio",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-20",
+   "details": "$17 at 60%",
+   "price": 17.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Faceless Empire",
+   "url": "https://muncheye.com/whitelabel-rights",
+   "network": "Launchpad",
+   "niche": "other",
+   "launch": "2026-10-20",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Link to Affiliate Suite",
+   "url": "https://muncheye.com/link-to-results",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-20",
+   "details": "9.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Click Flood 2.0",
+   "url": "https://muncheye.com/click-flood-2-0",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-20",
+   "details": "9.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Coding PLR",
+   "url": "https://muncheye.com/ai-coding-plr",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-20",
+   "details": "$ 7 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "CaseBound",
+   "url": "https://muncheye.com/casebound",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-20",
+   "details": "27.00 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Customer Support Agents (30 recurring commission)",
+   "url": "https://muncheye.com/chirps-build-ai-customer-support-voice-sales-agents-for-your-business-14",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-20",
+   "details": "$49 at 30%",
+   "price": 49.0,
+   "commPct": 30.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Nostalgia Puzzle Press",
+   "url": "https://muncheye.com/nostalgia-puzzle-press",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-20",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "(PLR) AI Business for Seniors",
+   "url": "https://muncheye.com/plr-ai-business-for-seniors",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-20",
+   "details": "14.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "ViralDashboardAi",
    "url": "https://muncheye.com/guaranteed-launch",
    "network": "JVZoo",
@@ -497,17 +629,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "MysteryForge AI",
-   "url": "https://muncheye.com/mysteryforge-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-19",
-   "details": "9.97 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "TeleCash AI",
    "url": "https://muncheye.com/telecash-ai",
    "network": "Launchpad",
@@ -516,28 +637,6 @@
    "details": "$17 at 50%",
    "price": 17.0,
    "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "MysteryQuest Kids AI",
-   "url": "https://muncheye.com/mysteryquest-kids-ai",
-   "network": "",
-   "niche": "software",
-   "launch": "2026-10-19",
-   "details": "$11.97 at 100%",
-   "price": 11.97,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "RoyaltyAI",
-   "url": "https://muncheye.com/royaltyai-ai-romance-storybook-system",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-19",
-   "details": "$11.97 at 100%",
-   "price": 11.97,
-   "commPct": 100.0,
    "source": "MunchEye"
   },
   {
@@ -560,105 +659,6 @@
    "details": "$497.00 at 25%",
    "price": 497.0,
    "commPct": 25.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "ProfitPilot",
-   "url": "https://muncheye.com/profitpilot-launch",
-   "network": "Launchpad",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Nonogram Story Studio",
-   "url": "https://muncheye.com/nonogram-story-studio",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Spy Puzzle Generator",
-   "url": "https://muncheye.com/the-spy-academy-5-in-1-spy-puzzle-book-generator",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "37 at 60%",
-   "price": 0,
-   "commPct": 60.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Locus AI",
-   "url": "https://muncheye.com/pallab-ghosal-locusai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-18",
-   "details": "$14 at 50%",
-   "price": 14.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Kids Storybook & Fable Picture Book Studio",
-   "url": "https://muncheye.com/puzzlepouttalon-kids-storybook-fable-picture-book-studio",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-18",
-   "details": ".95 at %",
-   "price": 0,
-   "commPct": 0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR] The AI Continuity Vault",
-   "url": "https://muncheye.com/jason-oickle-the-ai-continuity-vault-plr-package",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-18",
-   "details": "$7.97 at 75%",
-   "price": 7.97,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "WelcomeBook Studio",
-   "url": "https://muncheye.com/welcome-book-studio",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-18",
-   "details": "$16 at 50%",
-   "price": 16.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Animal Village Junk Journal",
-   "url": "https://muncheye.com/animal-village-junk-journal",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-18",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "E-commerce Seller Toolkit (Standard)",
-   "url": "https://muncheye.com/e-commerce-seller-toolkit-standard-ai-prompts-seo-worksheets-store-templates",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-18",
-   "details": "$9 at 50%",
-   "price": 9.0,
-   "commPct": 50.0,
    "source": "MunchEye"
   }
  ]
