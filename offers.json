@@ -1,17 +1,6 @@
 {
- "generated": "2026-10-21T11:05:30Z",
+ "generated": "2026-10-22T11:05:47Z",
  "offers": [
-  {
-   "name": "ProfitMaps AI",
-   "url": "https://muncheye.com/profit-maps",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-21",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "TwinClips AI",
    "url": "https://muncheye.com/adrian-isfan-twinclips-ai",
@@ -183,8 +172,8 @@
    "network": "WarriorPlus",
    "niche": "software",
    "launch": "2026-11-23",
-   "details": "$21 at 50%",
-   "price": 21.0,
+   "details": "$19 at 50%",
+   "price": 19.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -464,6 +453,116 @@
    "source": "MunchEye"
   },
   {
+   "name": "ProfitMaps AI",
+   "url": "https://muncheye.com/profit-maps",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-21",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Ai MovieMaker Unlimited Edition",
+   "url": "https://muncheye.com/ai-moviemaker-unlimited-edition",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-21",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] The Bounceback Blueprint",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-the-bounceback-blueprint",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-21",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] NeuroKids Workbook Creator AI",
+   "url": "https://muncheye.com/tekcloudllc-neurokids-workbook-creator-ai-with-plr",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-21",
+   "details": "$6.97 (Its Dime Sale Price) at 50%",
+   "price": 6.97,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RoyaltyAI",
+   "url": "https://muncheye.com/royaltyai-ai-romance-storybook-system",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-21",
+   "details": "$11.97 at 100%",
+   "price": 11.97,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Traffic Blackbox",
+   "url": "https://muncheye.com/traffic-blackbox",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-21",
+   "details": "$27 at 60%",
+   "price": 27.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] AI Brain Transplant",
+   "url": "https://muncheye.com/jason-oickle-the-ai-brain-transplant-plr-lead-magnet-package",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-21",
+   "details": "$1 at 100%",
+   "price": 1.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "KDP Cozy Crime Publisher",
+   "url": "https://muncheye.com/kdp-cozy-crime-publisher-five-offline-ai-dashboards-that-turn-ai-chat-into-print-ready-books-50-commission-launches-wed-21-oct",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-21",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "KinderBloom",
+   "url": "https://muncheye.com/astroblu-2",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-21",
+   "details": "15 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Are We There Yet PLR",
+   "url": "https://muncheye.com/are-we-there-yet-plr",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-21",
+   "details": "$17 at 60%",
+   "price": 17.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Explaindio 5 AI",
    "url": "https://muncheye.com/explaindio",
    "network": "JVZoo",
@@ -560,105 +659,6 @@
    "details": "$49 at 30%",
    "price": 49.0,
    "commPct": 30.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Nostalgia Puzzle Press",
-   "url": "https://muncheye.com/nostalgia-puzzle-press",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-20",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "(PLR) AI Business for Seniors",
-   "url": "https://muncheye.com/plr-ai-business-for-seniors",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-20",
-   "details": "14.95 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "ViralDashboardAi",
-   "url": "https://muncheye.com/guaranteed-launch",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "47 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Retirement Activity Prints",
-   "url": "https://muncheye.com/retirement-activity-prints",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "19 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR Firesale] Release The Past",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-release-the-past",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-19",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Urban Fantasy Royalties Bot",
-   "url": "https://muncheye.com/andreas-quintana-urban-fantasy-royalties-bot",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-19",
-   "details": "17.88 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "TeleCash AI",
-   "url": "https://muncheye.com/telecash-ai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-19",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Timeline AI",
-   "url": "https://muncheye.com/chris-et-al-traffic-xray",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-19",
-   "details": "267 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Second Prime Transformation",
-   "url": "https://muncheye.com/the-second-prime-transformation",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-19",
-   "details": "$497.00 at 25%",
-   "price": 497.0,
-   "commPct": 25.0,
    "source": "MunchEye"
   }
  ]
