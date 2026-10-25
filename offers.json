@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T10:13:14Z",
+ "generated": "2026-10-25T10:38:18Z",
  "offers": [
   {
    "name": "ViralForge",
@@ -442,6 +442,105 @@
    "source": "MunchEye"
   },
   {
+   "name": "Passport Profits",
+   "url": "https://muncheye.com/little-genius-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-24",
+   "details": "16.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Drama Series",
+   "url": "https://muncheye.com/ai-drama-series-justin-opay",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-24",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "TokMax Ai",
+   "url": "https://muncheye.com/dr-amit-pareek-tok-max-ai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-24",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Japanese Logic Puzzle & KuroNazo Studio",
+   "url": "https://muncheye.com/puzzlepouttalon-japanese-logic-puzzle-kuronazo-studio-2",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-24",
+   "details": "$9.95 at %",
+   "price": 9.95,
+   "commPct": 0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ClickBank Machine",
+   "url": "https://muncheye.com/clickbank-machine",
+   "network": "ClickBank",
+   "niche": "other",
+   "launch": "2026-10-24",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Halloween Build-a-Craft Vault",
+   "url": "https://muncheye.com/halloween-build-a-craft-vault",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-24",
+   "details": "$1 at 50%",
+   "price": 1.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "SpookyScale™",
+   "url": "https://muncheye.com/spookyscale",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-24",
+   "details": "$17-$29 at 60%",
+   "price": 17.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Construction Crew Explorer",
+   "url": "https://muncheye.com/construction-crew-explorer",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-24",
+   "details": "$17 at 100%",
+   "price": 17.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "(PLR) SAAS With Gemini Pivot",
+   "url": "https://muncheye.com/plr-saas-with-gemini-pivot",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-24",
+   "details": "14.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Ultimate Traffic Bundle",
    "url": "https://muncheye.com/big-monster-traffic-dawud-islam",
    "network": "WarriorPlus",
@@ -497,17 +596,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "Passport Profits",
-   "url": "https://muncheye.com/little-genius-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-23",
-   "details": "16.95 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "MysteryForge AI",
    "url": "https://muncheye.com/mysteryforge-ai",
    "network": "WarriorPlus",
@@ -541,17 +629,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "SpookyScale™",
-   "url": "https://muncheye.com/spookyscale",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-23",
-   "details": "$17-$29 at 60%",
-   "price": 17.0,
-   "commPct": 60.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "CozyCraft KDP AI Studio",
    "url": "https://muncheye.com/tupa28-cozycraft-kdp-ai-studio",
    "network": "WarriorPlus",
@@ -581,83 +658,6 @@
    "launch": "2026-10-22",
    "details": "$27 at 50%",
    "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "BeaconQ AI",
-   "url": "https://muncheye.com/beaconqai-oct-22",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-22",
-   "details": "$27 at 50%",
-   "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "GeminAI 4.0",
-   "url": "https://muncheye.com/mike-radu-geminai-4",
-   "network": "Launchpad",
-   "niche": "other",
-   "launch": "2026-10-22",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "TwinClips AI",
-   "url": "https://muncheye.com/adrian-isfan-twinclips-ai",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-22",
-   "details": "67 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "MysteryQuest Kids AI",
-   "url": "https://muncheye.com/mysteryquest-kids-ai",
-   "network": "",
-   "niche": "software",
-   "launch": "2026-10-22",
-   "details": "$11.97 at 100%",
-   "price": 11.97,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "6 Figure Accelerator",
-   "url": "https://muncheye.com/6-figure-accelerator",
-   "network": "",
-   "niche": "other",
-   "launch": "2026-10-22",
-   "details": "17.97 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "NowItFits",
-   "url": "https://muncheye.com/matt-garrett-doorstep-profits-2",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-22",
-   "details": "$27 at 75%",
-   "price": 27.0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "BizKitPrompt",
-   "url": "https://muncheye.com/bizkitprompt",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-22",
-   "details": "17 at 50%",
-   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
