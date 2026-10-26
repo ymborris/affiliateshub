@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T10:38:18Z",
+ "generated": "2026-10-26T12:11:24Z",
  "offers": [
   {
    "name": "ViralForge",
@@ -46,17 +46,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "Social Beaver A.I",
-   "url": "https://muncheye.com/social-beaver-a-i-gpt-monster-10000-prizes",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-11-03",
-   "details": "497.00 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "AI Agency Engine",
    "url": "https://muncheye.com/sean-donahoe-ai-agency-engine",
    "network": "JVZoo",
@@ -64,6 +53,17 @@
    "launch": "2026-11-03",
    "details": "$47 - ($497 Bundle) at 50%",
    "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Social Beaver A.I",
+   "url": "https://muncheye.com/social-beaver-a-i-gpt-monster-10000-prizes",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-11-03",
+   "details": "497.00 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -134,17 +134,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "Nazo Box",
-   "url": "https://muncheye.com/nazo-box-murder-mystery-nonogram-amazon-kdp-software-2001-in-prizes",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-23",
-   "details": "$19 at 50%",
-   "price": 19.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "SkyNetAI",
    "url": "https://muncheye.com/skynetai",
    "network": "JVZoo",
@@ -152,6 +141,17 @@
    "launch": "2026-11-23",
    "details": "$47 at 50%",
    "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Nazo Box",
+   "url": "https://muncheye.com/nazo-box-murder-mystery-nonogram-amazon-kdp-software-2001-in-prizes",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-11-23",
+   "details": "$19 at 50%",
+   "price": 19.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -244,17 +244,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "Ziggy",
-   "url": "https://muncheye.com/pankaj-malav-deepanker-r-ziggy",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-12-16",
-   "details": "$47 at 50%",
-   "price": 47.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "Big Launch",
    "url": "https://muncheye.com/adrian-isfan-big-launch-3",
    "network": "JVZoo",
@@ -262,6 +251,17 @@
    "launch": "2026-12-16",
    "details": "67 at 50%",
    "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Ziggy",
+   "url": "https://muncheye.com/pankaj-malav-deepanker-r-ziggy",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-12-16",
+   "details": "$47 at 50%",
+   "price": 47.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -442,6 +442,160 @@
    "source": "MunchEye"
   },
   {
+   "name": "Kids Activity Studio",
+   "url": "https://muncheye.com/sam-arief-coloring-book",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "$16 at 50%",
+   "price": 16.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "VideoHub AI",
+   "url": "https://muncheye.com/pranshu-gupta-videohubai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] AI Automation Hacks",
+   "url": "https://muncheye.com/jason-oickle-ai-automation-hacks-plr-package",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "$7.97 at 75%",
+   "price": 7.97,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Job Hunter Pipeline Core",
+   "url": "https://muncheye.com/job-hunter-pipeline-core",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "$37 at 75%",
+   "price": 37.0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The Essential AI Tool Box (PLR)",
+   "url": "https://muncheye.com/the-essential-ai-tool-box-plr",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Loreever AI Snap Toolkit",
+   "url": "https://muncheye.com/loreever-ai-snap-toolkit-chrome-extension-for-snapchat-web",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "$12.99 at 50%",
+   "price": 12.99,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "CountaRoo",
+   "url": "https://muncheye.com/astroblu-3",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "15 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Life Coach PLR",
+   "url": "https://muncheye.com/new-plr-launch-14",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "$10 at 100%",
+   "price": 10.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Halloween Special Grammar Worksheet - PLR",
+   "url": "https://muncheye.com/ai-audio-royalty-formula-plr-2",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "The Cozy-Mystery Tradecraft Engine",
+   "url": "https://muncheye.com/the-cozy-mystery-tradecraft-engine-2",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "17.90 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Whimsical Character Fusion Studio",
+   "url": "https://muncheye.com/whimsical-character-fusion-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "PuzzleMyLove: Personalized Puzzle Book Maker",
+   "url": "https://muncheye.com/puzzlemylove-personalized-puzzle-gift-books-for-etsy-kdp-and-gifts",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Lead AI",
+   "url": "https://muncheye.com/lead-ai-ai-powered-lead-generation-software",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-25",
+   "details": "14.94 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "3D Ninja",
+   "url": "https://muncheye.com/3d-ninja-the-hottest-little-known-opportunity-in-digital-products",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-25",
+   "details": "27.00 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Passport Profits",
    "url": "https://muncheye.com/little-genius-ai",
    "network": "WarriorPlus",
@@ -504,160 +658,6 @@
    "launch": "2026-10-24",
    "details": "$1 at 50%",
    "price": 1.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "SpookyScale™",
-   "url": "https://muncheye.com/spookyscale",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-24",
-   "details": "$17-$29 at 60%",
-   "price": 17.0,
-   "commPct": 60.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Construction Crew Explorer",
-   "url": "https://muncheye.com/construction-crew-explorer",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-24",
-   "details": "$17 at 100%",
-   "price": 17.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "(PLR) SAAS With Gemini Pivot",
-   "url": "https://muncheye.com/plr-saas-with-gemini-pivot",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-24",
-   "details": "14.95 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Ultimate Traffic Bundle",
-   "url": "https://muncheye.com/big-monster-traffic-dawud-islam",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-23",
-   "details": "$1 at 100%",
-   "price": 1.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI VideoSongs",
-   "url": "https://muncheye.com/video-song",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-23",
-   "details": "24.95 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Viral AI Health Reels",
-   "url": "https://muncheye.com/viral-ai-health-reels-bundle",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-23",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Martsi",
-   "url": "https://muncheye.com/martsi",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-23",
-   "details": "37 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR Firesale] Focus With Intention",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-focus-with-intention-2",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-23",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "MysteryForge AI",
-   "url": "https://muncheye.com/mysteryforge-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-23",
-   "details": "9.97 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Digital Product Marketplace Planner",
-   "url": "https://muncheye.com/the-digital-product-marketplace-planner",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-23",
-   "details": "$9.00 at 50%",
-   "price": 9.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Voice Agent Starter Kit",
-   "url": "https://muncheye.com/ai-voice-agent-starter-kit",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-23",
-   "details": "$97.00 at 60%",
-   "price": 97.0,
-   "commPct": 60.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "CozyCraft KDP AI Studio",
-   "url": "https://muncheye.com/tupa28-cozycraft-kdp-ai-studio",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-23",
-   "details": "14.9 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Affiliate Launch Guide",
-   "url": "https://muncheye.com/affiliate-launch-guide",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-10-23",
-   "details": "$17 at 100%",
-   "price": 17.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Zigzaggle | The Best Maze Puzzle Maker",
-   "url": "https://muncheye.com/zigzaggle",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-22",
-   "details": "$27 at 50%",
-   "price": 27.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
