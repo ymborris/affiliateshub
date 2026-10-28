@@ -1,28 +1,6 @@
 {
- "generated": "2026-10-27T11:32:35Z",
+ "generated": "2026-10-28T12:03:01Z",
  "offers": [
-  {
-   "name": "ViralForge",
-   "url": "https://muncheye.com/viralforge",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-27",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "RebranderClub",
-   "url": "https://muncheye.com/im-wealth-builders-rebranderclub",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-27",
-   "details": "27 at 75%",
-   "price": 0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
   {
    "name": "RocketToons AI",
    "url": "https://muncheye.com/tim-verdouw-et-al-rockettoons-ai",
@@ -85,6 +63,17 @@
    "niche": "other",
    "launch": "2026-11-10",
    "details": "67 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Clonebid",
+   "url": "https://muncheye.com/clonebid",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-11-10",
+   "details": "397 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
@@ -442,6 +431,94 @@
    "source": "MunchEye"
   },
   {
+   "name": "Halloween Activity Books PLR",
+   "url": "https://muncheye.com/ali-anjamparuthi-halloween-plr",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-10-27",
+   "details": "$9.97 at 50%",
+   "price": 9.97,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ViralForge",
+   "url": "https://muncheye.com/viralforge",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-27",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "BundleBee AI",
+   "url": "https://muncheye.com/bundlebee-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-27",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR] Ultimate Claude AI Prompt Vault",
+   "url": "https://muncheye.com/firelaunchers-ultimate-claude-ai-prompt-vault-with-plr",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-27",
+   "details": "$9.97 (Its Dime Sale Price) at 50%",
+   "price": 9.97,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Build a Real Email List",
+   "url": "https://muncheye.com/build-a-real-email-list",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-27",
+   "details": "$17.00 at 75%",
+   "price": 17.0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RebranderClub",
+   "url": "https://muncheye.com/im-wealth-builders-rebranderclub",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-27",
+   "details": "27 at 75%",
+   "price": 0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "OutSends — Complete B2B Cold Email Platform",
+   "url": "https://muncheye.com/outsends-complete-b2b-cold-email-platform",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-10-27",
+   "details": "49$ at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ZaapMail",
+   "url": "https://muncheye.com/zaapmail",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-27",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "KDPGlobal",
    "url": "https://muncheye.com/seun-ogundele-kdpglobal",
    "network": "Launchpad",
@@ -493,6 +570,17 @@
    "launch": "2026-10-26",
    "details": "$ 12.99 at 50%",
    "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "WelcomeBook Studio",
+   "url": "https://muncheye.com/welcome-book-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-26",
+   "details": "$16 at 50%",
+   "price": 16.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -570,94 +658,6 @@
    "launch": "2026-10-26",
    "details": "9.95 at 50%",
    "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Customer Support Agents (30 recurring commission)",
-   "url": "https://muncheye.com/chirps-build-ai-customer-support-voice-sales-agents-for-your-business-15",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-26",
-   "details": "$49 at 30%",
-   "price": 49.0,
-   "commPct": 30.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Inbox365: LeadsLeap One-Click Import",
-   "url": "https://muncheye.com/inbox365-leadsleap-one-click-import-365-done-for-you-emails-27-launch-50-commissions",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-26",
-   "details": "27 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Spreadsheet Studio Skill Kit",
-   "url": "https://muncheye.com/the-spreadsheet-studio-skill-kit",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-26",
-   "details": "17.00 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "VideoHub AI",
-   "url": "https://muncheye.com/pranshu-gupta-videohubai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-10-25",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR] AI Automation Hacks",
-   "url": "https://muncheye.com/jason-oickle-ai-automation-hacks-plr-package",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-25",
-   "details": "$7.97 at 75%",
-   "price": 7.97,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Job Hunter Pipeline Core",
-   "url": "https://muncheye.com/job-hunter-pipeline-core",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-25",
-   "details": "$37 at 75%",
-   "price": 37.0,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "The Essential AI Tool Box (PLR)",
-   "url": "https://muncheye.com/the-essential-ai-tool-box-plr",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-25",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Loreever AI Snap Toolkit",
-   "url": "https://muncheye.com/loreever-ai-snap-toolkit-chrome-extension-for-snapchat-web",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-25",
-   "details": "$12.99 at 50%",
-   "price": 12.99,
    "commPct": 50.0,
    "source": "MunchEye"
   }
