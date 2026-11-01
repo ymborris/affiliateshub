@@ -1,17 +1,6 @@
 {
- "generated": "2026-10-31T11:38:15Z",
+ "generated": "2026-11-01T12:37:10Z",
  "offers": [
-  {
-   "name": "RocketToons AI",
-   "url": "https://muncheye.com/tim-verdouw-et-al-rockettoons-ai",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-10-31",
-   "details": "$27 at 50%",
-   "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "AI Repurposer",
    "url": "https://muncheye.com/neil-napier-aicloser-2",
@@ -530,6 +519,94 @@
    "source": "MunchEye"
   },
   {
+   "name": "Tails & Tales Studio",
+   "url": "https://muncheye.com/tails-tales-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-31",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "HealthNova AI",
+   "url": "https://muncheye.com/healthnova-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-10-31",
+   "details": "$14.95 at 50%",
+   "price": 14.95,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "RocketToons AI",
+   "url": "https://muncheye.com/tim-verdouw-et-al-rockettoons-ai",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-10-31",
+   "details": "$27 at 50%",
+   "price": 27.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Halloween Build-a-Craft Vault",
+   "url": "https://muncheye.com/halloween-build-a-craft-vault",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-31",
+   "details": "$1 at 50%",
+   "price": 1.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Match & Sort Missions",
+   "url": "https://muncheye.com/match-sort-missions",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-10-31",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Printable Goldmine AI",
+   "url": "https://muncheye.com/printable-goldmine-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-31",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Post Apocalyptic Survival Stories App",
+   "url": "https://muncheye.com/post-apocalyptic-survival-stories",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-31",
+   "details": "$9 at 100%",
+   "price": 9.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "(PLR) Be an AI Consultant",
+   "url": "https://muncheye.com/plr-be-an-ai-consultant",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-10-31",
+   "details": "14.95 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Talking Deck",
    "url": "https://muncheye.com/talking-deck",
    "network": "WarriorPlus",
@@ -581,83 +658,6 @@
    "launch": "2026-10-30",
    "details": "9.95 at 50%",
    "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Mind-Blowing Fact & Viral Trivia Card Studio",
-   "url": "https://muncheye.com/puzzlepouttalon-mind-blowing-fact-viral-trivia-card-studio",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-30",
-   "details": "$9.95 at %",
-   "price": 9.95,
-   "commPct": 0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "SalesLadder Secrets Ebook & Diagnostic Kit",
-   "url": "https://muncheye.com/salesladder-secrets-ebook-diagnostic-kit",
-   "network": "JVZoo",
-   "niche": "education",
-   "launch": "2026-10-30",
-   "details": "$7.00 at 90%",
-   "price": 7.0,
-   "commPct": 90.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "VanBlaisa Review Intelligence Engine",
-   "url": "https://muncheye.com/vanblaisa-review-intelligence-engine",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-10-30",
-   "details": "$97.00 at 30%",
-   "price": 97.0,
-   "commPct": 30.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "PuzzleMyLove: Personalized Puzzle Book Maker",
-   "url": "https://muncheye.com/puzzlemylove-personalized-puzzle-gift-books-for-etsy-kdp-and-gifts",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-30",
-   "details": "$14 at 50%",
-   "price": 14.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR] 30-Day AI Digital Product Launch Bootcamp",
-   "url": "https://muncheye.com/plr-30-day-ai-digital-product-launch-bootcamp",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-30",
-   "details": "$5-$12 at 50%",
-   "price": 5.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "NicheSeeker",
-   "url": "https://muncheye.com/nicheseeker",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-10-30",
-   "details": "11.95 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "PushPro Cloud",
-   "url": "https://muncheye.com/pushpro-cloud",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-10-30",
-   "details": "$27 at 50%",
-   "price": 27.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
