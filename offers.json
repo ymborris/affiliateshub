@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T14:40:15Z",
+ "generated": "2026-11-03T13:33:53Z",
  "offers": [
   {
    "name": "Social Beaver A.I",
@@ -508,6 +508,138 @@
    "source": "MunchEye"
   },
   {
+   "name": "Detective Maker",
+   "url": "https://muncheye.com/detective-maker",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-02",
+   "details": "$27 at 50%",
+   "price": 27.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Self-PublishMistry AI",
+   "url": "https://muncheye.com/self-publishmistry-ai",
+   "network": "Launchpad",
+   "niche": "software",
+   "launch": "2026-11-02",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "[PLR Firesale] The Traffic Acquisition Blueprint",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-the-traffic-acquisition-blueprint",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-11-02",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Med Spa & Aesthetics Chatbot Agency Starter Kit",
+   "url": "https://muncheye.com/ai-med-spa-aesthetics-chatbot-agency-starter-kit",
+   "network": "JVZoo",
+   "niche": "software",
+   "launch": "2026-11-02",
+   "details": "$97.00 at 60%",
+   "price": 97.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Hailr AI",
+   "url": "https://muncheye.com/hailr-ai-affiliate-program",
+   "network": "",
+   "niche": "software",
+   "launch": "2026-11-02",
+   "details": "$19 - $199/month at 40%",
+   "price": 19.0,
+   "commPct": 40.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "OfferSpy AI",
+   "url": "https://muncheye.com/offerspy-ai-discover-winning-offers-spy-on-competitors-unlock-profitable-opportunities",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-11-02",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Vitanova Studio",
+   "url": "https://muncheye.com/arifianto-rahardi-vitanova-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-02",
+   "details": "$7.59 at 70%",
+   "price": 7.59,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "LittleWiz Studio",
+   "url": "https://muncheye.com/littlewiz-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-02",
+   "details": "$27 at 50%",
+   "price": 27.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "TrueEmailer BlackFriday Lifetime",
+   "url": "https://muncheye.com/trueemailer",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-11-02",
+   "details": "200 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "PartyPalette",
+   "url": "https://muncheye.com/partypalette-complete-matching-party-printables-studio",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-02",
+   "details": "$14 at 50%",
+   "price": 14.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Holiday Complete Puzzle Book Factory for Amazon KDP Publishers",
+   "url": "https://muncheye.com/holiday-complete-puzzle-book-factory-for-amazon-kdp-publishers",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-02",
+   "details": "17 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Productivity Hub",
+   "url": "https://muncheye.com/ai-productivity-hub-60-prompts-planners-time-tracker",
+   "network": "",
+   "niche": "software",
+   "launch": "2026-11-02",
+   "details": "21 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "ClaudeX 5.5",
    "url": "https://muncheye.com/venkatesh-claudex-5-5",
    "network": "Launchpad",
@@ -519,28 +651,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "MysteryForge AI",
-   "url": "https://muncheye.com/mysteryforge-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "9.97 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "MysteryQuest Kids AI",
-   "url": "https://muncheye.com/mysteryquest-kids-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "$11.97 at 100%",
-   "price": 11.97,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "[PLR] The PLR Rescue Kit",
    "url": "https://muncheye.com/jason-oickle-the-plr-rescue-kit-plr-package",
    "network": "WarriorPlus",
@@ -549,116 +659,6 @@
    "details": "$7.97 at 75%",
    "price": 7.97,
    "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Profit Agents AI",
-   "url": "https://muncheye.com/profit-agents-ai",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "$27.00 at 50%",
-   "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Thriller Fiction Stack",
-   "url": "https://muncheye.com/thriller-fiction-stack",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-01",
-   "details": "37 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Quantix AI",
-   "url": "https://muncheye.com/quantix-ai",
-   "network": "",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "$17 at 100%",
-   "price": 17.0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Coloring Book Planning & Design Kit",
-   "url": "https://muncheye.com/ai-coloring-book-planning-design-kit-14-99-50-commission",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "14.99 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "EscapeBook Studio",
-   "url": "https://muncheye.com/escapebook-studio-escape-room-puzzle-books-for-kids-kdp-rights",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-01",
-   "details": "$27 at 50%",
-   "price": 27.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "LeadFlow PLR",
-   "url": "https://muncheye.com/astroblu-5",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-11-01",
-   "details": "$3 at 50%",
-   "price": 3.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "HistoryForge AI",
-   "url": "https://muncheye.com/historyforge-ai-ai-powered-historical-book-creation-toolkit",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "₹12.99 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "30 Day Local Visibility Kit - White Label",
-   "url": "https://muncheye.com/30-day-local-visibility-kit-white-label",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-01",
-   "details": "12.97 at 100%",
-   "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Ecover Studio",
-   "url": "https://muncheye.com/new-launch-7",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-01",
-   "details": "$9.95 at 50%",
-   "price": 9.95,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "FreeTraffic AI",
-   "url": "https://muncheye.com/freetraffic-ai",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-01",
-   "details": "19.99 at 100%",
-   "price": 0,
-   "commPct": 100.0,
    "source": "MunchEye"
   }
  ]
