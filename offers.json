@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T13:55:48Z",
+ "generated": "2026-11-06T13:41:12Z",
  "offers": [
   {
    "name": "Clonebid",
@@ -18,7 +18,7 @@
    "network": "WarriorPlus",
    "niche": "mmo",
    "launch": "2026-11-13",
-   "details": "27 at 50%",
+   "details": "17 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
@@ -79,24 +79,13 @@
    "source": "MunchEye"
   },
   {
-   "name": "SkyNetAI",
-   "url": "https://muncheye.com/skynetai",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-11-23",
-   "details": "$47 at 50%",
-   "price": 47.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "CursorReel",
-   "url": "https://muncheye.com/cursorreel",
+   "name": "BuzzFarmsAI",
+   "url": "https://muncheye.com/buzzfarmai",
    "network": "JVZoo",
    "niche": "other",
    "launch": "2026-11-24",
-   "details": "$67 at 50%",
-   "price": 67.0,
+   "details": "$47 at 50%",
+   "price": 47.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -299,17 +288,6 @@
    "source": "MunchEye"
   },
   {
-   "name": "EvilAI",
-   "url": "https://muncheye.com/evilai",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2027-01-12",
-   "details": "$47 at 50%",
-   "price": 47.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
    "name": "AgenticAiSoftware",
    "url": "https://muncheye.com/newaisoftware",
    "network": "JVZoo",
@@ -387,6 +365,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "SkyNetAI",
+   "url": "https://muncheye.com/skynetai",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-03-02",
+   "details": "$47 at 50%",
+   "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "Coooming Soon",
    "url": "https://muncheye.com/march",
    "network": "JVZoo",
@@ -425,6 +414,17 @@
    "network": "JVZoo",
    "niche": "other",
    "launch": "2027-03-30",
+   "details": "$47 at 50%",
+   "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "EvilAI",
+   "url": "https://muncheye.com/evilai",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-04-06",
    "details": "$47 at 50%",
    "price": 47.0,
    "commPct": 50.0,
@@ -519,145 +519,145 @@
    "source": "MunchEye"
   },
   {
-   "name": "Humanify",
-   "url": "https://muncheye.com/seyi-adeleke-humanify",
+   "name": "ClipFuse AI",
+   "url": "https://muncheye.com/anjani-kumar-clipfuse-ai",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-11-05",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "TokStar AI",
+   "url": "https://muncheye.com/pranshu-gupta-5-nov-2026",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-11-05",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "WelcomeBook Studio",
+   "url": "https://muncheye.com/welcome-book-studio",
    "network": "WarriorPlus",
    "niche": "other",
-   "launch": "2026-11-04",
-   "details": "$27 at 50%",
+   "launch": "2026-11-05",
+   "details": "$16 at 50%",
+   "price": 16.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Sniper",
+   "url": "https://muncheye.com/sniper",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-11-05",
+   "details": "$16.97 at 50%",
+   "price": 16.97,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Wedding Planning PLR Starter Kit",
+   "url": "https://muncheye.com/wedding-planning-plr-starter-kit",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-11-05",
+   "details": "17.00 at 50%",
+   "price": 0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Book Traffic Domination",
+   "url": "https://muncheye.com/daniele-melandri-new-launch-15",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-11-05",
+   "details": "$17 at 50%",
+   "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "PinMyListings",
+   "url": "https://muncheye.com/pinmylistings",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-05",
+   "details": "$17 at 100%",
+   "price": 17.0,
+   "commPct": 100.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "SelfPublishHQ",
+   "url": "https://muncheye.com/matt-garrett-selfpublishhq",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-05",
+   "details": "$27 at 75%",
    "price": 27.0,
-   "commPct": 50.0,
+   "commPct": 75.0,
    "source": "MunchEye"
   },
   {
-   "name": "Superplug AI",
-   "url": "https://muncheye.com/pankaj-malav-deepanker-r-superplugai",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-11-04",
-   "details": "$47 at 50%",
-   "price": 47.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "[PLR Firesale] The High-Output Switch",
-   "url": "https://muncheye.com/plr-experts-plr-firesale-the-high-output-switch",
+   "name": "Own Your Morning",
+   "url": "https://muncheye.com/own-your-morning",
    "network": "WarriorPlus",
    "niche": "mmo",
-   "launch": "2026-11-04",
-   "details": "$19-$197 at 70%",
-   "price": 19.0,
-   "commPct": 70.0,
+   "launch": "2026-11-05",
+   "details": "9.95 at 100%",
+   "price": 0,
+   "commPct": 100.0,
    "source": "MunchEye"
   },
   {
-   "name": "QuestPrint",
-   "url": "https://muncheye.com/picture-comprehension-prompt-vault",
+   "name": "CineMill Creator: Make Short & Long Videos in Any Genre",
+   "url": "https://muncheye.com/cinemill-creator-make-short-long-videos-in-any-genre",
    "network": "WarriorPlus",
    "niche": "other",
-   "launch": "2026-11-04",
+   "launch": "2026-11-05",
+   "details": "$17 at 60%",
+   "price": 17.0,
+   "commPct": 60.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI Made Easy After 50",
+   "url": "https://muncheye.com/ted-mauro-ai-made-easy-after-50",
+   "network": "ClickBank",
+   "niche": "software",
+   "launch": "2026-11-05",
+   "details": "$27 at 75%",
+   "price": 27.0,
+   "commPct": 75.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "MonthScapes 2027",
+   "url": "https://muncheye.com/belle-tran-monthscapes-2027",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-05",
    "details": "17 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "Jerkd3: AI Traffic Elite",
-   "url": "https://muncheye.com/ai-traffic-elite",
+   "name": "ColorBook AI Factory",
+   "url": "https://muncheye.com/colorbook-ai-factory",
    "network": "WarriorPlus",
    "niche": "software",
-   "launch": "",
-   "details": "at %",
+   "launch": "2026-11-05",
+   "details": "5.99 at 50%",
    "price": 0,
-   "commPct": 0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "ViralVault AI 2.0 — Preloaded Video Content Websites 130+ niches",
-   "url": "https://muncheye.com/viralvault-ai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-11-04",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "FocusForge PLR",
-   "url": "https://muncheye.com/fusionplr-leadflow",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-11-04",
-   "details": "$3 at 50%",
-   "price": 3.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "SalesLadder Secrets Ebook & Diagnostic Kit",
-   "url": "https://muncheye.com/salesladder-secrets-ebook-diagnostic-kit-2",
-   "network": "JVZoo",
-   "niche": "education",
-   "launch": "2026-11-04",
-   "details": "7 at 90%",
-   "price": 0,
-   "commPct": 90.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Book Club Cash",
-   "url": "https://muncheye.com/book-club-cash",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-04",
-   "details": "9.97 - 27 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Customer Support Agents (30 recurring commission)",
-   "url": "https://muncheye.com/chirps-build-ai-customer-support-voice-sales-agents-for-your-business-16",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-11-04",
-   "details": "$49 at 30%",
-   "price": 49.0,
-   "commPct": 30.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Syntra AI",
-   "url": "https://muncheye.com/syntra-ai-art-flair",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-11-03",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Bizarre Mystery Videos Pack PLR",
-   "url": "https://muncheye.com/tube-search",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-11-03",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "AI Agency Engine",
-   "url": "https://muncheye.com/sean-donahoe-ai-agency-engine",
-   "network": "JVZoo",
-   "niche": "software",
-   "launch": "2026-11-03",
-   "details": "$47 - ($497 Bundle) at 50%",
-   "price": 47.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
