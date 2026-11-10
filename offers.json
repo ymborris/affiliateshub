@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T15:03:06Z",
+ "generated": "2026-11-10T14:14:55Z",
  "offers": [
   {
    "name": "Clonebid",
@@ -53,6 +53,17 @@
    "launch": "2026-11-18",
    "details": "$47 at 50%",
    "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "DramaStudioAi",
+   "url": "https://muncheye.com/eric-holmlund-et-al-dramastudioai",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-11-19",
+   "details": "$37 at 50%",
+   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -241,6 +252,17 @@
    "details": "47 at 50%",
    "price": 0,
    "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Tim Verdouw et al: RocketFlow",
+   "url": "https://muncheye.com/rocketflow",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "",
+   "details": "at %",
+   "price": 0,
+   "commPct": 0,
    "source": "MunchEye"
   },
   {
@@ -530,134 +552,112 @@
    "source": "MunchEye"
   },
   {
-   "name": "[PLR] The Book That Coaches Back",
-   "url": "https://muncheye.com/jason-oickle-the-book-that-coaches-back-plr-package",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-11-08",
-   "details": "$7.97 at 75%",
-   "price": 7.97,
-   "commPct": 75.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Loreever AI Snap Toolkit",
-   "url": "https://muncheye.com/loreever-ai-snap-toolkit-chrome-extension-for-snapchat-web",
-   "network": "WarriorPlus",
-   "niche": "software",
-   "launch": "2026-11-08",
-   "details": "$12.99 at 50%",
-   "price": 12.99,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Copy Paste Easy",
-   "url": "https://muncheye.com/mike-from-maine-et-al-copy-paste-easy",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-11-08",
-   "details": "$147 at 50%",
-   "price": 147.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Intone AI",
-   "url": "https://muncheye.com/laxman-singh-webstore-ai",
+   "name": "MyTribe AI",
+   "url": "https://muncheye.com/november-11th",
    "network": "Launchpad",
    "niche": "software",
-   "launch": "2026-11-08",
+   "launch": "2026-11-09",
    "details": "$17 at 50%",
    "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "The Small List Profit Machine App Bundle",
-   "url": "https://muncheye.com/the-small-list-profit-machine",
+   "name": "Mind &amp; Wellness Vault w/ Unrestricted PLR",
+   "url": "https://muncheye.com/mind-wellness-vault-w-unrestricted-plr",
    "network": "WarriorPlus",
    "niche": "mmo",
-   "launch": "2026-11-08",
-   "details": "9.97 at 100%",
+   "launch": "2026-11-09",
+   "details": "5 at 60%",
    "price": 0,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "SOP Builder PLR",
-   "url": "https://muncheye.com/fusionplr-focusforge",
-   "network": "WarriorPlus",
-   "niche": "mmo",
-   "launch": "2026-11-08",
-   "details": "$3 at 50%",
-   "price": 3.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Self-help Workbook Vault",
-   "url": "https://muncheye.com/self-help-workbook-vault",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-08",
-   "details": "$9.99 at 60%",
-   "price": 9.99,
    "commPct": 60.0,
    "source": "MunchEye"
   },
   {
-   "name": "PinPrompt Vault: Free Pinterest Traffic With Copy-and-Paste AI Prompts",
-   "url": "https://muncheye.com/pinprompt-vault-free-pinterest-traffic-with-copy-and-paste-ai-prompts",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-11-08",
-   "details": "$1 at 50%",
-   "price": 1.0,
+   "name": "[PLR Firesale] The Membership Revenue Framework",
+   "url": "https://muncheye.com/plr-experts-plr-firesale-the-membership-revenue-framework",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-11-09",
+   "details": "$19-$197 at 70%",
+   "price": 19.0,
+   "commPct": 70.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Puzzle Arsenal",
+   "url": "https://muncheye.com/puzzle-arsenal-profitable-puzzle-book-builders",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-09",
+   "details": "27 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "321 Preschool Kids Activity Prompt Pack",
-   "url": "https://muncheye.com/321-preschool-kids-activity-prompt-pack",
+   "name": "MRR: Weight Loss Reset",
+   "url": "https://muncheye.com/cellular-weight-loss-mrr-the-blueprint-90-commission",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-11-09",
+   "details": "9.95 at 90%",
+   "price": 0,
+   "commPct": 90.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "ShowerKit",
+   "url": "https://muncheye.com/showerkit",
    "network": "WarriorPlus",
    "niche": "other",
-   "launch": "2026-11-08",
+   "launch": "2026-11-09",
    "details": "17 at 50%",
    "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "Hearthplay",
-   "url": "https://muncheye.com/hearthplay",
-   "network": "WarriorPlus",
+   "name": "ClientCrafter",
+   "url": "https://muncheye.com/ayoub-assif-clientcrafter",
+   "network": "Explodely",
    "niche": "other",
-   "launch": "2026-11-08",
-   "details": "17 at 50%",
-   "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Space Adventure ComicVerse",
-   "url": "https://muncheye.com/space-adventure-comicverse",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-08",
-   "details": "$9.95 at 100%",
-   "price": 9.95,
-   "commPct": 100.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "Nativity Playset Studio",
-   "url": "https://muncheye.com/nativity-playset-studio-for-etsy-and-kdp",
-   "network": "WarriorPlus",
-   "niche": "other",
-   "launch": "2026-11-08",
+   "launch": "2026-11-09",
    "details": "$17 at 50%",
    "price": 17.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Prepare to Claim Your ChatGPT Business Profile - 72 Hr PLR",
+   "url": "https://muncheye.com/prepare-to-claim-your-chatgpt-business-profile-72-hr-plr",
+   "network": "WarriorPlus",
+   "niche": "mmo",
+   "launch": "2026-11-09",
+   "details": "$9.00 at 50%",
+   "price": 9.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "CouponLaunch Max",
+   "url": "https://muncheye.com/couponlaunch-max",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-09",
+   "details": "$97.00 at 40%",
+   "price": 97.0,
+   "commPct": 40.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "AI TrafficLingo",
+   "url": "https://muncheye.com/ai-trafficlingo",
+   "network": "WarriorPlus",
+   "niche": "software",
+   "launch": "2026-11-09",
+   "details": "$57.00 at 50%",
+   "price": 57.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
