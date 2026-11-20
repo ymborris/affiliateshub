@@ -1,17 +1,6 @@
 {
- "generated": "2026-11-19T15:10:38Z",
+ "generated": "2026-11-20T14:50:39Z",
  "offers": [
-  {
-   "name": "DramaStudioAi",
-   "url": "https://muncheye.com/eric-holmlund-et-al-dramastudioai",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-11-19",
-   "details": "$37 at 50%",
-   "price": 37.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
   {
    "name": "Nazo Box",
    "url": "https://muncheye.com/nazo-box-murder-mystery-nonogram-amazon-kdp-software-2001-in-prizes",
@@ -288,6 +277,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "ScrollReel",
+   "url": "https://muncheye.com/scrollreel",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-01-19",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "RebranderClub",
    "url": "https://muncheye.com/im-wealth-builders-rebranderclub",
    "network": "WarriorPlus",
@@ -317,17 +317,6 @@
    "launch": "2027-01-25",
    "details": "67 at 50%",
    "price": 0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "ScrollReel",
-   "url": "https://muncheye.com/scrollreel",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2027-01-26",
-   "details": "$37 at 50%",
-   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -486,6 +475,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "BuzzReel",
+   "url": "https://muncheye.com/buzzreel",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-05-18",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "GuruOS",
    "url": "https://muncheye.com/guruos2",
    "network": "JVZoo",
@@ -493,17 +493,6 @@
    "launch": "2027-05-19",
    "details": "$47 at 50%",
    "price": 47.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "BuzzReel",
-   "url": "https://muncheye.com/buzzreel",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2027-05-25",
-   "details": "$37 at 50%",
-   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -563,6 +552,17 @@
    "source": "MunchEye"
   },
   {
+   "name": "SparkReel",
+   "url": "https://muncheye.com/sparkreel",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2027-08-24",
+   "details": "$37 at 50%",
+   "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
    "name": "MemberHub",
    "url": "https://muncheye.com/karthik-ramani-memberhub",
    "network": "JVZoo",
@@ -570,17 +570,6 @@
    "launch": "2027-08-25",
    "details": "$297 at 50%",
    "price": 297.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "SparkReel",
-   "url": "https://muncheye.com/sparkreel",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2027-08-31",
-   "details": "$37 at 50%",
-   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -640,24 +629,35 @@
    "source": "MunchEye"
   },
   {
-   "name": "MarketPresso Dfy Edition",
-   "url": "https://muncheye.com/marketpresso-dfy-edition",
-   "network": "JVZoo",
+   "name": "AzonFlow",
+   "url": "https://muncheye.com/mike-mckay-azonflow",
+   "network": "Launchpad",
    "niche": "other",
-   "launch": "2026-11-18",
-   "details": "$47 at 50%",
-   "price": 47.0,
+   "launch": "2026-11-19",
+   "details": "$17 at 50%",
+   "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "Host Hero",
-   "url": "https://muncheye.com/pallab-ghosal-host-hero",
+   "name": "ProfitBildr 2.0",
+   "url": "https://muncheye.com/mike-radu-profitfunnel-2",
    "network": "Launchpad",
    "niche": "other",
-   "launch": "2026-11-18",
-   "details": "$14 - $17 at 50%",
-   "price": 14.0,
+   "launch": "2026-11-19",
+   "details": "$22 at 50%",
+   "price": 22.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "DramaStudioAi",
+   "url": "https://muncheye.com/eric-holmlund-et-al-dramastudioai",
+   "network": "JVZoo",
+   "niche": "other",
+   "launch": "2026-11-19",
+   "details": "$37 at 50%",
+   "price": 37.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
