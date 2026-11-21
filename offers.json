@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T14:50:39Z",
+ "generated": "2026-11-21T14:08:21Z",
  "offers": [
   {
    "name": "Nazo Box",
@@ -31,6 +31,17 @@
    "launch": "2026-11-24",
    "details": "$47 at 50%",
    "price": 47.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "BLACK FRI-YAY!",
+   "url": "https://muncheye.com/dpapas-black-fri-yay",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-27",
+   "details": "47 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
@@ -321,22 +332,22 @@
    "source": "MunchEye"
   },
   {
-   "name": "6th of 2026",
-   "url": "https://muncheye.com/6th-of-2026",
+   "name": "TokBuilder",
+   "url": "https://muncheye.com/tokbuilder",
    "network": "JVZoo",
    "niche": "other",
-   "launch": "2027-01-26",
+   "launch": "2027-02-02",
    "details": "$47 at 50%",
    "price": 47.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "TokBuilder",
-   "url": "https://muncheye.com/tokbuilder",
+   "name": "6th of 2026",
+   "url": "https://muncheye.com/6th-of-2026",
    "network": "JVZoo",
    "niche": "other",
-   "launch": "2027-02-02",
+   "launch": "2027-02-09",
    "details": "$47 at 50%",
    "price": 47.0,
    "commPct": 50.0,
@@ -629,35 +640,24 @@
    "source": "MunchEye"
   },
   {
-   "name": "AzonFlow",
-   "url": "https://muncheye.com/mike-mckay-azonflow",
-   "network": "Launchpad",
+   "name": "Mat1 - Inbox Engines",
+   "url": "https://muncheye.com/mat1-inbox-engineers",
+   "network": "WarriorPlus",
    "niche": "other",
-   "launch": "2026-11-19",
-   "details": "$17 at 50%",
-   "price": 17.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "ProfitBildr 2.0",
-   "url": "https://muncheye.com/mike-radu-profitfunnel-2",
-   "network": "Launchpad",
-   "niche": "other",
-   "launch": "2026-11-19",
-   "details": "$22 at 50%",
-   "price": 22.0,
-   "commPct": 50.0,
-   "source": "MunchEye"
-  },
-  {
-   "name": "DramaStudioAi",
-   "url": "https://muncheye.com/eric-holmlund-et-al-dramastudioai",
-   "network": "JVZoo",
-   "niche": "other",
-   "launch": "2026-11-19",
+   "launch": "2026-11-20",
    "details": "$37 at 50%",
    "price": 37.0,
+   "commPct": 50.0,
+   "source": "MunchEye"
+  },
+  {
+   "name": "Nook Tales Creator",
+   "url": "https://muncheye.com/nook-tales-creator",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-20",
+   "details": "$17 at 50%",
+   "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
