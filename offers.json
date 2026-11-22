@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T14:08:21Z",
+ "generated": "2026-11-22T13:58:40Z",
  "offers": [
   {
    "name": "Nazo Box",
@@ -640,24 +640,24 @@
    "source": "MunchEye"
   },
   {
-   "name": "Mat1 - Inbox Engines",
-   "url": "https://muncheye.com/mat1-inbox-engineers",
-   "network": "WarriorPlus",
+   "name": "DOMAIN DECK",
+   "url": "https://muncheye.com/domain-deck-art-flair",
+   "network": "Launchpad",
    "niche": "other",
-   "launch": "2026-11-20",
-   "details": "$37 at 50%",
-   "price": 37.0,
+   "launch": "2026-11-21",
+   "details": "17 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "Nook Tales Creator",
-   "url": "https://muncheye.com/nook-tales-creator",
-   "network": "WarriorPlus",
+   "name": "ChatGPT Prompts Bundle",
+   "url": "https://muncheye.com/chatgpt-prompts-bundle",
+   "network": "JVZoo",
    "niche": "other",
-   "launch": "2026-11-20",
-   "details": "$17 at 50%",
-   "price": 17.0,
+   "launch": "2026-11-21",
+   "details": "17 at 50%",
+   "price": 0,
    "commPct": 50.0,
    "source": "MunchEye"
   }
