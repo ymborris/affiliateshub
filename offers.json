@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T16:44:00Z",
+ "generated": "2026-11-26T16:19:20Z",
  "offers": [
   {
    "name": "BLACK FRI-YAY!",
@@ -640,25 +640,25 @@
    "source": "MunchEye"
   },
   {
-   "name": "CommissionPilot AI",
-   "url": "https://muncheye.com/pranshu-gupta-commissionpilot-ai",
-   "network": "Launchpad",
-   "niche": "software",
-   "launch": "2026-11-24",
+   "name": "Artimagez 100 confirmed Launch",
+   "url": "https://muncheye.com/artimagez-100-confirmed-launch",
+   "network": "WarriorPlus",
+   "niche": "other",
+   "launch": "2026-11-25",
    "details": "$17 at 50%",
    "price": 17.0,
    "commPct": 50.0,
    "source": "MunchEye"
   },
   {
-   "name": "BuzzFarmsAI",
-   "url": "https://muncheye.com/buzzfarmai",
-   "network": "JVZoo",
+   "name": "Shopkeeper Math Studio",
+   "url": "https://muncheye.com/shopkeepermathstudio",
+   "network": "WarriorPlus",
    "niche": "other",
-   "launch": "2026-11-24",
-   "details": "$47 at 50%",
-   "price": 47.0,
-   "commPct": 50.0,
+   "launch": "2026-11-25",
+   "details": "$9 at 100%",
+   "price": 9.0,
+   "commPct": 100.0,
    "source": "MunchEye"
   }
  ]
